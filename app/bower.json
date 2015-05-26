@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "0.0.0",
+  "authors": [
+    "Asa Toburen"
+  ],
+  "license": "MIT",
+  "homepage": "asatoburen.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lodash": "~3.9.3"
+  }
+}
