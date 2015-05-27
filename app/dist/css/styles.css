@@ -338,7 +338,8 @@ html section.projects ul {
 }
 
 html section.projects ul li {
-    padding: 1em 7.894%;
+    padding: 1em 6.5%;
+    cursor: pointer;
     display: inline-block;
     margin-right: -4px;
 }

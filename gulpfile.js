@@ -8,6 +8,10 @@ var gulp = require('gulp'),
     autoprefixer = require('autoprefixer-core'),
     imagemin = require('gulp-imagemin'),
     cache = require('gulp-cache'),
+    plumber = require('gulp-plumber'),
+    rename = require('gulp-rename'),
+    uglify = require('gulp-uglify'),
+    concat = require('gulp-concat'),
     port = process.env.port || 8080;
 
 gulp.task('open', function() {
@@ -49,6 +53,21 @@ gulp.task('styles', function() {
         .pipe(connect.reload());
 });
 
+gulp.task('scripts', function(){
+  //return gulp.src(['./app/scripts/jquery.min.js'], ['./app/scripts/main.js'])
+  return gulp.src('./app/scripts/*.js')
+    .pipe(plumber({
+      errorHandler: function (error) {
+        console.log(error.message);
+        this.emit('end');
+    }}))
+    .pipe(concat('app.js'))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(uglify())
+    .pipe(gulp.dest('./app/dist/scripts/'))
+    .pipe(connect.reload());
+});
+
 gulp.task('html', function() {
     gulp.src('./app/index.html')
         .pipe(connect.reload());
@@ -60,8 +79,8 @@ gulp.task('watch', function() {
     gulp.watch("app/*.html");
 });
 
-gulp.task('default');
+gulp.task('default', ['scripts']);
 
-gulp.task('serve', ['watch', 'styles', 'connect', 'open']);
+gulp.task('serve', ['watch', 'styles', 'scripts', 'connect', 'open']);
 
 
