@@ -167,6 +167,7 @@ html {
     section.profile {
         background-image: url('../../images/dark_geometric_@2X.png');
         padding: 5em 3em;
+        height: 40em;
         h1 {
             padding: 1em 0;
             font-size: 1.7em;
@@ -196,7 +197,7 @@ html {
         }
     }
     section.skills {
-        height: 78em;
+        height: 85em;
         text-align: center;
         h1 {
             background-color: $teal;
@@ -207,28 +208,39 @@ html {
         div.container {
             display: flex;
             flex-flow: row wrap;
-            margin: 3em 11em 0 11em;
-            justify-content: flex-end;
+            padding: 0 10em;
         }
         div.skill-area {
-            width: 33%;
-            margin: .5em 5.5em;
+            width: 35%;
             display: inline-block;
             background-color: $grey;
-            border-radius: 1em;
+            margin: 4em 7.5%;
+            box-shadow: inset 0 0 2px #000;
+            &:hover {
+                div.skill-img {
+                    box-shadow: inset 0 0 50px $teal;
+                }
+            }
             h2 {
                 background: linear-gradient(-265deg, rgba(0, 0, 0, 0), $teal 79%);
                 padding: .7em;
+                margin: 0;
+                margin-top: .5em;
             }
             p {
                 line-height: 1.5em;
+                margin: 0;
                 padding: .7em;
             }
             div.skill-img {
+                background: #fff;
+                border-bottom: none;
                 height: 15em;
                 background-size: 62%;
                 background-position: 50%;
                 background-repeat: no-repeat;
+                box-shadow: inset 0 0 20px #000000;
+                transition: all .5s ease;
             }
             div.markup-icon {
                 background-image: url('../../images/icons/css 3.png');
@@ -248,6 +260,7 @@ html {
         padding: .5em 0;
         margin: 0;
         margin: 0 4em;
+        height: 45em;
         h1 {
             border-bottom: 5px solid #333;
             padding: .5em;
@@ -255,17 +268,25 @@ html {
             margin: 0;
         }
         ul {
-            margin-left: -.5em;
             padding: 0;
+            margin: 0 0 2em 0;
+            margin-left: -3px;
             list-style-type: none;
             text-align: center;
+            text-transform: uppercase;
             li {
+                padding: 1em 7.894%;
                 display: inline-block;
-                padding: 1em;
-                margin: 0 1em;
+                margin-right: -4px;
                 &:hover {
                     background-color: $teal;
                 }
+            }
+            >:last-child {
+                padding-right: 5.5em;
+            }
+            li.active {
+                background-color: $teal;
             }
         }
         div.project-wrapper {
@@ -277,10 +298,16 @@ html {
             justify: space-around;
             article {
                 width: 27%;
-                height: 10em;
-                margin: 0 2em;
+                height: 14em;
+                margin: 1em 2em;
                 border: 2px solid #000;
             }
         }
     }
+}
+
+footer {
+    height: 30em;
+    margin-top: 15em;
+    background-image: url('../../images/dark_geometric_@2X.png');
 }

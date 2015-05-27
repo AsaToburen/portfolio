@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -17,16 +18,16 @@
             <div>
                 <h2>Front End Developer</h2>
                 <ul>
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#projects">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#work">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </header>
     <section class="marquee">
     </section>
-    <section class="profile">
+    <section id="profile" class="profile">
         <div class="profile-content">
             <div class="profile-bg"></div>
             <h1>A little about me._</h1>
@@ -50,7 +51,9 @@
                 <p>Developed several projects using vanilla javascript and object-oriented principles. Experience implementing logic to handle user interactions with Javascript and JQuery.</p>
             </div>
             <div class="skill-area">
-                <div class="angular-icon skill-img"></div>
+                <span>
+                    <div class="angular-icon skill-img"></div>
+                </span>
                 <h2>Angular</h2>
                 <p>Experience building single page applications with the most popular frontend MVC framework. Working understanding of unit testing with Protractor, Jasmine and Karma.</p>
             </div>
@@ -61,31 +64,31 @@
             </div>
         </div>
         <div>
-            <h2>Noteworthy Mentions</h2>
+            <h2 class="sub-heading">Noteworthy Mentions</h2>
         </div>
     </section>
-    <section class="projects">
-                    <h1>Projects</h1>
+    <section id="work" class="projects">
+        <h1>Projects</h1>
         <ul>
-            <li>Javascript</li>
-            <li>Angular</li>
-            <li>Node</li>
-            <li>JQuery</li>
-            <li>HTML/CSS</li>
+            <li class="btn" id="js">Javascript</li>
+            <li class="btn" id="an">Angular</li>
+            <li class="btn" id="no">Node</li>
+            <li class="btn" id="jq">JQuery</li>
+            <li class="btn" id="ht">HTML/CSS</li>
         </ul>
         <div id="projects" class="project-wrapper">
-            <article class="project">
-                <div id="reader" class="pro-bg js css">
+            <article class="project js ht an">
+                <div id="reader" class="pro-bg">
                 </div>
                 <h3>Rss Feed Reader</h3>
             </article>
-            <article class="project">
-                <div id="reader" class="pro-bg js css">
+            <article class="project js ht an no">
+                <div id="reader" class="pro-bg">
                 </div>
                 <h3>Twitter Open Mic</h3>
             </article>
-            <article class="project">
-                <div id="reader" class="pro-bg js">
+            <article class="project js ht an no">
+                <div id="reader" class="pro-bg">
                 </div>
                 <h3>Mean ToDo List</h3>
             </article>
@@ -121,9 +124,10 @@
             </article>
         </div>
     </section>
-    <footer>
+    <footer id="contact">
     </footer>
     <script src="bower_components/lodash/lodash.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 
