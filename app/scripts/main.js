@@ -11,12 +11,8 @@ var filterBtns = $('.btn').click(function() {
 });
 
 
-
-//var input = 'css';
-
-//var filteredProjects = _.filter(projects, function(project) {
-//    console.log(project.className);
-//    return _.includes(project.tags, input);
-//});
-
-//console.log(filteredProjects);
+$('#mail').click(function() {
+    $(this).addClass('hideTop');
+    $('.linkedin, .twitter').addClass('hideBottom');
+    $('.contact-form').addClass('showContact');
+});

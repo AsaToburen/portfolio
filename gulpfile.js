@@ -1,4 +1,3 @@
-
 /* Add build task -- cssnano etc, browserify */
 
 var gulp = require('gulp'),
@@ -53,19 +52,21 @@ gulp.task('styles', function() {
         .pipe(connect.reload());
 });
 
-gulp.task('scripts', function(){
-  //return gulp.src(['./app/scripts/jquery.min.js'], ['./app/scripts/main.js'])
-  return gulp.src('./app/scripts/*.js')
-    .pipe(plumber({
-      errorHandler: function (error) {
-        console.log(error.message);
-        this.emit('end');
-    }}))
-    .pipe(concat('app.js'))
-    .pipe(rename({suffix: '.min'}))
-    .pipe(uglify())
-    .pipe(gulp.dest('./app/dist/scripts/'))
-    .pipe(connect.reload());
+gulp.task('scripts', function() {
+    return gulp.src('./app/scripts/*.js')
+        .pipe(plumber({
+            errorHandler: function(error) {
+                console.log(error.message);
+                this.emit('end');
+            }
+        }))
+        .pipe(concat('app.js'))
+        .pipe(rename({
+            suffix: '.min'
+        }))
+        .pipe(uglify())
+        .pipe(gulp.dest('./app/dist/scripts/'))
+        .pipe(connect.reload());
 });
 
 gulp.task('html', function() {
@@ -82,5 +83,3 @@ gulp.task('watch', function() {
 gulp.task('default', ['scripts']);
 
 gulp.task('serve', ['watch', 'styles', 'scripts', 'connect', 'open']);
-
-
