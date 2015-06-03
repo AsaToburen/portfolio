@@ -364,7 +364,7 @@ footer {
                 font-size: 1.3em;
                 width: 45%;
                 display: inline-block;
-                padding: .3em;
+                padding: 1.1%;
                 &:focus {
                     outline: none;
                 }
@@ -375,20 +375,20 @@ footer {
                 padding: .2em;
                 color: #fff;
                 text-transform: uppercase;
-                margin-right: 19em;
+                margin-right: 30%;
             }
             input[type="submit"] {
                 background-color: #4b88a2;
                 border: none;
                 text-align: left;
-                padding: .66em 1em;
+                height: 2.5em;
                 width: 48%;
                 color: #fff;
             }
             textarea {
                 float: right;
-                padding: 1em 0 0 1em;
-                width: 50%;
+                padding: 1em 0 0 0;
+                width: 52%;
                 height: 16.5em;
                 margin-top: -8.4em;
                 border: none;
