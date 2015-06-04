@@ -11,8 +11,20 @@ var filterBtns = $('.btn').click(function() {
 });
 
 
-$('#mail').click(function() {
-    $(this).addClass('hideTop');
-    $('.linkedin, .twitter').addClass('hideBottom');
-    $('.contact-form').addClass('showContact');
+//$('#mail').click(function() {
+//    $(this).addClass('hideTop');
+//    $('.linkedin, .twitter').addClass('hideBottom');
+//    $('.contact-form').addClass('showContact');
+//});
+
+
+$("#mail").click(function() {
+    $('#mail, .linkedin, .twitter').animate({
+        top: "-28em",
+    }, 500, function() {
+       $('.contact-form').animate({
+        display: "block",
+        right: "0em",
+       });
+    });
 });
