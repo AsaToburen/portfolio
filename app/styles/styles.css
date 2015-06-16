@@ -12,8 +12,6 @@ $font-color: #0C120C;
 $divider: #B6B6B6;
 $blue: #448AFF;
 $drkBlue: #314570;
-
-
 @keyframes linearAnimation {
     0% {
         background: linear-gradient(-280deg, rgba(0, 0, 0, 0), $teal 40%);
@@ -58,7 +56,7 @@ header {
     font-size: 1em;
     padding-top: 1em;
     text-align: right;
-    margin: 0 4em;
+    margin: 1em 5em;
     i {
         border-top: 100px solid $teal;
         border-left: 100px solid transparent;
@@ -151,8 +149,8 @@ html {
     section.marquee {
         background-color: $grey;
         opacity: .3;
-        margin: 1.5em 4em 3em 4em;
-        height: 36em;
+        margin: 1.5em 5em 3em;
+        height: 35em;
         h2 {
             margin: 0;
             padding: .6em 0 .2em .6em;
@@ -168,12 +166,8 @@ html {
     }
     section.profile {
         background-image: url('../../images/dark_geometric_@2X.png');
-        padding: 5em 3em;
+        padding: 5em 1em;
         height: 33em;
-        h1 {
-            padding: 1em 0;
-            font-size: 1.7em;
-        }
         div.profile-content {
             background-color: #A2AEBB;
             opacity: 0.9;
@@ -181,21 +175,32 @@ html {
             margin: 0 4em;
             padding: .5em 3em;
             clear: both;
-            p {
-                margin-top: 1.2em;
-                font-size: 1.2em;
-                line-height: 2em;
+            div.profile-desc {
+                width: 67%;
+                margin-top: 1.7em;
+                padding: 1em;
+                h1 {
+                    font-size: 1.7em;
+                }
+                p {
+                    margin-top: 1.6em;
+                    font-size: 1.2em;
+                    line-height: 2em;
+                }
             }
         }
         div.profile-bg {
-            width: 25%;
-            margin-top: 1.7em;
+            width: 20%;
+            margin-top: 3.5em;
+            margin-right: 1.5em;
             height: 18em;
-            background-color: #fff;
             float: right;
             background-position: center;
-            background-size: cover;
+            background-size: 87%;
+            background-repeat: no-repeat;
             background-image: url('../../images/profile.jpg');
+            border: 5px solid #fff;
+            padding: 3em;
         }
     }
     section.skills {
@@ -282,9 +287,10 @@ html {
     section.projects {
         padding: .5em 0;
         margin: 0;
-        padding: .5em 0 12em;
+        padding: .5em 4em 12em;
         height: 50em;
         background-color: #D9D9D9;
+        justify-content: space-around;
         h1 {
             border-bottom: 5px solid #333;
             padding: .5em;
@@ -293,38 +299,50 @@ html {
         }
         ul {
             padding: 0;
-            margin: 0 0 2em -5px;
+            margin: 0 0 2em;
             list-style-type: none;
             text-align: center;
             text-transform: uppercase;
+            background-color: #444444;
             li {
                 padding: 1em 0;
                 width: 20%;
-                margin-right: -5px;
+                margin-right: 2px;
                 cursor: pointer;
                 display: inline-block;
+                color: #fff;
+                span {}
                 &:hover {
                     background-color: $teal;
                 }
+                img {
+                    display: none;
+                }
             }
             li:last-child {
-                width: 19.9%;
+                width: 19%;
+                margin-right: -11px;
             }
             li.active {
                 background-color: $teal;
+                span {
+                    font-weight: bold;
+                    color: #fff;
+                }
+                img {
+                    display: inline;
+                }
             }
         }
         div.project-wrapper {
             display: flex;
             flex-wrap: wrap;
-            justify-content: flex-start;
+            justify-content: space-around;
             margin: 0 4em;
             height: 100%;
-            justify: space-around;
             article {
-                width: 27%;
-                height: 14em;
-                margin: 1em 2em;
+                width: 31%;
+                height: 15em;
                 border: 2px solid #000;
             }
         }
@@ -338,8 +356,8 @@ footer {
     background-image: url('../../images/dark_geometric_@2X.png');
     div.contact-container {
         border: 6px solid #fff;
-        width: 40%;
-        height: 15em;
+        width: 50%;
+        height: 20em;
         margin: 0 auto;
         overflow: hidden;
         h2 {
@@ -367,19 +385,17 @@ footer {
             transition: all .5s ease;
             overflow: hidden;
             position: relative;
-            top: 0;
             &:hover {
                 background-color: $teal;
             }
         }
         div.contact-form {
             position: relative;
-            right: 37em;
             width: 100%;
-            display: none;
+            height: 83%;
             input {
                 font-size: 1.3em;
-                width: 45%;
+                width: 45.4%;
                 display: inline-block;
                 padding: 1.1%;
                 &:focus {
@@ -389,7 +405,7 @@ footer {
             label {
                 display: inline-block;
                 width: 47.3%;
-                padding: .2em;
+                padding: 1em 0.2em;
                 color: #fff;
                 text-transform: uppercase;
                 margin-right: 30%;
@@ -401,13 +417,15 @@ footer {
                 height: 2.5em;
                 width: 48%;
                 color: #fff;
+                height: 3.3em;
             }
             textarea {
                 float: right;
-                padding: 1em 0 0 0;
-                width: 52%;
-                height: 16.5em;
-                margin-top: -8.4em;
+                padding: 1em .5em 0 1em;
+                width: 49%;
+                height: 21.5em;
+                font-size: 16px;
+                margin-top: -9.4em;
                 border: none;
             }
         }
@@ -422,14 +440,6 @@ footer {
         }
         div.mail {
             background-image: url('../../images/icons/mail81.svg');
-        }
-        div.hideTop {
-            position: relative;
-            top: -28em;
-        }
-        div.hideBottom {
-            position: relative;
-            top: 12em;
         }
     }
 }

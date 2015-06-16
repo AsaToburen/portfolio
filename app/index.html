@@ -30,11 +30,13 @@
     <section id="profile" class="profile">
         <div class="profile-content">
             <div class="profile-bg"></div>
-            <h1>A little about me._</h1>
-            <p>My name is Asa. I am a frontend developer from sunny Tucson, Arizona.</p>
-            <p>A javascript developer by training, I am always working to improve my development toolkit and learn new technologies.</p>
-            <p>When I am away from the keyboard you might find me enjoying strong coffee, listening to electronic music or riding my bicycle long distances.</p>
-            <p>Check out my projects below and drop me a line if you would like to connect with me.</p>
+            <div class="profile-desc">
+                <h1>A little about me._</h1>
+                <p>My name is Asa. I am a frontend developer from sunny Tucson, Arizona.</p>
+                <p>A javascript developer by training, I am always working to improve my development toolkit and learn new technologies.</p>
+                <p>When I am away from the keyboard you might find me enjoying strong coffee, listening to electronic music or riding my bicycle long distances.</p>
+                <p>Check out my projects below and drop me a line if you would like to connect with me.</p>
+            </div>
         </div>
     </section>
     <section class="skills">
@@ -81,11 +83,26 @@
     <section id="work" class="projects">
         <h1>Projects</h1>
         <ul>
-            <li class="btn" id="js">Javascript</li>
-            <li class="btn" id="an">Angular</li>
-            <li class="btn" id="no">Node</li>
-            <li class="btn" id="jq">JQuery</li>
-            <li class="btn" id="ht">HTML/CSS</li>
+            <li class="btn" id="js">
+                <span>Javascript</span>
+                <!--  <img src="./images/icons/workflow/js_badge.svg" alt="Javascript"> -->
+            </li>
+            <li class="btn" id="an">
+                <span>Angular</span>
+                <!--  <img src="./images/icons/workflow/angular_simple.svg" alt="Javascript"> -->
+            </li>
+            <li class="btn" id="no">
+                <span>Node</span>
+                <!-- <img height="40px" src="./images/icons/workflow/nodejs_small.svg" alt="Javascript"> -->
+            </li>
+            <li class="btn" id="jq">
+                <span>JQuery</span>
+                <!-- <img src="./images/icons/workflow/jquery_logo.svg" alt="Javascript"> -->
+            </li>
+            <li class="btn" id="ht">
+                <span>HTML/CSS</span>
+                <!-- <img src="./images/icons/workflow/html5.svg" alt="Javascript"> -->
+            </li>
         </ul>
         <div id="projects" class="project-wrapper">
             <article class="project js ht an">
@@ -148,9 +165,6 @@
                     <input type="submit" value="Send">
                 </form>
             </div>
-            <div class="linkedin"></div>
-            <div id="mail" class="mail"></div>
-            <div class="twitter"></div>
         </div>
     </footer>
     <!-- <script src="dist/scripts/app.min.js"></script> -->
