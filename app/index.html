@@ -28,9 +28,9 @@
     </section>
     <section id="profile" class="profile">
         <div class="profile-content">
-            <div class="profile-bg"></div>
             <div class="profile-desc">
                 <h1>A little about me._</h1>
+                <img src="./images/profile.jpg" alt="Asa Toburen Profile">
                 <p>My name is Asa. I am a frontend developer from Tucson, Arizona.</p>
                 <p>A javascript developer by training, I am always working to improve my development skillset and learn new technologies.</p>
                 <p>When I am away from the keyboard you might find me enjoying strong coffee, listening to electronic music or riding my bicycle long distances.</p>
@@ -40,47 +40,50 @@
     </section>
     <section class="skills">
         <h1>Primary Focus Areas</h1>
-        <div class="container">
-            <div class="skill-area">
-                <div class="markup-icon skill-img"></div>
-                <h2>HTML5/CSS3</h2>
-                <p>Strong understanding of markup and styling languages. Proficient and able to design and build responsive layouts with web development best practices.</p>
-            </div>
-            <div class="skill-area">
-                <div class="js-icon skill-img"></div>
-                <h2>Javascript/JQuery</h2>
-                <p>Developed several projects using vanilla javascript and object-oriented principles. Experience implementing logic to handle user interactions with Javascript and JQuery.</p>
-            </div>
-            <div class="skill-area">
-                <span>
-                    <div class="angular-icon skill-img"></div>
+        <div class="skill-area">
+            <!--<div class="markup-icon skill-img"></div> -->
+            <h2>HTML5/CSS3</h2>
+            <img src="./images/icons/css.png" alt="Html/CSS Icon">
+            <p>Strong understanding of markup and styling languages. Proficient and able to design and build responsive layouts with web development best practices.</p>
+        </div>
+        <div class="skill-area">
+            <!-- <div class="js-icon skill-img"></div> -->
+            <h2>Javascript/JQuery</h2>
+            <img src="./images/icons/tools2.png" alt="Javascript/JQuery">
+            <p>Developed several projects using vanilla javascript and object-oriented principles. Experience implementing logic to handle user interactions with Javascript and JQuery.</p>
+        </div>
+        <div class="skill-area">
+            <span>
+                 <!--   <div class="angular-icon skill-img"></div> -->
                 </span>
-                <h2>Angular</h2>
-                <p>Experience building single page applications with the most popular frontend MVC framework. Working understanding of unit testing with Protractor, Jasmine and Karma.</p>
-            </div>
-            <div class="skill-area">
-                <div class="responsive-icon skill-img"></div>
-                <h2>Responsive Design</h2>
-                <p>Familiar with Responsive Design and and page speed optimization best practices. Working understanding of mobile-first design and development.</p>
-            </div>
+            <h2 class="angular">Angular</h2>
+            <img src="./images/icons/accelerometer.png" alt="Angular Icon">
+            <p>Experience building single page applications with the most popular frontend MVC framework. Working understanding of unit testing with Protractor, Jasmine and Karma.</p>
+        </div>
+        <div class="skill-area">
+            <!--<div class="responsive-icon skill-img"></div> -->
+            <img src="./images/icons/multidevice.png" alt="Responsive Icon">
+            <h2>Responsive Design</h2>
+            <p>Familiar with Responsive Design and and page speed optimization best practices. Working understanding of mobile-first design and development.</p>
         </div>
         <div class="toolkit">
             <div class="tools">
-                <h2 class="sub-heading">Workflow Tools</h2>
-                <ul>
-                    <li><img src="./images/icons/workflow/sublime.svg" alt="Sublime Text 3"></li>
-                    <li><img src="./images/icons/workflow/gulp.svg" alt="Gulp"></li>
-                    <li><img src="./images/icons/workflow/git.svg" alt="Git"></li>
-                    <li><img src="./images/icons/workflow/sass.svg" alt="Sass"></li>
-                    <li><img src="./images/icons/workflow/npm.svg" alt="npm"></li>
-                    <li><img src="./images/icons/workflow/github_full.svg" alt="Github"></li>
-                    <li><img src="./images/icons/workflow/terminal.svg" alt="Terminal"></li>
-                </ul>
+                <h2>Workflow Tools</h2>
+                <span><img src="./images/icons/workflow/sublime.svg" alt="Sublime Text 3"></span>
+                <span><img src="./images/icons/workflow/gulp.svg" alt="Gulp"></span>
+                <span><img src="./images/icons/workflow/git.svg" alt="Git"></span>
+                <span><img src="./images/icons/workflow/sass.svg" alt="Sass"></span>
+                <span><img src="./images/icons/workflow/npm.svg" alt="npm"></span>
+                <span><img src="./images/icons/workflow/github_full.svg" alt="Github"></li>
+                    <span><img src="./images/icons/workflow/terminal.svg" alt="Terminal"></span>
             </div>
         </div>
     </section>
     <section id="work" class="projects">
         <h1>Portfolio</h1>
+        <h3>
+            <span class="filter">Filter Projects</span>
+        </h3>
         <ul>
             <li class="btn" id="js">
                 <span>Javascript</span>
@@ -153,10 +156,8 @@
     </section>
     <footer id="contact">
         <div class="contact-container">
+            <h2>Contact</h2>
             <ul>
-                <li>
-                    <h2>Contact</h2>
-                </li>
                 <li class="contact-link">
                     <a href="https://www.linkedin.com/pub/asa-toburen-pettit/3a/164/aa7"><img height="40px" class="linkedin" src="./images/icons/link94.svg" alt="LinkedIn"></a>
                 </li>
@@ -164,18 +165,14 @@
                     <a href="mailto:atopettit@gmail.com"><img height="45px" class="mail" src="./images/icons/mail81.svg" alt="Email"></a>
                 </li>
             </ul>
-            <div class="contact-form">
-                <form action="//formspree.io/atopettit@gmail.com" method="POST">
-                    <div class="input-container">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" class="email" name="_replyto">
-                        <input type="submit" value="Send">
-                    </div>
-                    <textarea name="message" rows="5" placeholder="Your message"></textarea>
-                </form>
-            </div>
+            <form action="//formspree.io/atopettit@gmail.com" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="email" name="_replyto">
+                <textarea name="message" rows="5" placeholder="Your message"></textarea>
+                <input type="submit" value="Send">
+            </form>
         </div>
     </footer>
     <!-- <script src="dist/scripts/app.min.js"></script> -->

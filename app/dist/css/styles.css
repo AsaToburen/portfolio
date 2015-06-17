@@ -17,6 +17,11 @@ html body {
 html body h1 {
     margin: 0;
 }
+html body ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 html body section {
     padding: 0 1.5em 0 2em;
     height: 37em;
@@ -74,11 +79,9 @@ header div div h2 {
 }
 
 header div div ul {
-    margin: 0;
-    background-color: #333;
+    background-color: #252525;
     width: 100%;
     padding: .5em 0;
-    list-style-type: none;
     display: inline-block;
 }
 
@@ -89,16 +92,166 @@ header div div li {
 
 header div div a {
     padding: .5em .7em;
-    color: #fff;
+    color: #CAD8DE;
     text-decoration: none;
 }
 
 section.profile {
+    padding-top: 2em;
+    height: 49em;
     background-image: url('../../images/dark_geometric_@2X.png');
-
 }
 
 section.profile div.profile-desc {
     background-color: #CAD8DE;
     opacity: .7;
+    padding: .5em 1em 1em;
+}
+
+section.profile div.profile-desc h1 {
+    margin: .5em 0;
+}
+
+section.profile div.profile-desc p {
+    line-height: 1.7em;
+}
+
+section.skills {
+    padding-left: 0;
+    padding-right: 0;
+    height: 70em;
+    background-color: #D9D9D9;
+}
+
+section.skills h1 {
+    text-align: center;
+    padding: .5em 0;
+    background-color: #4b88a2;
+    border-top: 3px solid #CAD8DE;
+    border-bottom: 3px solid #CAD8DE;
+    margin-bottom: 1em;
+}
+
+section.skills div.skill-area {
+    padding: 0 1.5em 0 2em;
+}
+
+section.skills div.skill-area h2 {
+    display: inline-block;
+    margin: 0;
+    padding: .5em 0 .5em .5em;
+    background: linear-gradient(to right, #4b88a2, #D9D9D9);
+}
+
+section.skills div.skill-area h2.angular {
+    width: 70%;
+}
+
+section.skills div.skill-area img {
+    float: right;
+    padding-right: .5em;
+}
+
+section.skills div.toolkit h2 {
+    text-align: center;
+    padding: .5em 0;
+    background-color: #4b88a2;
+    border-top: 3px solid #CAD8DE;
+    border-bottom: 3px solid #CAD8DE;
+}
+
+section.skills div.toolkit span {
+    float: left;
+    width: 50%;
+    border: 1px solid black;
+}
+
+section.projects {
+    /* Have section that adjusts height according
+        to contents */
+    
+    height: 109em;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    background-color: #D9D9D9;
+}
+
+section.projects h1 {
+    text-align: center;
+    padding: .5em 0;
+    background-color: #4b88a2;
+    border-top: 3px solid #CAD8DE;
+    border-bottom: 3px solid #CAD8DE;
+}
+
+section.projects ul {
+    display: none;
+}
+
+section.projects ul li {
+    padding: 1.5em 0;
+    color: #CAD8DE;
+    background-color: #252525;
+}
+
+section.projects div.project-wrapper {
+    padding: 0 2em;
+}
+
+section.projects div.project-wrapper article {
+    height: 10em;
+    border: 2px solid black;
+    margin: 1em 0;
+}
+
+footer {
+    height: 40em;
+    background-image: url('../../images/dark_geometric_@2X.png');
+}
+
+footer h2 {
+    text-align: center;
+    padding: .5em 0;
+    background-color: #4b88a2;
+    border-top: 3px solid #CAD8DE;
+    border-bottom: 3px solid #CAD8DE;
+    margin-bottom: 1em;
+    margin-top: 0;
+}
+
+footer ul {
+    display: none;
+}
+
+footer form {
+    background-color: #CAD8DE;
+    opacity: .7;
+    height: 22em;
+    margin: 3em auto;
+    width: 60%;
+    padding: 1em 2em;
+    font-size: 1.2em;
+}
+
+footer form input, footer form label {
+    margin: .5em 0;
+}
+
+footer form input {
+    width: 90%;
+    font-size: 1.2em;
+    border: 1px solid #252525;
+}
+
+footer form textarea {
+    width: 90%;
+    height: 10em;
+    font-size: .8em;
+    border: 1px solid #252525;
+}
+
+footer form input[type="submit"] {
+    margin-top: 1em;
+    padding: .5em 0;
 }
