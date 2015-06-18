@@ -43,6 +43,7 @@ header i {
     position: relative;
     top: 8.34em;
     z-index: 100;
+    pointer-events: none;
 }
 
 header div {
@@ -71,7 +72,7 @@ header div div h2 {
     text-transform: uppercase;
     margin: 0;
     padding: .2em .5em;
-    font-size: 1.2em;
+    font-size: 1.1em;
     float: left;
     text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
 }
@@ -96,14 +97,14 @@ header div div a {
 
 section.profile {
     padding-top: 2em;
-    height: 49em;
+    height: 53em;
     background-image: url('../../images/dark_geometric_@2X.png');
 }
 
 section.profile div.profile-desc {
     background-color: #CAD8DE;
     opacity: .7;
-    padding: .5em 1em 1em;
+    padding: .5em 1.5em 0;
 }
 
 section.profile div.profile-desc h1 {
@@ -114,10 +115,25 @@ section.profile div.profile-desc p {
     line-height: 1.7em;
 }
 
+section.profile div.profile-desc span {
+    position: relative;
+    left: 8em;
+    bottom: 1em;
+}
+
+section.profile div.profile-desc span a {
+    margin: 0 .4em;
+}
+
+section.profile div.profile-desc span img.mail {
+    position: relative;
+    top: 3px;
+}
+
 section.skills {
     padding-left: 0;
     padding-right: 0;
-    height: 75em;
+    height: 72.5em;
     background-color: #D9D9D9;
 }
 
@@ -162,18 +178,22 @@ section.skills div.toolkit h2 {
     border-bottom: 3px solid #CAD8DE;
 }
 
+section.skills div.toolkit ul {
+    margin: 0 3em;
+}
+
 section.skills div.toolkit ul li {
     height: 2.5em;
 }
 
-section.skills div.toolkit ul li.even img {
-    float: right;
-    padding-right: 2em;
+section.skills div.toolkit ul span {
+    float: left;
+    margin-top: .5em;
+    padding-left: 1em;
 }
 
-section.skills div.toolkit ul li.odd img {
+section.skills div.toolkit ul img {
     float: left;
-    padding-left: 2em;
 }
 
 section.projects {
@@ -231,6 +251,10 @@ footer {
     background-image: url('../../images/dark_geometric_@2X.png');
 }
 
+footer div.contact-container {
+    padding: 0 2em;
+}
+
 footer h2 {
     text-align: center;
     padding: .5em 0;
@@ -247,10 +271,8 @@ footer ul {
 
 footer form {
     background-color: #CAD8DE;
-    opacity: .7;
     height: 22em;
-    margin: 3em auto;
-    width: 60%;
+    margin: 2em auto 1em auto;
     padding: 1em 1.5em;
     font-size: 1.2em;
 }
@@ -260,14 +282,14 @@ footer form input, footer form label {
 }
 
 footer form input {
-    width: 100%;
+    width: 97%;
     font-size: 1.2em;
     border: 1px solid #252525;
     background-color: #fff;
 }
 
 footer form textarea {
-    width: 100%;
+    width: 95%;
     height: 10em;
     margin-top: 1em;
     font-size: .8em;

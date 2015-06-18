@@ -42,11 +42,12 @@ header {
     text-align: right;
     margin: 0;
     i {
-        border-top: 113px solid #4b88a2;
+        border-top: 113px solid $teal;
         border-left: 119px solid transparent;
         position: relative;
         top: 8.34em;
         z-index: 100;
+        pointer-events: none;
     }
     div {
         text-align: left;
@@ -69,7 +70,7 @@ header {
                 text-transform: uppercase;
                 margin: 0;
                 padding: .2em .5em;
-                font-size: 1.2em;
+                font-size: 1.1em;
                 float: left;
                 text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
             }
@@ -94,17 +95,29 @@ header {
 
 section.profile {
     padding-top: 2em;
-    height: 49em;
+    height: 53em;
     background-image: url('../../images/dark_geometric_@2X.png');
     div.profile-desc {
         background-color: $grey;
         opacity: .7;
-        padding: .5em 1em 1em;
+        padding: .5em 1.5em 0;
         h1 {
             margin: .5em 0;
         }
         p {
             line-height: 1.7em;
+        }
+        span {
+            position: relative;
+            left: 8em;
+            bottom: 1em;
+            a {
+                margin: 0 .4em;
+            }
+            img.mail {
+                position: relative;
+                top: 3px;
+            }
         }
     }
 }
@@ -112,7 +125,7 @@ section.profile {
 section.skills {
     padding-left: 0;
     padding-right: 0;
-    height: 75em;
+    height: 72.5em;
     background-color: #D9D9D9;
     h1 {
         text-align: center;
@@ -150,20 +163,17 @@ section.skills {
             border-bottom: 3px solid #CAD8DE;
         }
         ul {
+            margin: 0 3em;
             li {
                 height: 2.5em;
             }
-            li.even {
-                img {
-                    float: right;
-                    padding-right: 2em;
-                }
+            span {
+               float: left;
+               margin-top: .5em;
+               padding-left: 1em;
             }
-            li.odd {
-                img {
-                    float: left;
-                    padding-left: 2em;
-                }
+            img {
+                float: left;
             }
         }
     }
@@ -182,8 +192,8 @@ section.projects {
         text-align: center;
         padding: .5em 0;
         background-color: $teal;
-        border-top: 3px solid #CAD8DE;
-        border-bottom: 3px solid #CAD8DE;
+        border-top: 3px solid $grey;
+        border-bottom: 3px solid $grey;
     }
     h3:active {
         background-color: $charcoal;
@@ -215,12 +225,15 @@ section.projects {
 footer {
     height: 40em;
     background-image: url('../../images/dark_geometric_@2X.png');
+    div.contact-container {
+        padding: 0 2em;
+    }
     h2 {
         text-align: center;
         padding: .5em 0;
         background-color: $teal;
-        border-top: 3px solid #CAD8DE;
-        border-bottom: 3px solid #CAD8DE;
+        border-top: 3px solid $grey;
+        border-bottom: 3px solid $grey;
         margin-bottom: 1em;
         margin-top: 0;
     }
@@ -229,23 +242,21 @@ footer {
     }
     form {
         background-color: $grey;
-        opacity: .7;
         height: 22em;
-        margin: 3em auto;
-        width: 60%;
+        margin: 2em auto 1em auto;
         padding: 1em 1.5em;
         font-size: 1.2em;
         input, label {
             margin: .5em 0;
         }
         input {
-            width: 100%;
+            width: 97%;
             font-size: 1.2em;
             border: 1px solid $charcoal;
             background-color: #fff;
         }
         textarea {
-            width: 100%;
+            width: 95%;
             height: 10em;
             margin-top: 1em;
             font-size: .8em;

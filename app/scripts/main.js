@@ -1,11 +1,14 @@
 //Accordion for projects 
 
 $(document).ready(function() {
-
     $("#work h3").click(function() {
         $("#work ul").slideUp();
+        //$('.btn').show(function() {
+        //       $(this).next().slideDown();
+        //   });
         //slide down the link list below the h3 clicked - only if its closed
         if (!$(this).next().is(":visible")) {
+            $('.btn').show();
             $(this).next().slideDown();
         }
     });
@@ -16,8 +19,6 @@ $(document).ready(function() {
     });
 });
 
-
-
 // Filter to sort projects
 
 var filterBtns = $('.btn').click(function() {
@@ -26,3 +27,13 @@ var filterBtns = $('.btn').click(function() {
     filterBtns.removeClass('active');
     $(this).addClass('active');
 });
+
+
+//Trigger Workflow Tools Animations on scroll
+
+//$(window).scroll(function() {
+//    console.log($(this).scrollTop());
+//    if ($(this).scrollTop() > 1760) {
+//        $('.even').velocity("transition.slideLeftBigIn", { stagger: 250 });
+//    }
+//});
