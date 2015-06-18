@@ -218,6 +218,23 @@ section.projects {
             border: 2px solid black;
             margin: 1em 0;
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            h3 {
+                text-align: left;
+                padding: .5em;
+                margin: .6em 0;
+                background: linear-gradient(to right, $teal, #D9D9D9);
+            }
+            p {
+                text-align: right;
+                position: relative;
+                font-size: .95em;
+                top: 33%;
+                background-color: $charcoal;
+                color: $grey;
+                opacity: .9;
+                padding: .2em 0;
+                padding-right: .1em;
+            }
         }
     }
 }

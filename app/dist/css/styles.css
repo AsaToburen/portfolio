@@ -246,6 +246,25 @@ section.projects div.project-wrapper article {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
+section.projects div.project-wrapper article h3 {
+    text-align: left;
+    padding: .5em;
+    margin: .6em 0;
+    background: linear-gradient(to right, #4b88a2, #D9D9D9);
+}
+
+section.projects div.project-wrapper article p {
+    text-align: right;
+    position: relative;
+    font-size: .95em;
+    top: 33%;
+    background-color: #252525;
+    color: #CAD8DE;
+    opacity: .9;
+    padding: .2em 0;
+    padding-right: .1em;
+}
+
 footer {
     height: 40em;
     background-image: url('../../images/dark_geometric_@2X.png');
