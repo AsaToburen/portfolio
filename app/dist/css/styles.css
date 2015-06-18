@@ -1,7 +1,4 @@
 /* Variables */
-/*
-$font-color: #333;
-*/
 html {
     color: #0C120C;
     font-family: 'Gudea',
@@ -45,7 +42,6 @@ header i {
     border-left: 119px solid transparent;
     position: relative;
     top: 8.34em;
-    left: -.1%;
     z-index: 100;
 }
 
@@ -60,6 +56,7 @@ header div h1 {
     margin: 0;
     opacity: .7;
     text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 header div div {
@@ -67,6 +64,7 @@ header div div {
     opacity: .7;
     margin-top: 1em;
     border-bottom: 1px solid #0C120C;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 header div div h2 {
@@ -119,7 +117,7 @@ section.profile div.profile-desc p {
 section.skills {
     padding-left: 0;
     padding-right: 0;
-    height: 70em;
+    height: 75em;
     background-color: #D9D9D9;
 }
 
@@ -133,7 +131,7 @@ section.skills h1 {
 }
 
 section.skills div.skill-area {
-    padding: 0 1.5em 0 2em;
+    padding: 0 2em;
 }
 
 section.skills div.skill-area h2 {
@@ -144,12 +142,16 @@ section.skills div.skill-area h2 {
 }
 
 section.skills div.skill-area h2.angular {
-    width: 70%;
+    width: 65%;
 }
 
 section.skills div.skill-area img {
     float: right;
     padding-right: .5em;
+}
+
+section.skills div.skill-area img.multi {
+    padding-right: 0;
 }
 
 section.skills div.toolkit h2 {
@@ -160,17 +162,25 @@ section.skills div.toolkit h2 {
     border-bottom: 3px solid #CAD8DE;
 }
 
-section.skills div.toolkit span {
+section.skills div.toolkit ul li {
+    height: 2.5em;
+}
+
+section.skills div.toolkit ul li.even img {
+    float: right;
+    padding-right: 2em;
+}
+
+section.skills div.toolkit ul li.odd img {
     float: left;
-    width: 50%;
-    border: 1px solid black;
+    padding-left: 2em;
 }
 
 section.projects {
     /* Have section that adjusts height according
         to contents */
     
-    height: 109em;
+    height: 114em;
     padding-left: 0;
     padding-right: 0;
     text-align: center;
@@ -185,6 +195,12 @@ section.projects h1 {
     border-bottom: 3px solid #CAD8DE;
 }
 
+section.projects h3:active {
+    background-color: #252525;
+    margin: 0;
+    padding: 1em;
+}
+
 section.projects ul {
     display: none;
 }
@@ -195,14 +211,19 @@ section.projects ul li {
     background-color: #252525;
 }
 
+section.projects ul li.active {
+    background-color: #4b88a2;
+}
+
 section.projects div.project-wrapper {
-    padding: 0 2em;
+    padding: 2em;
 }
 
 section.projects div.project-wrapper article {
     height: 10em;
     border: 2px solid black;
     margin: 1em 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 footer {
@@ -230,7 +251,7 @@ footer form {
     height: 22em;
     margin: 3em auto;
     width: 60%;
-    padding: 1em 2em;
+    padding: 1em 1.5em;
     font-size: 1.2em;
 }
 
@@ -239,19 +260,23 @@ footer form input, footer form label {
 }
 
 footer form input {
-    width: 90%;
+    width: 100%;
     font-size: 1.2em;
     border: 1px solid #252525;
+    background-color: #fff;
 }
 
 footer form textarea {
-    width: 90%;
+    width: 100%;
     height: 10em;
+    margin-top: 1em;
     font-size: .8em;
     border: 1px solid #252525;
 }
 
 footer form input[type="submit"] {
     margin-top: 1em;
-    padding: .5em 0;
+    height: 2em;
+    background-color: #4b88a2;
+    color: #fff;
 }

@@ -1,22 +1,11 @@
 /* Variables */
 
-$quattro: 'Quattrocento Sans',
-sans-serif;
 $gudea: 'Gudea',
-sans-serif;
-$fira: 'Fira Sans',
 sans-serif;
 $teal: #4b88a2;
 $grey: #CAD8DE;
 $charcoal: #252525;
 $font-color: #0C120C;
-/*
-$font-color: #333;
-*/
-
-$divider: #B6B6B6;
-$blue: #448AFF;
-$drkBlue: #314570;
 html {
     color: $font-color;
     font-family: $gudea;
@@ -57,7 +46,6 @@ header {
         border-left: 119px solid transparent;
         position: relative;
         top: 8.34em;
-        left: -.1%;
         z-index: 100;
     }
     div {
@@ -69,12 +57,14 @@ header {
             margin: 0;
             opacity: .7;
             text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
         }
         div {
             background-color: $grey;
             opacity: .7;
             margin-top: 1em;
             border-bottom: 1px solid $font-color;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
             h2 {
                 text-transform: uppercase;
                 margin: 0;
@@ -122,7 +112,7 @@ section.profile {
 section.skills {
     padding-left: 0;
     padding-right: 0;
-    height: 70em;
+    height: 75em;
     background-color: #D9D9D9;
     h1 {
         text-align: center;
@@ -133,7 +123,7 @@ section.skills {
         margin-bottom: 1em;
     }
     div.skill-area {
-        padding: 0 1.5em 0 2em;
+        padding: 0 2em;
         h2 {
             display: inline-block;
             margin: 0;
@@ -141,11 +131,14 @@ section.skills {
             background: linear-gradient(to right, $teal, #D9D9D9);
         }
         h2.angular {
-            width: 70%;
+            width: 65%;
         }
         img {
             float: right;
             padding-right: .5em;
+        }
+        img.multi {
+            padding-right: 0;
         }
     }
     div.toolkit {
@@ -156,10 +149,22 @@ section.skills {
             border-top: 3px solid #CAD8DE;
             border-bottom: 3px solid #CAD8DE;
         }
-        span {
-            float: left;
-            width: 50%;
-            border: 1px solid black;
+        ul {
+            li {
+                height: 2.5em;
+            }
+            li.even {
+                img {
+                    float: right;
+                    padding-right: 2em;
+                }
+            }
+            li.odd {
+                img {
+                    float: left;
+                    padding-left: 2em;
+                }
+            }
         }
     }
 }
@@ -168,7 +173,7 @@ section.projects {
     /* Have section that adjusts height according
         to contents */
     
-    height: 109em;
+    height: 114em;
     padding-left: 0;
     padding-right: 0;
     text-align: center;
@@ -180,6 +185,11 @@ section.projects {
         border-top: 3px solid #CAD8DE;
         border-bottom: 3px solid #CAD8DE;
     }
+    h3:active {
+        background-color: $charcoal;
+        margin: 0;
+        padding: 1em;
+    }
     ul {
         display: none;
         li {
@@ -187,13 +197,17 @@ section.projects {
             color: $grey;
             background-color: $charcoal;
         }
+        li.active {
+            background-color: $teal;
+        }
     }
     div.project-wrapper {
-        padding: 0 2em;
+        padding: 2em;
         article {
             height: 10em;
             border: 2px solid black;
             margin: 1em 0;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
         }
     }
 }
@@ -219,25 +233,29 @@ footer {
         height: 22em;
         margin: 3em auto;
         width: 60%;
-        padding: 1em 2em;
+        padding: 1em 1.5em;
         font-size: 1.2em;
         input, label {
             margin: .5em 0;
         }
         input {
-            width: 90%;
+            width: 100%;
             font-size: 1.2em;
             border: 1px solid $charcoal;
+            background-color: #fff;
         }
         textarea {
-            width: 90%;
+            width: 100%;
             height: 10em;
+            margin-top: 1em;
             font-size: .8em;
             border: 1px solid $charcoal;
         }
-         input[type="submit"] {
+        input[type="submit"] {
             margin-top: 1em;
-            padding: .5em 0;
+            height: 2em;
+            background-color: $teal;
+            color: #fff;
         }
     }
 }
