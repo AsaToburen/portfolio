@@ -42,6 +42,7 @@ header i {
     border-left: 119px solid transparent;
     position: relative;
     top: 8.34em;
+    left: 1%;
     z-index: 100;
     pointer-events: none;
 }
@@ -113,6 +114,7 @@ section.profile div.profile-desc h1 {
 
 section.profile div.profile-desc p {
     line-height: 1.7em;
+    margin-bottom: 0;
 }
 
 section.profile div.profile-desc span {
@@ -199,8 +201,7 @@ section.skills div.toolkit ul img {
 section.projects {
     /* Have section that adjusts height according
         to contents */
-    
-    height: 114em;
+    height: 135em;
     padding-left: 0;
     padding-right: 0;
     text-align: center;
@@ -236,13 +237,14 @@ section.projects ul li.active {
 }
 
 section.projects div.project-wrapper {
-    padding: 2em;
+    padding: 2em;/* PROJECT PHOTOS */
 }
 
 section.projects div.project-wrapper article {
     height: 10em;
     border: 2px solid black;
-    margin: 1em 0;
+    margin: 2em 0;
+    background-size: cover;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -250,19 +252,58 @@ section.projects div.project-wrapper article h3 {
     text-align: left;
     padding: .5em;
     margin: .6em 0;
-    background: linear-gradient(to right, #4b88a2, #D9D9D9);
+    background: linear-gradient(to right, #4b88a2 20%, #D9D9D9, transparent);
 }
 
 section.projects div.project-wrapper article p {
     text-align: right;
     position: relative;
-    font-size: .95em;
-    top: 33%;
+    font-size: 1em;
+    top: 31%;
     background-color: #252525;
     color: #CAD8DE;
     opacity: .9;
-    padding: .2em 0;
-    padding-right: .1em;
+    padding: .2em .5em;
+}
+
+section.projects div.project-wrapper #reader {
+    background-image: url(../../images/project-sm/feedReader_sm.png);
+}
+
+section.projects div.project-wrapper #openMic {
+    background-image: url(../../images/project-sm/openMic.png);
+}
+
+section.projects div.project-wrapper #meanTodo {
+    background-image: url(../../images/project-sm/meanTodo.png);
+}
+
+section.projects div.project-wrapper #reactList {
+    background-image: url(../../images/project-sm/reactList_sm.png);
+}
+
+section.projects div.project-wrapper #store {
+    background-image: url(../../images/project-sm/store_sm.png);
+}
+
+section.projects div.project-wrapper #weather {
+    background-image: url(../../images/project-sm/weather_sm.png);
+}
+
+section.projects div.project-wrapper #instagram {
+    background-image: url(../../images/project-sm/instagram_sm.png);
+}
+
+section.projects div.project-wrapper #madLibs {
+    background-image: url(../../images/project-sm/madLib_sm.png);
+}
+
+section.projects div.project-wrapper #waitStaff {
+    background-image: url(../../images/project-sm/waitstaff_sm.png);
+}
+
+section.projects div.project-wrapper #musicDisc {
+    background-image: url(../../images/project-sm/musicdiscovery.png);
 }
 
 footer {
