@@ -188,7 +188,6 @@ html {
             background-color: $grey;
             margin: 7em 1.2em 5em 1.2em;
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-            &:hover {}
             h2 {
                 background: linear-gradient(-265deg, rgba(0, 0, 0, 0), $teal 79%);
                 padding: .7em;

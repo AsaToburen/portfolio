@@ -41,6 +41,9 @@ section.marquee {
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
         height: 51em;
     }
+    @media only screen and (min-width: 1224px) {
+        height: 50em;
+    }
 }
 
 header {
@@ -56,7 +59,10 @@ header {
         z-index: 100;
         pointer-events: none;
         @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-            left: 0%;
+            left: 0.05%;
+        }
+        @media only screen and (min-width: 1224px) {
+            left: 0.05%;
         }
     }
     div {
@@ -111,9 +117,14 @@ header {
 section.profile {
     padding-top: 3em;
     height: 54em;
+    padding: 3em 10em 0;
     background-image: url('../../images/dark_geometric_@2X.png');
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
         height: 50em;
+    }
+    @media only screen and (min-width: 1224px) {
+        height: 45em;
+        margin: 0;
     }
     div.profile-desc {
         background-color: $grey;
@@ -141,6 +152,10 @@ section.profile {
                 line-height: 1em;
             }
         }
+        @media only screen and (min-width: 1224px) {
+            height: 40em;
+            padding: .5em 26% 0;
+        }
         img.profile {
             display: block;
             margin: 1em auto;
@@ -161,6 +176,10 @@ section.profile {
             }
             @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
                 left: 24em;
+                top: -1em;
+            }
+            @media only screen and (min-width: 1224px) {
+                left: 20em;
                 top: -1em;
             }
             a {
@@ -190,6 +209,27 @@ section.skills {
         border-bottom: 3px solid $grey;
         margin-bottom: 1em;
     }
+    @media only screen and (min-width: 1224px) {
+        height: 52em;
+        div.container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            height: 18em;
+            div.skill-area {
+                padding: .5em;
+                margin: 1.5em .5em;
+                height: 13em;
+                border: 2px solid $font-color;
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+                p {
+                    text-align: center;
+                    line-height: 1.6em;
+                    padding: 0 .5em;
+                }
+            }
+        }
+    }
     div.skill-area {
         padding: 0 2em;
         @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -201,6 +241,10 @@ section.skills {
                 line-height: 2em;
                 font-size: 1.2em;
             }
+        }
+        @media only screen and (min-width: 1224px) {
+            width: 21%;
+            display: inline-block;
         }
         h2 {
             display: inline-block;
@@ -220,15 +264,33 @@ section.skills {
         }
     }
     div.toolkit {
+        position: relative;
         @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
             height: 38em;
-            ul.tool-img {
-                padding-left: 12em;
-                padding-right: 6em;
-            }
             li {
                 font-size: 1.5em;
                 text-align: center;
+            }
+        }
+        @media only screen and (min-width: 1224px) {
+            ul.tool-img {
+                width: 55%;
+                margin: 0 22em;
+            }
+            li {
+                height: 3em;
+                display: inline-block;
+                width: 41%;
+                padding: 1em;
+                img {
+                    margin: 0;
+                    padding: .5em;
+                    display: inline-block;
+                }
+                p {
+                    display: inline-block;
+                    vertical-align: bottom;
+                }
             }
         }
         h2 {
@@ -237,24 +299,6 @@ section.skills {
             background-color: $teal;
             border-top: 3px solid #CAD8DE;
             border-bottom: 3px solid #CAD8DE;
-        }
-        ul {
-            float: left;
-            margin: 0 0 0 1em;
-            li {
-                height: 2.5em;
-            }
-            span {
-                float: left;
-                margin-top: .5em;
-                padding-left: 1em;
-            }
-            img {
-                float: left;
-            }
-        }
-        ul.tool-img {
-            margin: 0 0 0 3em;
         }
     }
 }
@@ -267,9 +311,17 @@ section.projects {
     padding: 0;
     text-align: center;
     background-color: #D9D9D9;
+    h3 {
+        cursor: pointer;
+        margin: 0;
+        padding: 1em 0;
+    }
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
         height: 73em;
         padding-bottom: 20em;
+    }
+    @media only screen and (min-width: 1224px) {
+        height: 69em;
     }
     h1 {
         text-align: center;
@@ -284,6 +336,26 @@ section.projects {
     }
     ul {
         display: none;
+        @media only screen and (min-width: 1224px) {
+            li {
+                display: inline-block;
+                width: 19.7%;
+                margin-left: -5px;
+                cursor: pointer;
+                &:hover {
+                    background-color: $teal;
+                    color: $grey;
+                }
+            }
+            li:first-child {
+                margin-left: -6px;
+                width: 19.9%;
+            }
+            li:last-child {
+                margin-right: 0px;
+                width: 21.7%;
+            }
+        }
         @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
             li {
                 display: inline-block;
@@ -330,9 +402,43 @@ section.projects {
                 box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
             }
         }
+        @media only screen and (min-width: 1224px) {
+            padding: 1em 0;
+            width: 99.8%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            height: 50%;
+            article.project {
+                width: 25%;
+                cursor: pointer;
+                background-size: cover;
+                transition: all .5s linear;
+                h3 {
+                    opacity: 0;
+                    width: 0px;
+                    transition: all .2s linear;
+                    height: 1.25em;
+                    overflow: hidden;
+                }
+                p {
+                    opacity: 0;
+                    transition: all .3s linear;
+                }
+                &:hover {
+                    h3 {
+                        width: 16em;
+                        opacity: 1;
+                    }
+                    p {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
         article {
             height: 10em;
-            border: 2px solid black;
+            border: 2px solid $font-color;
             margin: 2em 0;
             background-size: cover;
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -410,8 +516,11 @@ footer {
         @media (max-width: 375px) {
             padding: 0 3em;
         }
-        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1224px) {
             padding: 0 14em;
+        }
+        @media only screen and (min-width: 1224px) {
+            padding: 0 24em;
         }
     }
     h2 {
@@ -436,13 +545,13 @@ footer {
             margin: .5em 0;
         }
         input {
-            width: 97%;
+            width: 95%;
             font-size: 1.5em;
             border: 1px solid $charcoal;
             background-color: #fff;
         }
         textarea {
-            width: 95%;
+            width: 94.5%;
             height: 10em;
             margin-top: 1em;
             font-size: .8em;
@@ -453,6 +562,7 @@ footer {
             height: 2em;
             background-color: $teal;
             color: #fff;
+            width: 96%;
         }
     }
 }

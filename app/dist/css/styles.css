@@ -43,6 +43,12 @@ section.marquee {
     }
 }
 
+@media only screen and (min-width: 1224px) {
+    section.marquee {
+        height: 50em;
+    }
+}
+
 header {
     font-size: 1em;
     text-align: right;
@@ -61,7 +67,13 @@ header i {
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     header i {
-        left: 0%;
+        left: 0.05%;
+    }
+}
+
+@media only screen and (min-width: 1224px) {
+    header i {
+        left: 0.05%;
     }
 }
 
@@ -128,12 +140,20 @@ header div div a {
 section.profile {
     padding-top: 3em;
     height: 54em;
+    padding: 3em 10em 0;
     background-image: url('../../images/dark_geometric_@2X.png');
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     section.profile {
         height: 50em;
+    }
+}
+
+@media only screen and (min-width: 1224px) {
+    section.profile {
+        height: 45em;
+        margin: 0;
     }
 }
 
@@ -174,6 +194,13 @@ section.profile div.profile-desc {
     }
 }
 
+@media only screen and (min-width: 1224px) {
+    section.profile div.profile-desc {
+        height: 40em;
+        padding: .5em 26% 0;
+    }
+}
+
 section.profile div.profile-desc img.profile {
     display: block;
     margin: 1em auto;
@@ -203,6 +230,13 @@ section.profile div.profile-desc span {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     section.profile div.profile-desc span {
         left: 24em;
+        top: -1em;
+    }
+}
+
+@media only screen and (min-width: 1224px) {
+    section.profile div.profile-desc span {
+        left: 20em;
         top: -1em;
     }
 }
@@ -238,6 +272,36 @@ section.skills h1 {
     margin-bottom: 1em;
 }
 
+@media only screen and (min-width: 1224px) {
+    section.skills {
+        height: 52em;
+    }
+    section.skills div.container {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        height: 18em;
+    }
+    section.skills div.container div.skill-area {
+        padding: .5em;
+        margin: 1.5em .5em;
+        height: 13em;
+        border: 2px solid #0C120C;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+    section.skills div.container div.skill-area p {
+        text-align: center;
+        line-height: 1.6em;
+        padding: 0 .5em;
+    }
+}
+
 section.skills div.skill-area {
     padding: 0 2em;
 }
@@ -252,6 +316,13 @@ section.skills div.skill-area {
     section.skills div.skill-area p {
         line-height: 2em;
         font-size: 1.2em;
+    }
+}
+
+@media only screen and (min-width: 1224px) {
+    section.skills div.skill-area {
+        width: 21%;
+        display: inline-block;
     }
 }
 
@@ -275,17 +346,39 @@ section.skills div.skill-area img.multi {
     padding-right: 0;
 }
 
+section.skills div.toolkit {
+    position: relative;
+}
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     section.skills div.toolkit {
         height: 38em;
     }
-    section.skills div.toolkit ul.tool-img {
-        padding-left: 12em;
-        padding-right: 6em;
-    }
     section.skills div.toolkit li {
         font-size: 1.5em;
         text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1224px) {
+    section.skills div.toolkit ul.tool-img {
+        width: 55%;
+        margin: 0 22em;
+    }
+    section.skills div.toolkit li {
+        height: 3em;
+        display: inline-block;
+        width: 41%;
+        padding: 1em;
+    }
+    section.skills div.toolkit li img {
+        margin: 0;
+        padding: .5em;
+        display: inline-block;
+    }
+    section.skills div.toolkit li p {
+        display: inline-block;
+        vertical-align: bottom;
     }
 }
 
@@ -295,29 +388,6 @@ section.skills div.toolkit h2 {
     background-color: #4b88a2;
     border-top: 3px solid #CAD8DE;
     border-bottom: 3px solid #CAD8DE;
-}
-
-section.skills div.toolkit ul {
-    float: left;
-    margin: 0 0 0 1em;
-}
-
-section.skills div.toolkit ul li {
-    height: 2.5em;
-}
-
-section.skills div.toolkit ul span {
-    float: left;
-    margin-top: .5em;
-    padding-left: 1em;
-}
-
-section.skills div.toolkit ul img {
-    float: left;
-}
-
-section.skills div.toolkit ul.tool-img {
-    margin: 0 0 0 3em;
 }
 
 section.projects {
@@ -330,10 +400,22 @@ section.projects {
     background-color: #D9D9D9;
 }
 
+section.projects h3 {
+    cursor: pointer;
+    margin: 0;
+    padding: 1em 0;
+}
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     section.projects {
         height: 73em;
         padding-bottom: 20em;
+    }
+}
+
+@media only screen and (min-width: 1224px) {
+    section.projects {
+        height: 69em;
     }
 }
 
@@ -352,6 +434,27 @@ section.projects h3:active {
 
 section.projects ul {
     display: none;
+}
+
+@media only screen and (min-width: 1224px) {
+    section.projects ul li {
+        display: inline-block;
+        width: 19.7%;
+        margin-left: -5px;
+        cursor: pointer;
+    }
+    section.projects ul li:hover {
+        background-color: #4b88a2;
+        color: #CAD8DE;
+    }
+    section.projects ul li:first-child {
+        margin-left: -6px;
+        width: 19.9%;
+    }
+    section.projects ul li:last-child {
+        margin-right: 0px;
+        width: 21.7%;
+    }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -416,9 +519,50 @@ section.projects div.project-wrapper {
     }
 }
 
+@media only screen and (min-width: 1224px) {
+    section.projects div.project-wrapper {
+        padding: 1em 0;
+        width: 99.8%;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+        height: 50%;
+    }
+    section.projects div.project-wrapper article.project {
+        width: 25%;
+        cursor: pointer;
+        background-size: cover;
+        transition: all .5s linear;
+    }
+    section.projects div.project-wrapper article.project h3 {
+        opacity: 0;
+        width: 0px;
+        transition: all .2s linear;
+        height: 1.25em;
+        overflow: hidden;
+    }
+    section.projects div.project-wrapper article.project p {
+        opacity: 0;
+        transition: all .3s linear;
+    }
+    section.projects div.project-wrapper article.project:hover h3 {
+        width: 16em;
+        opacity: 1;
+    }
+    section.projects div.project-wrapper article.project:hover p {
+        opacity: 1;
+    }
+}
+
 section.projects div.project-wrapper article {
     height: 10em;
-    border: 2px solid black;
+    border: 2px solid #0C120C;
     margin: 2em 0;
     background-size: cover;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -514,9 +658,15 @@ footer div.contact-container {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1224px) {
     footer div.contact-container {
         padding: 0 14em;
+    }
+}
+
+@media only screen and (min-width: 1224px) {
+    footer div.contact-container {
+        padding: 0 24em;
     }
 }
 
@@ -547,14 +697,14 @@ footer form input, footer form label {
 }
 
 footer form input {
-    width: 97%;
+    width: 95%;
     font-size: 1.5em;
     border: 1px solid #252525;
     background-color: #fff;
 }
 
 footer form textarea {
-    width: 95%;
+    width: 94.5%;
     height: 10em;
     margin-top: 1em;
     font-size: .8em;
@@ -566,4 +716,5 @@ footer form input[type="submit"] {
     height: 2em;
     background-color: #4b88a2;
     color: #fff;
+    width: 96%;
 }
