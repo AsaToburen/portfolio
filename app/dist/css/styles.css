@@ -20,8 +20,8 @@ html body ul {
     padding: 0;
 }
 html body section {
-    padding: 0 1.5em 0 2em;
-    height: 37em;
+    padding: 0 2em 0 2em;
+    height: 42em;
 }
 
 section.marquee {
@@ -29,6 +29,18 @@ section.marquee {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 73%;
+}
+
+@media (max-width: 415px) {
+    section.marquee {
+        height: 45em;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    section.marquee {
+        height: 51em;
+    }
 }
 
 header {
@@ -47,8 +59,20 @@ header i {
     pointer-events: none;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    header i {
+        left: 0%;
+    }
+}
+
 header div {
     text-align: left;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    header div {
+        text-align: center;
+    }
 }
 
 header div h1 {
@@ -74,7 +98,6 @@ header div div h2 {
     margin: 0;
     padding: .2em .5em;
     font-size: 1.1em;
-    float: left;
     text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
 }
 
@@ -90,6 +113,12 @@ header div div li {
     margin: 0 .75em 0 0;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    header div div li {
+        margin: 0 5em 0 5em;
+    }
+}
+
 header div div a {
     padding: .5em .7em;
     color: #CAD8DE;
@@ -97,23 +126,65 @@ header div div a {
 }
 
 section.profile {
-    padding-top: 2em;
-    height: 53em;
+    padding-top: 3em;
+    height: 54em;
     background-image: url('../../images/dark_geometric_@2X.png');
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    section.profile {
+        height: 50em;
+    }
 }
 
 section.profile div.profile-desc {
     background-color: #CAD8DE;
     opacity: .7;
-    padding: .5em 1.5em 0;
+    padding: .5em 2em 0;
+}
+
+@media (min-device-width: 375px) {
+    section.profile div.profile-desc {
+        height: 51em;
+        padding: 1em 3em 0;
+    }
+}
+
+@media (min-device-width: 415px) {
+    section.profile div.profile-desc {
+        padding: .5em 17% 0;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    section.profile div.profile-desc {
+        height: 46em;
+        padding: 2% 20%;
+    }
+    section.profile div.profile-desc h1 {
+        padding: 0 3em;
+    }
+    section.profile div.profile-desc img {
+        padding-bottom: 1em;
+    }
+    section.profile div.profile-desc p {
+        padding: .05em 3em;
+        font-size: 1.2em;
+        line-height: 1em;
+    }
+}
+
+section.profile div.profile-desc img.profile {
+    display: block;
+    margin: 1em auto;
 }
 
 section.profile div.profile-desc h1 {
-    margin: .5em 0;
+    margin: .5em 0 1em;
 }
 
 section.profile div.profile-desc p {
-    line-height: 1.7em;
+    line-height: 1.5em;
     margin-bottom: 0;
 }
 
@@ -121,6 +192,19 @@ section.profile div.profile-desc span {
     position: relative;
     left: 8em;
     bottom: 1em;
+}
+
+@media (min-device-width: 375px) {
+    section.profile div.profile-desc span {
+        bottom: -.5em;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    section.profile div.profile-desc span {
+        left: 24em;
+        top: -1em;
+    }
 }
 
 section.profile div.profile-desc span a {
@@ -135,8 +219,14 @@ section.profile div.profile-desc span img.mail {
 section.skills {
     padding-left: 0;
     padding-right: 0;
-    height: 72.5em;
+    height: 72em;
     background-color: #D9D9D9;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    section.skills {
+        height: 93em;
+    }
 }
 
 section.skills h1 {
@@ -150,6 +240,19 @@ section.skills h1 {
 
 section.skills div.skill-area {
     padding: 0 2em;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    section.skills div.skill-area {
+        padding: .5em 15em;
+    }
+    section.skills div.skill-area h2 {
+        width: 85%;
+    }
+    section.skills div.skill-area p {
+        line-height: 2em;
+        font-size: 1.2em;
+    }
 }
 
 section.skills div.skill-area h2 {
@@ -172,6 +275,20 @@ section.skills div.skill-area img.multi {
     padding-right: 0;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    section.skills div.toolkit {
+        height: 38em;
+    }
+    section.skills div.toolkit ul.tool-img {
+        padding-left: 12em;
+        padding-right: 6em;
+    }
+    section.skills div.toolkit li {
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
+
 section.skills div.toolkit h2 {
     text-align: center;
     padding: .5em 0;
@@ -181,7 +298,8 @@ section.skills div.toolkit h2 {
 }
 
 section.skills div.toolkit ul {
-    margin: 0 3em;
+    float: left;
+    margin: 0 0 0 1em;
 }
 
 section.skills div.toolkit ul li {
@@ -198,14 +316,25 @@ section.skills div.toolkit ul img {
     float: left;
 }
 
+section.skills div.toolkit ul.tool-img {
+    margin: 0 0 0 3em;
+}
+
 section.projects {
     /* Have section that adjusts height according
         to contents */
+    
     height: 135em;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
     text-align: center;
     background-color: #D9D9D9;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    section.projects {
+        height: 73em;
+        padding-bottom: 20em;
+    }
 }
 
 section.projects h1 {
@@ -213,7 +342,6 @@ section.projects h1 {
     padding: .5em 0;
     background-color: #4b88a2;
     border-top: 3px solid #CAD8DE;
-    border-bottom: 3px solid #CAD8DE;
 }
 
 section.projects h3:active {
@@ -224,6 +352,22 @@ section.projects h3:active {
 
 section.projects ul {
     display: none;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    section.projects ul li {
+        display: inline-block;
+        width: 19.7%;
+        margin-left: -5px;
+    }
+    section.projects ul li:first-child {
+        margin-left: -6px;
+        width: 19.9%;
+    }
+    section.projects ul li:last-child {
+        margin-right: -6px;
+        width: 19.9%;
+    }
 }
 
 section.projects ul li {
@@ -237,7 +381,39 @@ section.projects ul li.active {
 }
 
 section.projects div.project-wrapper {
-    padding: 2em;/* PROJECT PHOTOS */
+    padding: 1em 13%;/* PROJECT PHOTOS */
+}
+
+@media (min-device-width: 375px) {
+    section.projects div.project-wrapper {
+        padding: 1em 3em;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    section.projects div.project-wrapper {
+        padding: 1em 0;
+        width: 99.8%;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+        height: 82%;
+        border: 1px solid #333;
+        background: linear-gradient(to bottom left, #4b88a2, transparent);
+    }
+    section.projects div.project-wrapper article {
+        width: 25%;
+        height: 15em;
+        border: 2px solid #000;
+        background-image: url('https://unsplash.it/400/250/?random');
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
 }
 
 section.projects div.project-wrapper article {
@@ -311,8 +487,37 @@ footer {
     background-image: url('../../images/dark_geometric_@2X.png');
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    footer {
+        height: 54em;
+    }
+    footer div.contact-container {
+        padding: 0 14em;
+    }
+    footer div.contact-container form {
+        font-size: 1.6em;
+        padding: 1em 2em 2em 2em;
+    }
+    footer div.contact-container form textarea {
+        width: 88%;
+        padding: 1em;
+    }
+}
+
 footer div.contact-container {
     padding: 0 2em;
+}
+
+@media (max-width: 375px) {
+    footer div.contact-container {
+        padding: 0 3em;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    footer div.contact-container {
+        padding: 0 14em;
+    }
 }
 
 footer h2 {
@@ -331,8 +536,8 @@ footer ul {
 
 footer form {
     background-color: #CAD8DE;
-    height: 22em;
-    margin: 2em auto 1em auto;
+    height: 24em;
+    margin: 2em 5% 1em 5%;
     padding: 1em 1.5em;
     font-size: 1.2em;
 }
@@ -343,7 +548,7 @@ footer form input, footer form label {
 
 footer form input {
     width: 97%;
-    font-size: 1.2em;
+    font-size: 1.5em;
     border: 1px solid #252525;
     background-color: #fff;
 }

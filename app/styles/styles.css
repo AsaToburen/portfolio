@@ -24,8 +24,8 @@ html {
             padding: 0;
         }
         section {
-            padding: 0 1.5em 0 2em;
-            height: 37em;
+            padding: 0 2em 0 2em;
+            height: 42em;
         }
     }
 }
@@ -35,6 +35,12 @@ section.marquee {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 73%;
+    @media (max-width: 415px) {
+        height: 45em;
+    }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        height: 51em;
+    }
 }
 
 header {
@@ -49,9 +55,15 @@ header {
         left: 1%;
         z-index: 100;
         pointer-events: none;
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+            left: 0%;
+        }
     }
     div {
         text-align: left;
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+            text-align: center;
+        }
         h1 {
             padding: 0 .5em;
             background-color: $grey;
@@ -72,7 +84,6 @@ header {
                 margin: 0;
                 padding: .2em .5em;
                 font-size: 1.1em;
-                float: left;
                 text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
             }
             ul {
@@ -84,6 +95,9 @@ header {
             li {
                 display: inline-block;
                 margin: 0 .75em 0 0;
+                @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+                    margin: 0 5em 0 5em;
+                }
             }
             a {
                 padding: .5em .7em;
@@ -95,24 +109,60 @@ header {
 }
 
 section.profile {
-    padding-top: 2em;
-    height: 53em;
+    padding-top: 3em;
+    height: 54em;
     background-image: url('../../images/dark_geometric_@2X.png');
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        height: 50em;
+    }
     div.profile-desc {
         background-color: $grey;
         opacity: .7;
-        padding: .5em 1.5em 0;
+        padding: .5em 2em 0;
+        @media (min-device-width: 375px) {
+            height: 51em;
+            padding: 1em 3em 0;
+        }
+        @media (min-device-width: 415px) {
+            padding: .5em 17% 0;
+        }
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+            height: 46em;
+            padding: 2% 20%;
+            h1 {
+                padding: 0 3em;
+            }
+            img {
+                padding-bottom: 1em;
+            }
+            p {
+                padding: .05em 3em;
+                font-size: 1.2em;
+                line-height: 1em;
+            }
+        }
+        img.profile {
+            display: block;
+            margin: 1em auto;
+        }
         h1 {
-            margin: .5em 0;
+            margin: .5em 0 1em;
         }
         p {
-            line-height: 1.7em;
+            line-height: 1.5em;
             margin-bottom: 0;
         }
         span {
             position: relative;
             left: 8em;
             bottom: 1em;
+            @media (min-device-width: 375px) {
+                bottom: -.5em;
+            }
+            @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+                left: 24em;
+                top: -1em;
+            }
             a {
                 margin: 0 .4em;
             }
@@ -127,8 +177,11 @@ section.profile {
 section.skills {
     padding-left: 0;
     padding-right: 0;
-    height: 72.5em;
+    height: 72em;
     background-color: #D9D9D9;
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        height: 93em;
+    }
     h1 {
         text-align: center;
         padding: .5em 0;
@@ -139,6 +192,16 @@ section.skills {
     }
     div.skill-area {
         padding: 0 2em;
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+            padding: .5em 15em;
+            h2 {
+                width: 85%;
+            }
+            p {
+                line-height: 2em;
+                font-size: 1.2em;
+            }
+        }
         h2 {
             display: inline-block;
             margin: 0;
@@ -157,6 +220,17 @@ section.skills {
         }
     }
     div.toolkit {
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+            height: 38em;
+            ul.tool-img {
+                padding-left: 12em;
+                padding-right: 6em;
+            }
+            li {
+                font-size: 1.5em;
+                text-align: center;
+            }
+        }
         h2 {
             text-align: center;
             padding: .5em 0;
@@ -165,7 +239,8 @@ section.skills {
             border-bottom: 3px solid #CAD8DE;
         }
         ul {
-            margin: 0 3em;
+            float: left;
+            margin: 0 0 0 1em;
             li {
                 height: 2.5em;
             }
@@ -178,23 +253,29 @@ section.skills {
                 float: left;
             }
         }
+        ul.tool-img {
+            margin: 0 0 0 3em;
+        }
     }
 }
 
 section.projects {
     /* Have section that adjusts height according
         to contents */
+    
     height: 135em;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
     text-align: center;
     background-color: #D9D9D9;
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        height: 73em;
+        padding-bottom: 20em;
+    }
     h1 {
         text-align: center;
         padding: .5em 0;
         background-color: $teal;
         border-top: 3px solid $grey;
-        border-bottom: 3px solid $grey;
     }
     h3:active {
         background-color: $charcoal;
@@ -203,6 +284,21 @@ section.projects {
     }
     ul {
         display: none;
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+            li {
+                display: inline-block;
+                width: 19.7%;
+                margin-left: -5px;
+            }
+            li:first-child {
+                margin-left: -6px;
+                width: 19.9%;
+            }
+            li:last-child {
+                margin-right: -6px;
+                width: 19.9%;
+            }
+        }
         li {
             padding: 1.5em 0;
             color: $grey;
@@ -213,7 +309,27 @@ section.projects {
         }
     }
     div.project-wrapper {
-        padding: 2em;
+        padding: 1em 13%;
+        @media (min-device-width: 375px) {
+            padding: 1em 3em;
+        }
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+            padding: 1em 0;
+            width: 99.8%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            height: 82%;
+            border: 1px solid #333;
+            background: linear-gradient(to bottom left, $teal, transparent);
+            article {
+                width: 25%;
+                height: 15em;
+                border: 2px solid #000;
+                background-image: url('https://unsplash.it/400/250/?random');
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            }
+        }
         article {
             height: 10em;
             border: 2px solid black;
@@ -275,8 +391,28 @@ section.projects {
 footer {
     height: 40em;
     background-image: url('../../images/dark_geometric_@2X.png');
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        height: 54em;
+        div.contact-container {
+            padding: 0 14em;
+            form {
+                font-size: 1.6em;
+                padding: 1em 2em 2em 2em;
+                textarea {
+                    width: 88%;
+                    padding: 1em;
+                }
+            }
+        }
+    }
     div.contact-container {
         padding: 0 2em;
+        @media (max-width: 375px) {
+            padding: 0 3em;
+        }
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+            padding: 0 14em;
+        }
     }
     h2 {
         text-align: center;
@@ -292,8 +428,8 @@ footer {
     }
     form {
         background-color: $grey;
-        height: 22em;
-        margin: 2em auto 1em auto;
+        height: 24em;
+        margin: 2em 5% 1em 5%;
         padding: 1em 1.5em;
         font-size: 1.2em;
         input, label {
@@ -301,7 +437,7 @@ footer {
         }
         input {
             width: 97%;
-            font-size: 1.2em;
+            font-size: 1.5em;
             border: 1px solid $charcoal;
             background-color: #fff;
         }
