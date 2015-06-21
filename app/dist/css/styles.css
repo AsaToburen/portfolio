@@ -28,7 +28,7 @@ section.marquee {
     background-image: url('../../images/index.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 73%;
+    background-position: 0% 99%;
 }
 
 @media (max-width: 415px) {
@@ -50,7 +50,7 @@ section.marquee {
 }
 
 header {
-    font-size: 1em;
+    font-size: 1.2em;
     text-align: right;
     margin: 0;
 }
@@ -59,7 +59,7 @@ header i {
     border-top: 113px solid #4b88a2;
     border-left: 119px solid transparent;
     position: relative;
-    top: 8.34em;
+    top: 8.2em;
     left: 1%;
     z-index: 100;
     pointer-events: none;
@@ -73,7 +73,13 @@ header i {
 
 @media only screen and (min-width: 1224px) {
     header i {
-        left: 0.05%;
+        border-top: 136px solid #4b88a2;
+        border-left: 282px solid transparent;
+        position: relative;
+        top: 8.34em;
+        left: 1%;
+        z-index: 100;
+        pointer-events: none;
     }
 }
 
@@ -84,6 +90,9 @@ header div {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     header div {
         text-align: center;
+    }
+    header div div li {
+        margin: 0 5em 0 5em;
     }
 }
 
@@ -125,12 +134,6 @@ header div div li {
     margin: 0 .75em 0 0;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    header div div li {
-        margin: 0 5em 0 5em;
-    }
-}
-
 header div div a {
     padding: .5em .7em;
     color: #CAD8DE;
@@ -152,14 +155,13 @@ section.profile {
 
 @media only screen and (min-width: 1224px) {
     section.profile {
-        height: 45em;
         margin: 0;
     }
 }
 
 section.profile div.profile-desc {
     background-color: #CAD8DE;
-    opacity: .7;
+    opacity: .6;
     padding: .5em 2em 0;
 }
 
@@ -196,18 +198,25 @@ section.profile div.profile-desc {
 
 @media only screen and (min-width: 1224px) {
     section.profile div.profile-desc {
-        height: 40em;
+        height: 50em;
         padding: .5em 26% 0;
+        text-align: center;
     }
 }
 
 section.profile div.profile-desc img.profile {
     display: block;
-    margin: 1em auto;
+    margin: 1.5em auto;
 }
 
 section.profile div.profile-desc h1 {
-    margin: .5em 0 1em;
+    background-color: #d9d9d9;
+    width: 36%;
+    position: relative;
+    top: 20%;
+    left: 2%;
+    padding: 1%;
+    border-radius: .1em;
 }
 
 section.profile div.profile-desc p {
@@ -215,31 +224,31 @@ section.profile div.profile-desc p {
     margin-bottom: 0;
 }
 
+section.profile div.profile-desc div.block-wrap {
+    margin-top: 2em;
+    background-color: #252525;
+    width: 100%;
+    height: 4em;
+    clear: both;
+    opacity: .9;
+}
+
 section.profile div.profile-desc span {
     position: relative;
-    left: 8em;
-    bottom: 1em;
+    display: inline-block;
+    height: 70%;
+    margin: .5em 2em;
+    width: 6.5em;
+    float: right;
+    background-color: #d9d9d9;
+    border-radius: .3em;
 }
 
-@media (min-device-width: 375px) {
-    section.profile div.profile-desc span {
-        bottom: -.5em;
-    }
-}
+@media (min-device-width: 375px) {}
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    section.profile div.profile-desc span {
-        left: 24em;
-        top: -1em;
-    }
-}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {}
 
-@media only screen and (min-width: 1224px) {
-    section.profile div.profile-desc span {
-        left: 20em;
-        top: -1em;
-    }
-}
+@media only screen and (min-width: 1224px) {}
 
 section.profile div.profile-desc span a {
     margin: 0 .4em;
@@ -289,16 +298,26 @@ section.skills h1 {
         height: 18em;
     }
     section.skills div.container div.skill-area {
+        width: 21%;
         padding: .5em;
         margin: 1.5em .5em;
         height: 13em;
         border: 2px solid #0C120C;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     }
+    section.skills div.container div.skill-area h2.angular {
+        width: 50%;
+    }
     section.skills div.container div.skill-area p {
-        text-align: center;
+        text-align: left;
         line-height: 1.6em;
         padding: 0 .5em;
+    }
+    section.skills div.container div.skill-area img {
+        width: 36%;
+    }
+    section.skills div.container div.skill-area img.img-sm {
+        display: none;
     }
 }
 
@@ -316,13 +335,6 @@ section.skills div.skill-area {
     section.skills div.skill-area p {
         line-height: 2em;
         font-size: 1.2em;
-    }
-}
-
-@media only screen and (min-width: 1224px) {
-    section.skills div.skill-area {
-        width: 21%;
-        display: inline-block;
     }
 }
 
@@ -415,7 +427,7 @@ section.projects h3 {
 
 @media only screen and (min-width: 1224px) {
     section.projects {
-        height: 69em;
+        height: 87em;
     }
 }
 
@@ -522,20 +534,25 @@ section.projects div.project-wrapper {
 @media only screen and (min-width: 1224px) {
     section.projects div.project-wrapper {
         padding: 1em 0;
-        width: 99.8%;
+        width: 85%;
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
         -webkit-flex-wrap: wrap;
             -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
+        -webkit-flex-shrink: 3;
+            -ms-flex-negative: 3;
+                flex-shrink: 3;
         -webkit-justify-content: space-around;
             -ms-flex-pack: distribute;
                 justify-content: space-around;
         height: 50%;
+        margin: 0 auto;
     }
     section.projects div.project-wrapper article.project {
-        width: 25%;
+        width: 30%;
+        height: 15em;
         cursor: pointer;
         background-size: cover;
         transition: all .5s linear;
@@ -571,7 +588,7 @@ section.projects div.project-wrapper article {
 section.projects div.project-wrapper article h3 {
     text-align: left;
     padding: .5em;
-    margin: .6em 0;
+    margin: 1.7em 0;
     background: linear-gradient(to right, #4b88a2 20%, #D9D9D9, transparent);
 }
 
@@ -579,7 +596,7 @@ section.projects div.project-wrapper article p {
     text-align: right;
     position: relative;
     font-size: 1em;
-    top: 31%;
+    top: 32%;
     background-color: #252525;
     color: #CAD8DE;
     opacity: .9;
@@ -648,6 +665,12 @@ footer {
     }
 }
 
+@media only screen and (min-width: 1224px) {
+    footer {
+        height: 46em;
+    }
+}
+
 footer div.contact-container {
     padding: 0 2em;
 }
@@ -666,7 +689,7 @@ footer div.contact-container {
 
 @media only screen and (min-width: 1224px) {
     footer div.contact-container {
-        padding: 0 24em;
+        padding: 0 29em;
     }
 }
 
