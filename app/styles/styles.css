@@ -141,7 +141,7 @@ section.profile {
         }
         h1 {
             background-color: #d9d9d9;
-            width: 36%;
+            width: 54%;
             position: relative;
             top: 20%;
             left: 2%;
@@ -202,7 +202,7 @@ section.profile {
         }
         @media only screen and (min-width: 1224px) {
             margin: 0;
-            height: 48em;
+            height: 52em;
             padding: .5em 26% 0;
             text-align: center;
             ul {
@@ -315,23 +315,23 @@ section.skills {
             justify-content: center;
             height: 18em;
             div.skill-area {
-                width: 26%;
+                width: 35%;
                 padding: .5em;
-                margin: 1.5em 3.5em;
+                margin: 1.5em 1.5em;
                 height: 15em;
-                border: 2px solid $font-color;
+                border: 2px solid #0C120C;
                 box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
                 h2.angular {
                     width: 50%;
                 }
                 p {
                     text-align: left;
-                    line-height: 1.6em;
+                    line-height: 1.7em;
                     padding: 0 .5em;
                     font-size: 1.2em;
                 }
                 img {
-                    width: 36%;
+                    width: 28%;
                 }
                 img.img-sm {
                     display: none;
@@ -508,7 +508,7 @@ section.projects {
                 }
                 p {
                     margin: 0;
-                    margin-top: .5em; 
+                    margin-top: .5em;
                     display: none;
                     color: #000;
                     border-radius: .5em;
@@ -547,10 +547,11 @@ section.projects {
             height: 50%;
             margin: 0 auto;
             article.project {
-                width: 30%;
-                height: 15em;
+                width: 31%;
+                height: 15.5em;
                 cursor: pointer;
-                background-size: cover;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
                 transition: all .7s linear;
                 h3 {
                     opacity: 0;

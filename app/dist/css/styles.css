@@ -157,7 +157,7 @@ section.profile div.profile-desc img.profile {
 
 section.profile div.profile-desc h1 {
     background-color: #d9d9d9;
-    width: 36%;
+    width: 54%;
     position: relative;
     top: 20%;
     left: 2%;
@@ -234,7 +234,7 @@ section.profile div.profile-desc span img.mail {
 @media only screen and (min-width: 1224px) {
     section.profile div.profile-desc {
         margin: 0;
-        height: 48em;
+        height: 52em;
         padding: .5em 26% 0;
         text-align: center;
     }
@@ -372,9 +372,9 @@ section.skills div.toolkit ul p {
         height: 18em;
     }
     section.skills div.container div.skill-area {
-        width: 26%;
+        width: 35%;
         padding: .5em;
-        margin: 1.5em 3.5em;
+        margin: 1.5em 1.5em;
         height: 15em;
         border: 2px solid #0C120C;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -384,12 +384,12 @@ section.skills div.toolkit ul p {
     }
     section.skills div.container div.skill-area p {
         text-align: left;
-        line-height: 1.6em;
+        line-height: 1.7em;
         padding: 0 .5em;
         font-size: 1.2em;
     }
     section.skills div.container div.skill-area img {
-        width: 36%;
+        width: 28%;
     }
     section.skills div.container div.skill-area img.img-sm {
         display: none;
@@ -631,10 +631,11 @@ section.projects div.project-wrapper #musicDisc {
         margin: 0 auto;
     }
     section.projects div.project-wrapper article.project {
-        width: 30%;
-        height: 15em;
+        width: 31%;
+        height: 15.5em;
         cursor: pointer;
-        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
         transition: all .7s linear;
     }
     section.projects div.project-wrapper article.project h3 {
