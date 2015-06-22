@@ -30,23 +30,23 @@ var filterBtns = $('.btn').click(function() {
 //Expand Project Detail
 
 
-//var projectThumbs = $('.project').click(function(e){
-//
-//    //$(e.target).css('background-image', 'none');
-//    //$(e.target).css('background-color', '#252525');
-//
-//
-//    /*
-//
-//    ** Expand Projects Individually
-//
-//    var targetClasses = e.target.classList;
-//    targetClasses.add('expanded');
-//
-//    */
-//
-//
-//});
+var projectThumbs = $('.project').click(function(e){
+
+    //$(e.target).css('background-image', 'none');
+    //$(e.target).css('background-color', '#252525');
+
+
+ 
+
+    
+
+    var targetClasses = e.target.classList;
+    targetClasses.add('expanded');
+
+    
+
+
+});
 
 
 

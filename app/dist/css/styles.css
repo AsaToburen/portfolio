@@ -674,6 +674,7 @@ section.projects div.project-wrapper #musicDisc {
     }
     section.projects div.project-wrapper article.project p {
         opacity: 0;
+        top: 28%;
         transition: all .3s linear;
     }
     section.projects div.project-wrapper article.project:hover h3 {
