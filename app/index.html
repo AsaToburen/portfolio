@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Asa Toburen || Web Developer</title>
     <link href='http://fonts.googleapis.com/css?family=Fira+Sans|Gudea|Quattrocento+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="dist/css/ionicons.min.css">
     <link rel="stylesheet" href="dist/css/styles.css">
 </head>
 
@@ -37,21 +38,25 @@
                 <p>A javascript developer by training, I am always working to improve my development skillset and learn new technologies.</p>
                 <p>When I am away from the keyboard you might find me enjoying strong coffee, listening to electronic music or riding my bicycle long distances.</p>
                 <p>Check out my projects below and drop me a line if you would like to connect with me.</p>
-                <div class="block-wrap">
-                    <span>
-                        <a href="www.linkedin.com/pub/asa-toburen-pettit/3a/164/aa7">
-                            <img height="35px" src="./images/icons/link94.svg" alt="LinkedIn">
-                        </a>
-                        <a href="mailto:atopettit@gmail.com">
-                            <img class="mail" height="40px" src="./images/icons/mail81.svg" alt="Email">
-                        </a>
-                     </span>
-                </div>
+                <ul>
+                    <a href="linkedin.com">
+                        <li class="ion-social-linkedin">
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="ion-email">
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="ion-social-github">
+                        </li>
+                    </a>
+                </ul>
             </div>
         </div>
     </section>
     <section class="skills">
-        <h1>Primary Focus Areas</h1>
+        <h1>Primary Skillset</h1>
         <div class="container">
             <div class="skill-area">
                 <!--<div class="markup-icon skill-img"></div> -->
@@ -120,9 +125,17 @@
     </section>
     <section id="work" class="projects">
         <h1>Portfolio</h1>
-        <h3>
-            <span class="filter">Filter Projects</span>
-        </h3>
+        <div class="filter">
+                <span>
+                    <i class="ion-android-funnel"></i>
+                    <p>Filter Projects</p>
+                </span>
+                <span>
+                    <i class="ion-android-expand"></i>
+                    <p>Expand Projects</p>
+                </span>
+        </div>
+        </div>
         <ul>
             <li class="btn" id="js">
                 <span>Javascript</span>
@@ -188,7 +201,7 @@
             </article>
         </div>
     </section>
-    <footer id="contact">
+    <section class="contact">
         <h2>Contact</h2>
         <div class="contact-container">
             <ul>
@@ -210,6 +223,16 @@
                 <input type="submit" value="Send">
             </form>
         </div>
+    </section>
+    <footer>
+        <span id="date">
+        <p>&copy;</p>
+        </span>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
     </footer>
     <script src="scripts/jquery.min.js"></script>
     <script src="dist/scripts/velocity.min.js"></script>

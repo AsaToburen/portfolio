@@ -3,21 +3,19 @@
 $(document).ready(function() {
     $("#work h3").click(function() {
         $("#work ul").slideUp();
-        //$('.btn').show(function() {
-        //       $(this).next().slideDown();
-        //   });
-        //slide down the link list below the h3 clicked - only if its closed
+
         if (!$(this).next().is(":visible")) {
             $('.btn').show();
             $(this).next().slideDown();
         }
     });
-    //when .btn is clicked slide up all other 
-    //btns
+    //when .btn is clicked slide up all other btns
     $(".btn").click(function() {
         $(this).siblings().slideUp();
     });
 });
+
+
 
 // Filter to sort projects
 
@@ -29,6 +27,30 @@ var filterBtns = $('.btn').click(function() {
 });
 
 
+//Expand Project Detail
+
+
+//var projectThumbs = $('.project').click(function(e){
+//
+//    //$(e.target).css('background-image', 'none');
+//    //$(e.target).css('background-color', '#252525');
+//
+//
+//    /*
+//
+//    ** Expand Projects Individually
+//
+//    var targetClasses = e.target.classList;
+//    targetClasses.add('expanded');
+//
+//    */
+//
+//
+//});
+
+
+
+
 //Trigger Workflow Tools Animations on scroll
 
 //$(window).scroll(function() {
@@ -37,3 +59,12 @@ var filterBtns = $('.btn').click(function() {
 //        $('.even').velocity("transition.slideLeftBigIn", { stagger: 250 });
 //    }
 //});
+
+
+
+// Add a date to the footer of the page.
+
+var dateEl = document.getElementById('date');
+var dateText = document.createElement('p');
+dateText.appendChild(document.createTextNode(new Date().getFullYear()));
+dateEl.appendChild(dateText);
