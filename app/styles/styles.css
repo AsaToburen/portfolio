@@ -100,9 +100,32 @@ header {
             }
         }
     }
+    @media (max-width: 320px) {
+        i {
+            border-top: 99px solid #4b88a2;
+            border-left: 90px solid transparent;
+            position: relative;
+            top: 6.4em;
+            left: .3%;
+            z-index: 100;
+            pointer-events: none;
+        }
+        div {
+            div {
+                ul {
+                    li {
+                        width: 32%;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
         i {
             left: 0.05%;
+            border-top: 133px solid #4b88a2;
+            border-left: 208px solid transparent;
         }
         div {
             text-align: center;
@@ -128,8 +151,8 @@ header {
 
 section.profile {
     padding-top: 3em;
-    height: 54em;
-    padding: 3em 10em 0;
+    height: 58em;
+    padding: 3em 1em 0;
     background-image: url('../../images/dark_geometric_@2X.png');
     div.profile-desc {
         background-color: $grey;
@@ -139,88 +162,96 @@ section.profile {
             display: block;
             margin: 1.5em auto;
         }
-        h1 {
-            background-color: #d9d9d9;
-            width: 54%;
-            position: relative;
-            top: 20%;
-            left: 2%;
-            padding: 1%;
-            border-radius: .1em;
-        }
         p {
             line-height: 1.5em;
             margin-bottom: 0;
             font-size: 1.1em;
         }
-        div.block-wrap {
+        ul {
             margin-top: 2em;
-            background-color: $charcoal;
             width: 100%;
             height: 4.5em;
             clear: both;
             opacity: .9;
-        }
-        span {
-            position: relative;
-            display: inline-block;
-            height: 70%;
-            margin: .5em 2em;
-            width: 6.5em;
-            float: right;
-            background-color: #d9d9d9;
-            border-radius: .3em;
-            a {
-                margin: 0 .4em;
-            }
-            img.mail {
+            li {
+                font-size: 3.5em;
+                color: $charcoal;
                 position: relative;
-                top: 3px;
-            }
-        }
-        @media (min-device-width: 375px) {
-            height: 51em;
-            padding: 1em 3em 0;
-        }
-        @media (min-device-width: 415px) {
-            padding: .5em 17% 0;
-        }
-        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-            height: 50em;
-            padding: 2% 20%;
-            h1 {
-                padding: 0 3em;
-            }
-            img {
-                padding-bottom: 1em;
-            }
-            p {
-                padding: .05em 3em;
-                font-size: 1.2em;
-                line-height: 1em;
-            }
-        }
-        @media only screen and (min-width: 1224px) {
-            margin: 0;
-            height: 52em;
-            padding: .5em 26% 0;
-            text-align: center;
-            ul {
-                margin-top: 2em;
-                width: 100%;
-                height: 4.5em;
-                clear: both;
-                opacity: .9;
-                li {
-                    font-size: 4.5em;
+                bottom: .1em;
+                float: left;
+                width: 20%;
+                margin: 0 6.5%;
+                &:hover {
                     color: $charcoal;
-                    position: relative;
-                    bottom: .1em;
-                    float: left;
-                    width: 33.3%;
-                    &:hover {
-                        color: $teal;
-                    }
+                    background-color: #fff;
+                    border-radius: .1em;
+                }
+            }
+        }
+    }
+    @media (min-device-width: 415px) {
+        padding: .5em 17% 0;
+    }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        height: 50em;
+        margin: 0;
+        padding: .5em 16% 0;
+        text-align: center;
+        h1 {
+            padding: 0 3em;
+        }
+        img {
+            padding-bottom: 1em;
+        }
+        p {
+            padding: .05em 3em;
+            font-size: 1.2em;
+        }
+        ul {
+            margin-top: 1em;
+            width: 100%;
+            height: 4.5em;
+            clear: both;
+            opacity: .9;
+            li {
+                font-size: 3em;
+                color: $charcoal;
+                position: relative;
+                bottom: .1em;
+                float: left;
+                width: 24%;
+                margin: 0 4.3%;
+                &:hover {
+                    color: $charcoal;
+                    background-color: #fff;
+                    border-radius: .1em;
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 1224px) {
+        margin: 0;
+        height: 46em;
+        padding: 2em 26% 0;
+        text-align: center;
+        ul {
+            margin-top: 2em;
+            width: 100%;
+            height: 4.5em;
+            clear: both;
+            opacity: .9;
+            li {
+                font-size: 4.5em;
+                color: $charcoal;
+                position: relative;
+                bottom: .1em;
+                float: left;
+                width: 20%;
+                margin: 0 6.3%;
+                &:hover {
+                    color: $charcoal;
+                    background-color: #fff;
+                    border-radius: .1em;
                 }
             }
         }
@@ -230,7 +261,7 @@ section.profile {
 section.skills {
     padding-left: 0;
     padding-right: 0;
-    height: 72em;
+    height: 50em;
     background-color: #D9D9D9;
     h1 {
         text-align: center;
@@ -255,6 +286,7 @@ section.skills {
             float: right;
             padding-right: .5em;
         }
+
         img.multi {
             padding-right: 0;
         }
@@ -284,11 +316,8 @@ section.skills {
             }
         }
     }
-    @media (min-device-width: 375px) {
-        div.skill-area {}
-    }
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-        height: 93em;
+        height: 62em;
         div.skill-area {
             padding: .5em 15em;
             h2 {
@@ -297,6 +326,9 @@ section.skills {
             p {
                 line-height: 2em;
                 font-size: 1.2em;
+            }
+            img.img-md {
+                display: none;
             }
         }
         div.toolkit {
@@ -361,7 +393,7 @@ section.projects {
     /* Have section that adjusts height according
         to contents */
     
-    height: 135em;
+    height: 139em;
     padding: 0;
     text-align: center;
     background-color: #D9D9D9;
@@ -372,6 +404,9 @@ section.projects {
         background-color: $teal;
         border-top: 3px solid $charcoal;
         border-bottom: 3px solid $charcoal;
+    }
+    div.filter {
+        display: none;
     }
     ul {
         display: none;
@@ -385,11 +420,13 @@ section.projects {
         }
     }
     div.project-wrapper {
+        padding: 0 1em;
         article {
             height: 10em;
             border: 2px solid $font-color;
-            margin: 2em 0;
-            background-size: cover;
+            margin: 3em 1.5em;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
             h3 {
                 text-align: left;
@@ -401,9 +438,9 @@ section.projects {
                 text-align: right;
                 position: relative;
                 font-size: 1em;
-                top: 32%;
-                background-color: $charcoal;
-                color: $grey;
+                top: 8%;
+                background-color: #252525;
+                color: #CAD8DE;
                 opacity: .9;
                 padding: .2em .5em;
             }
@@ -447,8 +484,10 @@ section.projects {
         }
     }
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-        height: 73em;
-        padding-bottom: 20em;
+        height: 80em;
+        div.filter {
+            display: none;
+        }
         ul {
             li {
                 display: inline-block;
@@ -471,11 +510,10 @@ section.projects {
             flex-wrap: wrap;
             justify-content: space-around;
             height: 82%;
-            border: 1px solid #333;
-            background: linear-gradient(to bottom left, $teal, transparent);
             article {
-                width: 25%;
-                height: 15em;
+                width: 28%;
+                margin: 1em 0;
+                height: 15.5em;
                 border: 2px solid #000;
                 box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
             }
@@ -539,7 +577,7 @@ section.projects {
         }
         div.project-wrapper {
             padding: 0 0 1em;
-            width: 85%;
+            width: 90%;
             display: flex;
             flex-wrap: wrap;
             flex-shrwink: 3;
@@ -547,7 +585,7 @@ section.projects {
             height: 50%;
             margin: 0 auto;
             article.project {
-                width: 31%;
+                width: 29%;
                 height: 15.5em;
                 cursor: pointer;
                 background-repeat: no-repeat;
@@ -605,10 +643,10 @@ section.contact {
         display: none;
     }
     form {
-        background-color: $grey;
+        background-color: #CAD8DE;
         height: 24em;
-        margin: 2em 5% 1em 5%;
-        padding: 1em 1.5em;
+        margin: 3em 1% 1em 1%;
+        padding: 1em 1em;
         font-size: 1.2em;
         input, label {
             margin: .5em 0;
@@ -635,8 +673,12 @@ section.contact {
         }
     }
     @media (max-width: 375px) {
+        height: 35em;
         div.contact-container {
             padding: 0 3em;
+        }
+        form {
+            font-size: 1em;
         }
     }
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -644,7 +686,7 @@ section.contact {
         div.contact-container {
             padding: 0 14em;
             form {
-                font-size: 1.6em;
+                font-size: 1.5em;
                 padding: 1em 2em 2em 2em;
                 textarea {
                     width: 88%;

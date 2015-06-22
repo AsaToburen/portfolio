@@ -113,9 +113,27 @@ header div div a {
     text-decoration: none;
 }
 
+@media (max-width: 320px) {
+    header i {
+        border-top: 99px solid #4b88a2;
+        border-left: 90px solid transparent;
+        position: relative;
+        top: 6.4em;
+        left: .3%;
+        z-index: 100;
+        pointer-events: none;
+    }
+    header div div ul li {
+        width: 32%;
+        margin: 0;
+    }
+}
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     header i {
         left: 0.05%;
+        border-top: 133px solid #4b88a2;
+        border-left: 208px solid transparent;
     }
     header div {
         text-align: center;
@@ -139,8 +157,8 @@ header div div a {
 
 section.profile {
     padding-top: 3em;
-    height: 54em;
-    padding: 3em 10em 0;
+    height: 58em;
+    padding: 3em 1em 0;
     background-image: url('../../images/dark_geometric_@2X.png');
 }
 
@@ -155,113 +173,116 @@ section.profile div.profile-desc img.profile {
     margin: 1.5em auto;
 }
 
-section.profile div.profile-desc h1 {
-    background-color: #d9d9d9;
-    width: 54%;
-    position: relative;
-    top: 20%;
-    left: 2%;
-    padding: 1%;
-    border-radius: .1em;
-}
-
 section.profile div.profile-desc p {
     line-height: 1.5em;
     margin-bottom: 0;
     font-size: 1.1em;
 }
 
-section.profile div.profile-desc div.block-wrap {
+section.profile div.profile-desc ul {
     margin-top: 2em;
-    background-color: #252525;
     width: 100%;
     height: 4.5em;
     clear: both;
     opacity: .9;
 }
 
-section.profile div.profile-desc span {
+section.profile div.profile-desc ul li {
+    font-size: 3.5em;
+    color: #252525;
     position: relative;
-    display: inline-block;
-    height: 70%;
-    margin: .5em 2em;
-    width: 6.5em;
-    float: right;
-    background-color: #d9d9d9;
-    border-radius: .3em;
+    bottom: .1em;
+    float: left;
+    width: 20%;
+    margin: 0 6.5%;
 }
 
-section.profile div.profile-desc span a {
-    margin: 0 .4em;
-}
-
-section.profile div.profile-desc span img.mail {
-    position: relative;
-    top: 3px;
-}
-
-@media (min-device-width: 375px) {
-    section.profile div.profile-desc {
-        height: 51em;
-        padding: 1em 3em 0;
-    }
+section.profile div.profile-desc ul li:hover {
+    color: #252525;
+    background-color: #fff;
+    border-radius: .1em;
 }
 
 @media (min-device-width: 415px) {
-    section.profile div.profile-desc {
+    section.profile {
         padding: .5em 17% 0;
     }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    section.profile div.profile-desc {
+    section.profile {
         height: 50em;
-        padding: 2% 20%;
+        margin: 0;
+        padding: .5em 16% 0;
+        text-align: center;
     }
-    section.profile div.profile-desc h1 {
+    section.profile h1 {
         padding: 0 3em;
     }
-    section.profile div.profile-desc img {
+    section.profile img {
         padding-bottom: 1em;
     }
-    section.profile div.profile-desc p {
+    section.profile p {
         padding: .05em 3em;
         font-size: 1.2em;
-        line-height: 1em;
+    }
+    section.profile ul {
+        margin-top: 1em;
+        width: 100%;
+        height: 4.5em;
+        clear: both;
+        opacity: .9;
+    }
+    section.profile ul li {
+        font-size: 3em;
+        color: #252525;
+        position: relative;
+        bottom: .1em;
+        float: left;
+        width: 24%;
+        margin: 0 4.3%;
+    }
+    section.profile ul li:hover {
+        color: #252525;
+        background-color: #fff;
+        border-radius: .1em;
     }
 }
 
 @media only screen and (min-width: 1224px) {
-    section.profile div.profile-desc {
+    section.profile {
         margin: 0;
-        height: 52em;
-        padding: .5em 26% 0;
+        height: 46em;
+        padding: 2em 26% 0;
         text-align: center;
     }
-    section.profile div.profile-desc ul {
+    section.profile ul {
         margin-top: 2em;
         width: 100%;
         height: 4.5em;
         clear: both;
         opacity: .9;
     }
-    section.profile div.profile-desc ul li {
+    section.profile ul li {
         font-size: 4.5em;
         color: #252525;
         position: relative;
         bottom: .1em;
         float: left;
-        width: 33.3%;
+        width: 20%;
+        margin: 0 6.3%;
     }
-    section.profile div.profile-desc ul li:hover {
-        color: #4b88a2;
+    section.profile ul li:hover {
+        color: #252525;
+        background-color: #fff;
+        border-radius: .1em;
     }
 }
 
 section.skills {
     padding-left: 0;
     padding-right: 0;
-    height: 72em;
+    height: 50em;
     background-color: #D9D9D9;
 }
 
@@ -328,13 +349,9 @@ section.skills div.toolkit ul p {
     padding: .5em;
 }
 
-@media (min-device-width: 375px) {
-    section.skills div.skill-area {}
-}
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     section.skills {
-        height: 93em;
+        height: 62em;
     }
     section.skills div.skill-area {
         padding: .5em 15em;
@@ -345,6 +362,9 @@ section.skills div.toolkit ul p {
     section.skills div.skill-area p {
         line-height: 2em;
         font-size: 1.2em;
+    }
+    section.skills div.skill-area img.img-md {
+        display: none;
     }
     section.skills div.toolkit {
         height: 38em;
@@ -414,7 +434,7 @@ section.projects {
     /* Have section that adjusts height according
         to contents */
     
-    height: 135em;
+    height: 139em;
     padding: 0;
     text-align: center;
     background-color: #D9D9D9;
@@ -427,6 +447,10 @@ section.projects h1 {
     background-color: #4b88a2;
     border-top: 3px solid #252525;
     border-bottom: 3px solid #252525;
+}
+
+section.projects div.filter {
+    display: none;
 }
 
 section.projects ul {
@@ -443,14 +467,16 @@ section.projects ul li.active {
     background-color: #4b88a2;
 }
 
-section.projects div.project-wrapper {/* PROJECT PHOTOS */
+section.projects div.project-wrapper {
+    padding: 0 1em;/* PROJECT PHOTOS */
 }
 
 section.projects div.project-wrapper article {
     height: 10em;
     border: 2px solid #0C120C;
-    margin: 2em 0;
-    background-size: cover;
+    margin: 3em 1.5em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -465,7 +491,7 @@ section.projects div.project-wrapper article p {
     text-align: right;
     position: relative;
     font-size: 1em;
-    top: 32%;
+    top: 8%;
     background-color: #252525;
     color: #CAD8DE;
     opacity: .9;
@@ -520,8 +546,10 @@ section.projects div.project-wrapper #musicDisc {
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     section.projects {
-        height: 73em;
-        padding-bottom: 20em;
+        height: 80em;
+    }
+    section.projects div.filter {
+        display: none;
     }
     section.projects ul li {
         display: inline-block;
@@ -549,12 +577,11 @@ section.projects div.project-wrapper #musicDisc {
             -ms-flex-pack: distribute;
                 justify-content: space-around;
         height: 82%;
-        border: 1px solid #333;
-        background: linear-gradient(to bottom left, #4b88a2, transparent);
     }
     section.projects div.project-wrapper article {
-        width: 25%;
-        height: 15em;
+        width: 28%;
+        margin: 1em 0;
+        height: 15.5em;
         border: 2px solid #000;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     }
@@ -616,7 +643,7 @@ section.projects div.project-wrapper #musicDisc {
     }
     section.projects div.project-wrapper {
         padding: 0 0 1em;
-        width: 85%;
+        width: 90%;
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
@@ -631,7 +658,7 @@ section.projects div.project-wrapper #musicDisc {
         margin: 0 auto;
     }
     section.projects div.project-wrapper article.project {
-        width: 31%;
+        width: 29%;
         height: 15.5em;
         cursor: pointer;
         background-repeat: no-repeat;
@@ -692,8 +719,8 @@ section.contact ul {
 section.contact form {
     background-color: #CAD8DE;
     height: 24em;
-    margin: 2em 5% 1em 5%;
-    padding: 1em 1.5em;
+    margin: 3em 1% 1em 1%;
+    padding: 1em 1em;
     font-size: 1.2em;
 }
 
@@ -725,8 +752,14 @@ section.contact form input[type="submit"] {
 }
 
 @media (max-width: 375px) {
+    section.contact {
+        height: 35em;
+    }
     section.contact div.contact-container {
         padding: 0 3em;
+    }
+    section.contact form {
+        font-size: 1em;
     }
 }
 
@@ -738,7 +771,7 @@ section.contact form input[type="submit"] {
         padding: 0 14em;
     }
     section.contact div.contact-container form {
-        font-size: 1.6em;
+        font-size: 1.5em;
         padding: 1em 2em 2em 2em;
     }
     section.contact div.contact-container form textarea {
