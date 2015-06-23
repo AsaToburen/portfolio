@@ -142,7 +142,7 @@ header {
             border-left: 282px solid transparent;
             position: relative;
             top: 8.34em;
-            left: 1%;
+            left: 0.1%;
             z-index: 100;
             pointer-events: none;
         }
@@ -151,10 +151,11 @@ header {
 
 section.profile {
     padding-top: 3em;
-    height: 58em;
+    height: 62em;
     padding: 3em 1em 0;
     background-image: url('../../images/dark_geometric_@2X.png');
     div.profile-desc {
+        height: auto;
         background-color: $grey;
         opacity: .6;
         padding: .5em 2em 0;
@@ -231,9 +232,13 @@ section.profile {
     }
     @media only screen and (min-width: 1224px) {
         margin: 0;
-        height: 46em;
+        height: 53em;
         padding: 2em 26% 0;
         text-align: center;
+        div.profile-desc {
+            height: auto;
+            padding: 2em 6em;
+        }
         ul {
             margin-top: 2em;
             width: 100%;
@@ -286,7 +291,6 @@ section.skills {
             float: right;
             padding-right: .5em;
         }
-
         img.multi {
             padding-right: 0;
         }
@@ -393,7 +397,7 @@ section.projects {
     /* Have section that adjusts height according
         to contents */
     
-    height: 139em;
+    height: auto;
     padding: 0;
     text-align: center;
     background-color: #D9D9D9;
@@ -513,16 +517,17 @@ section.projects {
             article {
                 width: 28%;
                 margin: 1em 0;
-                height: 15.5em;
+                height: 17.5em;
                 border: 2px solid #000;
                 box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
             }
         }
     }
     @media only screen and (min-width: 1224px) {
-        height: 92em;
+        height: auto;
         div.filter {
             height: 4em;
+            display: block;
             padding-right: 7em;
             span {
                 width: 8em;
@@ -591,12 +596,18 @@ section.projects {
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
                 transition: all .7s linear;
+                i {
+                  display: none;
+                }
                 h3 {
                     opacity: 0;
                     width: 0px;
                     transition: all .2s linear;
                     height: 1.25em;
                     overflow: hidden;
+                }
+                h2 {
+                    display: none;
                 }
                 p {
                     opacity: 0;
@@ -617,8 +628,63 @@ section.projects {
                 width: 96.3%;
                 height: 27em;
                 background-size: 320px 202px;
-                background-position: 3em 3em;
+                background-position: 4em 7.5em;
                 background-repeat: no-repeat;
+                background-color: #CAD8DE;
+                cursor: auto;
+                &:hover {
+                    h3 {
+                        width: 90%;
+                    }
+                }
+                i {
+                    display: inline-block;
+                    float: right;
+                    margin-right: .2em;
+                    margin-top: -.2em;
+                    font-size: 4em;
+                    cursor: pointer;
+                }
+                h3 {
+                    width: 90%;
+                    font-size: 1.5em;
+                    opacity: 1;
+                    margin-top: 1em;
+                    margin-bottom: .5em;
+                }
+                div.detail {
+                    width: 40%;
+                    margin-left: 30em;
+                }
+                h2 {
+                    display: block;
+                    text-align: left;
+                    border-bottom: 2px solid #000;
+                    padding: .5em;
+                }
+                ul.detail-list {
+                    width: 30em;
+                    height: 11em;
+                    display: inline-block;
+                    text-align: left;
+                    list-style-type: disc;
+                    li {
+                        display: list-item;
+                        width: 100%;
+                        padding: .5em;
+                        margin-left: 2em;
+                        background-color: transparent;
+                        color: #000;
+                        cursor: auto;
+                    }
+                }
+                p {
+                    top: 0%;
+                    height: 2em;
+                    opacity: 1;
+                    padding-right: 5em;
+                    font-size: 1.2em;
+                }
             }
         }
     }
@@ -699,12 +765,20 @@ section.contact {
     @media only screen and (min-width: 1224px) {
         height: 46em;
         div.contact-container {
-            padding: 0 29em;
+            padding: 0 32em;
         }
         form {
+            height: 26em;
+            input, textarea, input[type='submit'] {
+                width: 100%;
+                box-sizing: border-box;
+            }
             a {
                 padding: .8em;
                 background-color: $teal;
+            }
+            textarea {
+                height: 13em;
             }
         }
     }

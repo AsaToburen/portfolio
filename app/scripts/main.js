@@ -15,8 +15,6 @@ $(document).ready(function() {
     });
 });
 
-
-
 // Filter to sort projects
 
 var filterBtns = $('.btn').click(function() {
@@ -27,39 +25,35 @@ var filterBtns = $('.btn').click(function() {
 });
 
 
-//Expand Project Detail
+//Expand All Project Detail
 
+$('#expand').click(function(e) {
+    var expandText = $(this).next()[0];
+    console.log(expandText.text);
+    $(this).toggleClass("ion-android-expand ion-android-contract");
 
-var projectThumbs = $('.project').click(function(e){
+    //if ($('.project').hasClass('expanded')) {
+    //    $('.project').toggleClass('expanded');
+    //} else {
+    //    $('.project').addClass('expanded');
+    //}
 
-    //$(e.target).css('background-image', 'none');
-    //$(e.target).css('background-color', '#252525');
-
-
- 
-
-    
-
-    var targetClasses = e.target.classList;
-    targetClasses.add('expanded');
-
-    
-
+    $('.project').toggleClass('expanded');
 
 });
 
+//Expand Single Project Detail
 
+$('.project').click(function() {
+    this.classList.add('expanded');
+});
 
+//Close Project Detail
 
-//Trigger Workflow Tools Animations on scroll
-
-//$(window).scroll(function() {
-//    console.log($(this).scrollTop());
-//    if ($(this).scrollTop() > 1760) {
-//        $('.even').velocity("transition.slideLeftBigIn", { stagger: 250 });
-//    }
-//});
-
+$('.ion-ios-close-empty').click(function(e) {
+    $(this).parent().removeClass('expanded');
+    e.stopPropagation();
+});
 
 
 // Add a date to the footer of the page.

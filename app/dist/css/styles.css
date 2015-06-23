@@ -149,7 +149,7 @@ header div div a {
         border-left: 282px solid transparent;
         position: relative;
         top: 8.34em;
-        left: 1%;
+        left: 0.1%;
         z-index: 100;
         pointer-events: none;
     }
@@ -157,12 +157,13 @@ header div div a {
 
 section.profile {
     padding-top: 3em;
-    height: 58em;
+    height: 62em;
     padding: 3em 1em 0;
     background-image: url('../../images/dark_geometric_@2X.png');
 }
 
 section.profile div.profile-desc {
+    height: auto;
     background-color: #CAD8DE;
     opacity: .6;
     padding: .5em 2em 0;
@@ -252,9 +253,13 @@ section.profile div.profile-desc ul li:hover {
 @media only screen and (min-width: 1224px) {
     section.profile {
         margin: 0;
-        height: 46em;
+        height: 53em;
         padding: 2em 26% 0;
         text-align: center;
+    }
+    section.profile div.profile-desc {
+        height: auto;
+        padding: 2em 6em;
     }
     section.profile ul {
         margin-top: 2em;
@@ -434,7 +439,7 @@ section.projects {
     /* Have section that adjusts height according
         to contents */
     
-    height: 139em;
+    height: auto;
     padding: 0;
     text-align: center;
     background-color: #D9D9D9;
@@ -581,7 +586,7 @@ section.projects div.project-wrapper #musicDisc {
     section.projects div.project-wrapper article {
         width: 28%;
         margin: 1em 0;
-        height: 15.5em;
+        height: 17.5em;
         border: 2px solid #000;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     }
@@ -589,10 +594,11 @@ section.projects div.project-wrapper #musicDisc {
 
 @media only screen and (min-width: 1224px) {
     section.projects {
-        height: 92em;
+        height: auto;
     }
     section.projects div.filter {
         height: 4em;
+        display: block;
         padding-right: 7em;
     }
     section.projects div.filter span {
@@ -665,12 +671,18 @@ section.projects div.project-wrapper #musicDisc {
         background-size: 100% 100%;
         transition: all .7s linear;
     }
+    section.projects div.project-wrapper article.project i {
+        display: none;
+    }
     section.projects div.project-wrapper article.project h3 {
         opacity: 0;
         width: 0px;
         transition: all .2s linear;
         height: 1.25em;
         overflow: hidden;
+    }
+    section.projects div.project-wrapper article.project h2 {
+        display: none;
     }
     section.projects div.project-wrapper article.project p {
         opacity: 0;
@@ -688,8 +700,61 @@ section.projects div.project-wrapper #musicDisc {
         width: 96.3%;
         height: 27em;
         background-size: 320px 202px;
-        background-position: 3em 3em;
+        background-position: 4em 7.5em;
         background-repeat: no-repeat;
+        background-color: #CAD8DE;
+        cursor: auto;
+    }
+    section.projects div.project-wrapper article.expanded:hover h3 {
+        width: 90%;
+    }
+    section.projects div.project-wrapper article.expanded i {
+        display: inline-block;
+        float: right;
+        margin-right: .2em;
+        margin-top: -.2em;
+        font-size: 4em;
+        cursor: pointer;
+    }
+    section.projects div.project-wrapper article.expanded h3 {
+        width: 90%;
+        font-size: 1.5em;
+        opacity: 1;
+        margin-top: 1em;
+        margin-bottom: .5em;
+    }
+    section.projects div.project-wrapper article.expanded div.detail {
+        width: 40%;
+        margin-left: 30em;
+    }
+    section.projects div.project-wrapper article.expanded h2 {
+        display: block;
+        text-align: left;
+        border-bottom: 2px solid #000;
+        padding: .5em;
+    }
+    section.projects div.project-wrapper article.expanded ul.detail-list {
+        width: 30em;
+        height: 11em;
+        display: inline-block;
+        text-align: left;
+        list-style-type: disc;
+    }
+    section.projects div.project-wrapper article.expanded ul.detail-list li {
+        display: list-item;
+        width: 100%;
+        padding: .5em;
+        margin-left: 2em;
+        background-color: transparent;
+        color: #000;
+        cursor: auto;
+    }
+    section.projects div.project-wrapper article.expanded p {
+        top: 0%;
+        height: 2em;
+        opacity: 1;
+        padding-right: 5em;
+        font-size: 1.2em;
     }
 }
 
@@ -786,11 +851,21 @@ section.contact form input[type="submit"] {
         height: 46em;
     }
     section.contact div.contact-container {
-        padding: 0 29em;
+        padding: 0 32em;
+    }
+    section.contact form {
+        height: 26em;
+    }
+    section.contact form input, section.contact form textarea, section.contact form input[type='submit'] {
+        width: 100%;
+        box-sizing: border-box;
     }
     section.contact form a {
         padding: .8em;
         background-color: #4b88a2;
+    }
+    section.contact form textarea {
+        height: 13em;
     }
 }
 
