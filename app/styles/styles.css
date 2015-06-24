@@ -237,7 +237,7 @@ section.profile {
         text-align: center;
         div.profile-desc {
             height: auto;
-            padding: 2em 6em;
+            padding: 2em 11em;
         }
         ul {
             margin-top: 2em;
@@ -591,7 +591,7 @@ section.projects {
             margin: 0 auto;
             article.project {
                 width: 29%;
-                height: 15.5em;
+                height: 17.5em;
                 cursor: pointer;
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
@@ -625,7 +625,7 @@ section.projects {
                 }
             }
             article.expanded {
-                width: 96.3%;
+                width: 80%;
                 height: 27em;
                 background-size: 320px 202px;
                 background-position: 4em 7.5em;
