@@ -24,6 +24,8 @@ html body section {
     height: 42em;
 }
 
+
+
 section.marquee {
     background-image: url('../../images/index.png');
     background-size: cover;
@@ -31,17 +33,23 @@ section.marquee {
     background-position: 0% 99%;
 }
 
+
+
 @media (max-width: 415px) {
     section.marquee {
         height: 45em;
     }
 }
 
+
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     section.marquee {
         height: 51em;
     }
 }
+
+
 
 @media only screen and (min-width: 1224px) {
     section.marquee {
@@ -259,7 +267,7 @@ section.profile div.profile-desc ul li:hover {
     }
     section.profile div.profile-desc {
         height: auto;
-        padding: 2em 6em;
+        padding: 2em 11em;
     }
     section.profile ul {
         margin-top: 2em;
@@ -404,6 +412,9 @@ section.skills div.toolkit ul p {
         border: 2px solid #0C120C;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     }
+    section.skills div.container div.skill-area h2 {
+        width: 60%;
+    }
     section.skills div.container div.skill-area h2.angular {
         width: 50%;
     }
@@ -411,7 +422,7 @@ section.skills div.toolkit ul p {
         text-align: left;
         line-height: 1.7em;
         padding: 0 .5em;
-        font-size: 1.2em;
+        font-size: 1.45em;
     }
     section.skills div.container div.skill-area img {
         width: 28%;
@@ -490,6 +501,10 @@ section.projects div.project-wrapper article h3 {
     padding: .5em;
     margin: 1.7em 0;
     background: linear-gradient(to right, #4b88a2 20%, #D9D9D9, transparent);
+}
+
+section.projects div.project-wrapper article ul {
+    display: none;
 }
 
 section.projects div.project-wrapper article p {
@@ -631,7 +646,7 @@ section.projects div.project-wrapper #musicDisc {
     }
     section.projects ul li {
         display: inline-block;
-        width: 18.9%;
+        width: 9%;
         margin-left: -5px;
         cursor: pointer;
     }
@@ -641,11 +656,11 @@ section.projects div.project-wrapper #musicDisc {
     }
     section.projects ul li:first-child {
         margin-left: -6px;
-        width: 19.9%;
+        width: 9%;
     }
     section.projects ul li:last-child {
         margin-right: 0px;
-        width: 21.7%;
+        width: 9%;
     }
     section.projects div.project-wrapper {
         padding: 0 0 1em;
@@ -665,7 +680,7 @@ section.projects div.project-wrapper #musicDisc {
     }
     section.projects div.project-wrapper article.project {
         width: 29%;
-        height: 15.5em;
+        height: 17.5em;
         cursor: pointer;
         background-repeat: no-repeat;
         background-size: 100% 100%;
@@ -697,7 +712,7 @@ section.projects div.project-wrapper #musicDisc {
         opacity: 1;
     }
     section.projects div.project-wrapper article.expanded {
-        width: 96.3%;
+        width: 80%;
         height: 27em;
         background-size: 320px 202px;
         background-position: 4em 7.5em;

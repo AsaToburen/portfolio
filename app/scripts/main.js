@@ -1,7 +1,10 @@
 //Accordion for projects 
 
 $(document).ready(function() {
-    $("#work h3").click(function() {
+    $(".ion-android-funnel").click(function(e) {
+
+        console.log('click');
+
         $("#work ul").slideUp();
 
         if (!$(this).next().is(":visible")) {
@@ -28,18 +31,19 @@ var filterBtns = $('.btn').click(function() {
 //Expand All Project Detail
 
 $('#expand').click(function(e) {
-    var expandText = $(this).next()[0];
-    console.log(expandText.text);
+
+    console.log('clicked');
+    var statusText = $(this).next()[0];
+
+    if ($(this).hasClass('ion-android-expand')) {
+        $('.project').addClass('expanded');
+        $(statusText).text('Collapse Projects');
+    } else {
+        $('.project').removeClass('expanded');
+        $(statusText).text('Expand Projects');
+    }
+
     $(this).toggleClass("ion-android-expand ion-android-contract");
-
-    //if ($('.project').hasClass('expanded')) {
-    //    $('.project').toggleClass('expanded');
-    //} else {
-    //    $('.project').addClass('expanded');
-    //}
-
-    $('.project').toggleClass('expanded');
-
 });
 
 //Expand Single Project Detail

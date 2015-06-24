@@ -30,6 +30,8 @@ html {
     }
 }
 
+
+
 section.marquee {
     background-image: url('../../images/index.png');
     background-size: cover;
@@ -357,6 +359,11 @@ section.skills {
                 height: 15em;
                 border: 2px solid #0C120C;
                 box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+                
+                h2 {
+                    width: 60%;
+                }            
+    
                 h2.angular {
                     width: 50%;
                 }
@@ -364,7 +371,7 @@ section.skills {
                     text-align: left;
                     line-height: 1.7em;
                     padding: 0 .5em;
-                    font-size: 1.2em;
+                    font-size: 1.45em;
                 }
                 img {
                     width: 28%;
@@ -437,6 +444,9 @@ section.projects {
                 padding: .5em;
                 margin: 1.7em 0;
                 background: linear-gradient(to right, $teal 20%, #D9D9D9, transparent);
+            }
+            ul {
+                display: none;
             }
             p {
                 text-align: right;
@@ -563,7 +573,7 @@ section.projects {
         ul {
             li {
                 display: inline-block;
-                width: 18.9%;
+                width: 9%;
                 margin-left: -5px;
                 cursor: pointer;
                 &:hover {
@@ -573,11 +583,11 @@ section.projects {
             }
             li:first-child {
                 margin-left: -6px;
-                width: 19.9%;
+                width: 9%;
             }
             li:last-child {
                 margin-right: 0px;
-                width: 21.7%;
+                width: 9%;
             }
         }
         div.project-wrapper {
@@ -629,7 +639,7 @@ section.projects {
                 height: 27em;
                 background-size: 320px 202px;
                 background-position: 4em 7.5em;
-                background-repeat: no-repeat;
+                 background-repeat: no-repeat;
                 background-color: #CAD8DE;
                 cursor: auto;
                 &:hover {
