@@ -605,14 +605,16 @@ section.projects {
                 cursor: pointer;
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
+                /*
                 transition: all .7s linear;
+                */
                 i {
                   display: none;
                 }
                 h3 {
                     opacity: 0;
                     width: 0px;
-                    transition: all .2s linear;
+                    transition: all .2s ease-in;
                     height: 1.25em;
                     overflow: hidden;
                 }
@@ -622,7 +624,7 @@ section.projects {
                 p {
                     opacity: 0;
                     top: 28%;
-                    transition: all .3s linear;
+                    transition: all .3s ease-in;
                 }
                 &:hover {
                     h3 {
@@ -665,6 +667,9 @@ section.projects {
                 div.detail {
                     width: 40%;
                     margin-left: 30em;
+                    a {
+                        width: 5em;
+                    }
                 }
                 h2 {
                     display: block;

@@ -57,37 +57,31 @@
         <h1>Primary Skillset</h1>
         <div class="container">
             <div class="skill-area">
-                <!--<div class="markup-icon skill-img"></div> -->
                 <h2>HTML5/CSS3</h2>
                 <img class="img-sm" src="./images/icons/css.png" alt="Html/CSS Icon">
                 <img class="img-md" src="./images/icons/css 2.png" alt="Html/CSS Icon">
                 <p>Strong understanding of markup and styling languages. Proficient and able to design and build responsive layouts with web development best practices.</p>
             </div>
             <div class="skill-area">
-                <!-- <div class="js-icon skill-img"></div> -->
                 <h2>Javascript/JQuery</h2>
                 <img class="img-sm" src="./images/icons/tools2.png" alt="Javascript/JQuery">
                 <img class="img-md" src="./images/icons/tools2 2.png" alt="Javascript/JQuery">
                 <p>Developed several projects using vanilla javascript and object-oriented principles. Experience implementing logic to handle user interactions with Javascript and JQuery.</p>
             </div>
             <div class="skill-area">
-                <span>
-                 <!--   <div class="angular-icon skill-img"></div> -->
-                </span>
                 <h2 class="angular">Angular</h2>
                 <img class="img-sm" src="./images/icons/accelerometer.png" alt="Angular Icon">
                 <img class="img-md" src="./images/icons/accelerometer 2.png" alt="Angular Icon">
                 <p>Experience building single page applications with the most popular frontend MVC framework. Working understanding of unit testing with Protractor, Jasmine and Karma.</p>
             </div>
             <div class="skill-area">
-                <!--<div class="responsive-icon skill-img"></div> -->
                 <img class="img-sm multi" src="./images/icons/multidevice.png" alt="Responsive Icon">
                 <img class="img-md multi" src="./images/icons/multidevice 2.png" alt="Responsive Icon">
                 <h2>Responsive Design</h2>
                 <p>Familiar with Responsive Design and and page speed optimization best practices. Working understanding of mobile-first design and development.</p>
             </div>
         </div>
-        <div class="toolkit">
+        <!-- <div class="toolkit">
             <h2>Workflow Tools</h2>
             <ul class="tool-img">
                 <li>
@@ -119,182 +113,200 @@
                     <p>Command Line</p>
                 </li>
             </ul>
-        </div>
+        </div> -->
     </section>
     <section id="work" class="projects">
         <h1>Portfolio</h1>
         <div class="filter">
-            <ul>
+            <ul class="filter-list">
                 <li class="btn" id="js">
-                    <span>Javascript</span>
-                    <!--  <img src="./images/icons/workflow/js_badge.svg" alt="Javascript"> -->
+                    Javascript
                 </li>
                 <li class="btn" id="an">
-                    <span>Angular</span>
-                    <!--  <img src="./images/icons/workflow/angular_simple.svg" alt="Javascript"> -->
+                    Angular
                 </li>
                 <li class="btn" id="no">
-                    <span>Node</span>
-                    <!-- <img height="40px" src="./images/icons/workflow/nodejs_small.svg" alt="Javascript"> -->
+                    Node
                 </li>
                 <li class="btn" id="jq">
-                    <span>JQuery</span>
-                    <!-- <img src="./images/icons/workflow/jquery_logo.svg" alt="Javascript"> -->
+                    JQuery
                 </li>
                 <li class="btn" id="ht">
-                    <span>HTML/CSS</span>
-                    <!-- <img src="./images/icons/workflow/html5.svg" alt="Javascript"> -->
+                    HTML/CSS
                 </li>
             </ul>
             <span>
                     <i class="ion-android-funnel"></i>
-                    <p>Filter Projects</p>
+                    <!-- <p id="filter-label">Filter Projects</p> -->
                 </span>
             <span>
                     <i id="expand" class="ion-android-expand"></i>
                     <p>Expand Projects</p>
-            </span>
+                </span>
         </div>
         <div id="projects" class="project-wrapper">
             <article id="reader" class="project js ht an">
-                <i class="ion-ios-close-empty"></i>
-                <h3>Rss Feed Reader</h3>
-                <div class="detail">
-                    <h2>Project Details:</h2>
-                    <ul class="detail-list">
-                        <li>Single Page Angular Application</li>
-                        <li>Angular Material UI from Yeoman Generator</li>
-                        <li>Application Sorts and Retrieves Rss Reeds By Category</li>
-                        <li>Lodash - A lightweight JS library is used to cross-list rss feeds.</li>
-                    </ul>
-                </div>
-                <p>Search and filter popular rss feeds</p>
+                <a href="http://www.google.com">
+                    <i class="ion-ios-close-empty"></i>
+                    <h3>Rss Feed Reader</h3>
+                    <div class="detail">
+                        <h2>Project Details:</h2>
+                        <ul class="detail-list">
+                            <li>Single Page Angular Application</li>
+                            <li>Angular Material UI Framework using Yeoman Generator</li>
+                            <li>Application Sorts and Retrieves Rss Reeds By Category</li>
+                            <li>Lodash - A lightweight JS library is used to cross-list rss feeds using tags.</li>
+                        </ul>
+                    </div>
+                    <p>Search and filter popular rss feeds</p>
+                </a>
             </article>
             <article id="openMic" class="project js ht an no">
-                <i class="ion-ios-close-empty"></i>
-                <h3>Twitter Open Mic</h3>
-                <div class="detail">
-                    <h2>Project Details:</h2>
-                    <ul class="detail-list">
-                        <li>Single Page Angular Application</li>
-                        <li>Angular Material UI from Yeoman Generator</li>
-                        <li>Application Sorts and Retrieves Rss Reeds By Category</li>
-                        <li>Lodash - A lightweight JS library is used to cross-list rss feeds.</li>
-                    </ul>
-                </div>
-                <p>Angular Twitter App to make you laugh</p>
+                <a href="">
+                    <i class="ion-ios-close-empty"></i>
+                    <h3>Twitter Open Mic</h3>
+                    <div class="detail">
+                        <h2>Project Details:</h2>
+                        <ul class="detail-list">
+                            <li>Angular and Node Application</li>
+                            <li>Load tweets from popular comedians in a curated timeline.</li>
+                            <li>The application also allows users to select an individual comedian's account to view only their tweets.</li>
+                            <li>Incorporated Bootstrap for frontend styling.</li>
+                            <li>Node server is used to communicate with the twitter api with Oauth.</li>
+                        </ul>
+                    </div>
+                    <p>Angular Twitter App to make you laugh</p>
+                </a>
             </article>
             <article id="meanTodo" class="project js ht an no">
-                <i class="ion-ios-close-empty"></i>
-                <h3>Mean ToDo List</h3>
-                <div class="detail">
-                    <h2>Project Details:</h2>
-                    <ul class="detail-list">
-                        <li>Single Page Angular Application</li>
-                        <li>Angular Material UI from Yeoman Generator</li>
-                        <li>Application Sorts and Retrieves Rss Reeds By Category</li>
-                        <li>Lodash - A lightweight JS library is used to cross-list rss feeds.</li>
-                    </ul>
-                </div>
-                <p>To-Do List Application</p>
+                <a href="">
+                    <i class="ion-ios-close-empty"></i>
+                    <h3>Mean ToDo List</h3>
+                    <div class="detail">
+                        <h2>Project Details:</h2>
+                        <ul class="detail-list">
+                            <li>MEAN Stack Application</li>
+                            <li>Simple ToDo List</li>
+                            <li>Application uses Angular on the frontend to submit the form to the Node endpoint.</li>
+                            <li>Node server will send data to be stored in a MongoDB database.</li>
+                            <li>Users can remove items from the list and the corresponding items will be removed from the database.</li>
+                        </ul>
+                    </div>
+                    <p>To-Do List Application</p>
+                </a>
             </article>
             <article id="reactList" class="project">
-                <i class="ion-ios-close-empty"></i>
-                <h3>React Listmaker</h3>
-                <div class="detail">
-                    <h2>Project Details:</h2>
-                    <ul class="detail-list">
-                        <li>Single Page Angular Application</li>
-                        <li>Angular Material UI from Yeoman Generator</li>
-                        <li>Application Sorts and Retrieves Rss Reeds By Category</li>
-                        <li>Lodash - A lightweight JS library is used to cross-list rss feeds.</li>
-                    </ul>
-                </div>
-                <p>Add strings to a list</p>
+                <a href="">
+                    <i class="ion-ios-close-empty"></i>
+                    <h3>React Listmaker</h3>
+                    <div class="detail">
+                        <h2>Project Details:</h2>
+                        <ul class="detail-list">
+                            <li>ReactJS Application</li>
+                            <li>Simple List Making Application</li>
+                            <li>Application created using two components. An entry form and a list of strings.</li>
+                            <li>The state of the string list component is updated and a numbered string is added to the list when a user submits the form.</li>
+                        </ul>
+                    </div>
+                    <p>Add strings to a list</p>
+                </a>
             </article>
             <article id="store" class="project">
-                <i class="ion-ios-close-empty"></i>
-                <h3>Ecommerce Site</h3>
-                <div class="detail">
-                    <h2>Project Details:</h2>
-                    <ul class="detail-list">
-                        <li>Single Page Angular Application</li>
-                        <li>Angular Material UI from Yeoman Generator</li>
-                        <li>Application Sorts and Retrieves Rss Reeds By Category</li>
-                        <li>Lodash - A lightweight JS library is used to cross-list rss feeds.</li>
-                    </ul>
-                </div>
-                <p>Online Store with Authentication</p>
+                <a href="">
+                    <i class="ion-ios-close-empty"></i>
+                    <h3>Ecommerce Site</h3>
+                    <div class="detail">
+                        <h2>Project Details:</h2>
+                        <ul class="detail-list">
+                            <li>Single Page Ecommerce Application</li>
+                            <li>Firebase, AngularJS and the Moltin Api were used to build this application.</li>
+                            <li>User authentication is handled using firebase.</li>
+                            <li>Authenticated users can filter items by category, add items to a shopping cart and view totals for selected items on a checkout page.</li>
+                            <li>Created unit tests with Jasmine and Karma, including mocks for the moltin and firebase services.</li>
+                        </ul>
+                    </div>
+                    <p>Online Store with Authentication</p>
+                </a>
             </article>
             <article id="weather" class="project">
-                <i class="ion-ios-close-empty"></i>
-                <h3>Ng-Bootstrap Weather</h3>
-                <div class="detail">
-                    <h2>Project Details:</h2>
-                    <ul class="detail-list">
-                        <li>Single Page Angular Application</li>
-                        <li>Angular Material UI from Yeoman Generator</li>
-                        <li>Application Sorts and Retrieves Rss Reeds By Category</li>
-                        <li>Lodash - A lightweight JS library is used to cross-list rss feeds.</li>
-                    </ul>
-                </div>
-                <p>Lookup 10-day forecast data</p>
+                <a href="">
+                    <i class="ion-ios-close-empty"></i>
+                    <h3>Ng-Bootstrap Weather</h3>
+                    <div class="detail">
+                        <h2>Project Details:</h2>
+                        <ul class="detail-list">
+                            <li>Single Page Weather Application</li>
+                            <li>Retrieve location-specific weather data from a weather api.</li>
+                            <li>Data is displayed in a ten day forcast format.</li>
+                            <li>Bootstrap used for UI components</li>
+                            <li>Video background incorporated into the landing page.</li>
+                        </ul>
+                    </div>
+                    <p>Lookup 10-day forecast data</p>
+                </a>
             </article>
             <article id="instagram" class="project">
-                <i class="ion-ios-close-empty"></i>
-                <h3>Instagram Image Searcher</h3>
-                <div class="detail">
-                    <h2>Project Details:</h2>
-                    <ul class="detail-list">
-                        <li>Single Page Angular Application</li>
-                        <li>Angular Material UI from Yeoman Generator</li>
-                        <li>Application Sorts and Retrieves Rss Reeds By Category</li>
-                        <li>Lodash - A lightweight JS library is used to cross-list rss feeds.</li>
-                    </ul>
-                </div>
-                <p>Lookup Images by Keyword</p>
+                <a href="">
+                    <i class="ion-ios-close-empty"></i>
+                    <h3>Instagram Image Searcher</h3>
+                    <div class="detail">
+                        <h2>Project Details:</h2>
+                        <ul class="detail-list">
+                            <li>Angular App to Query the Instagram Api</li>
+                            <li>Users submit a search term to load relevant images.</li>
+                            <li>Application displays loading spinner while data is being retrieved.</li>
+                            <li>Error messages are displayed if used enters an invalid search term and the number of items returned is also displayed.</li>
+                        </ul>
+                    </div>
+                    <p>Lookup Images by Keyword</p>
+                </a>
             </article>
             <article id="madLibs" class="project">
-                <i class="ion-ios-close-empty"></i>
-                <h3>Angular Madlibs</h3>
-                <div class="detail">
-                    <h2>Project Details:</h2>
-                    <ul class="detail-list">
-                        <li>Single Page Angular Application</li>
-                        <li>Angular Material UI from Yeoman Generator</li>
-                        <li>Application Sorts and Retrieves Rss Reeds By Category</li>
-                        <li>Lodash - A lightweight JS library is used to cross-list rss feeds.</li>
-                    </ul>
-                </div>
-                <p>Forms and Animations</p>
+                <a href="">
+                    <i class="ion-ios-close-empty"></i>
+                    <h3>Angular Madlibs</h3>
+                    <div class="detail">
+                        <h2>Project Details:</h2>
+                        <ul class="detail-list">
+                            <li>Madlibs Project to practice forms and animations in Angular</li>
+                            <li>Form validation used to verify user inputs.</li>
+                            <li>Relevant messages are displayed when a user submits an invalid input.</li>
+                            <li>When the user submits the valid form, the page transitions to another view where the text of the generated madlib is displayed.</li>
+                        </ul>
+                    </div>
+                    <p>Forms and Animations</p>
+                </a>
             </article>
             <article id="waitStaff" class="project">
-                <i class="ion-ios-close-empty"></i>
-                <h3>Waitstaff Calculator</h3>
-                <div class="detail">
-                    <h2>Project Details:</h2>
-                    <ul class="detail-list">
-                        <li>Single Page Angular Application</li>
-                        <li>Angular Material UI from Yeoman Generator</li>
-                        <li>Application Sorts and Retrieves Rss Reeds By Category</li>
-                        <li>Lodash - A lightweight JS library is used to cross-list rss feeds.</li>
-                    </ul>
-                </div>
-                <p>Calulate tips and totals</p>
+                <a href="">
+                    <i class="ion-ios-close-empty"></i>
+                    <h3>Waitstaff Calculator</h3>
+                    <div class="detail">
+                        <h2>Project Details:</h2>
+                        <ul class="detail-list">
+                            <li>A calculator to calculate the tips and totals of meals purchased in a restaurant.</li>
+                            <li>The separate views display different data and information.</li>
+                            <li>The user can submit the totals for a new meal before navigating to the earnings view where they will find updated tips and totals.</li>
+                        </ul>
+                    </div>
+                    <p>Calulate tips and totals</p>
+                </a>
             </article>
             <article id="musicDisc" class="project">
-                <i class="ion-ios-close-empty"></i>
-                <h3>Music Discovery</h3>
-                <div class="detail">
-                    <h2>Project Details:</h2>
-                    <ul class="detail-list">
-                        <li>Single Page Angular Application</li>
-                        <li>Angular Material UI from Yeoman Generator</li>
-                        <li>Application Sorts and Retrieves Rss Reeds By Category</li>
-                        <li>Lodash - A lightweight JS library is used to cross-list rss feeds.</li>
-                    </ul>
-                </div>
-                <p>Learn and listen to your favorite musicians</p>
+                <a href="">
+                    <i class="ion-ios-close-empty"></i>
+                    <h3>Music Discovery</h3>
+                    <div class="detail">
+                        <h2>Project Details:</h2>
+                        <ul class="detail-list">
+                            <li>Retrieve music data from two apis using Javascript.</li>
+                            <li>Submit the name of an artist to lookup their information from the LastFM Api.</li>
+                            <li>Click the play icon to hear a snippet from the Spotify Api.</li>
+                            <li>Select from suggested artists at the bottom of the page to lookup information about similar artists.</li>
+                        </ul>
+                    </div>
+                    <p>Learn and listen to your favorite musicians</p>
+                </a>
             </article>
         </div>
     </section>
@@ -332,8 +344,6 @@
         </ul>
     </footer>
     <script src="scripts/jquery.min.js"></script>
-    <!-- <script src="dist/scripts/velocity.min.js"></script>
-    <script src="scripts/velocity-ui.js"></script> -->
     <script src="scripts/main.js"></script>
 </body>
 

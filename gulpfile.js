@@ -1,9 +1,7 @@
-/* Add build task -- cssnano etc, browserify */
-
 var gulp = require('gulp'),
     connect = require('gulp-connect'),
     open = require('gulp-open'),
-    postcss = require('gulp-postcss'),
+    sass = require('gulp-sass'),
     autoprefixer = require('autoprefixer-core'),
     imagemin = require('gulp-imagemin'),
     cache = require('gulp-cache'),
@@ -40,14 +38,10 @@ gulp.task('images', function() {
         .pipe(gulp.dest('./app/dist/images'));
 });
 
+
 gulp.task('styles', function() {
-    return gulp.src('./app/styles/*.css')
-        .pipe(postcss([
-            require('postcss-nested'),
-            require('postcss-simple-vars'),
-            require('autoprefixer-core')('last 3 versions'),
-            require('cssnext')
-        ]))
+    return gulp.src('./app/scss/*.scss')
+        .pipe(sass())
         .pipe(gulp.dest('./app/dist/css'))
         .pipe(connect.reload());
 });
@@ -75,7 +69,7 @@ gulp.task('html', function() {
 });
 
 gulp.task('watch', function() {
-    gulp.watch('app/styles/*.css', ['styles'])
+    gulp.watch('app/scss/**/*.scss', ['styles']);
     gulp.watch("app/styles/images/*", ['images']);
     gulp.watch("app/*.html");
 });

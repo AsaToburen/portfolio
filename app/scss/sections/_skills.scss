@@ -1,0 +1,188 @@
+section.skills {
+    padding-left: 0;
+    padding-right: 0;
+    height: 50em;
+    background-color: #D9D9D9;
+    h1 {
+        text-align: center;
+        padding: .5em 0;
+        background-color: $teal;
+        border-top: 3px solid $grey;
+        border-bottom: 3px solid $grey;
+        margin-bottom: 1em;
+    }
+    div.skill-area {
+        padding: 0 2em;
+        h2 {
+            display: inline-block;
+            margin: 0;
+            padding: .5em 0 .5em .5em;
+            background: linear-gradient(to right, $teal, #D9D9D9);
+        }
+        h2.angular {
+            width: 67%;
+        }
+        img {
+            float: right;
+            padding-right: .5em;
+        }
+        img.img-md {
+            display: none;
+        }
+        img.multi {
+            padding-right: 0;
+        }
+    }
+}
+
+@media screen and (min-device-width: 360px) and (max-device-width: 480px) {
+    section.skills {
+        height: 53em;
+        div.skill-area {
+            h2 {
+                width: 73%;
+            }
+            p {
+                font-size: 1.1em;
+                line-height: 1.3em;
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width: 480px) {
+    section.skills {
+        height: 58em;
+        div.skill-area {
+            padding: 0 4em;
+            img, img.multi {
+                padding-right: 1em;
+            }
+            p {
+                line-height: 1.4em;
+                width: 89%;
+            }
+        }
+    }
+}
+
+@media (min-device-width: 600px) and (max-device-width: 768px) {
+    section.skills {
+        height: 46em;
+        div.container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            height: 18em;
+            div.skill-area {
+                width: 42%;
+                padding: .5em;
+                margin: 1.5em .75em;
+                height: 15em;
+                border: 2px solid #0C120C;
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+                h2 {
+                    font-size: 1.25em;
+                    width: 60%;
+                }
+                h2.angular {
+                    width: 50%;
+                }
+                h2.multi {
+                    padding-right: 0;
+                }
+                p {
+                    text-align: left;
+                    line-height: 1.4em;
+                    padding: 0 .5em;
+                    font-size: 1.2em;
+                    margin: .5em 0 0 0;
+                }
+                img {
+                    width: 28%;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-device-width: 768px) and (max-device-width: 1024px) {
+    section.skills {
+        height: 46em;
+        div.container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            height: 18em;
+            div.skill-area {
+                width: 42%;
+                padding: .5em;
+                margin: 1.5em .75em;
+                height: 15em;
+                border: 2px solid #0C120C;
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+                h2 {
+                    font-size: 1.5em;
+                    width: 69%;
+                }
+                h2.angular {
+                    width: 69%;
+                }
+                p {
+                    text-align: left;
+                    line-height: 1.7em;
+                    padding: 0 .5em;
+                    font-size: 1.3em;
+                    margin: .5em 0 0 0;
+                }
+                img {
+                    width: 28%;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-device-width: 1024px) and (max-device-width: 1440px) {
+    section.skills {
+        height: 53em;
+        div.container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            height: 18em;
+            div.skill-area {
+                width: 40%;
+                padding: .5em;
+                margin: 1.5em 1.25em;
+                height: 16em;
+                border: 2px solid #0C120C;
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+                h2 {
+                    font-size: 1.6em;
+                    width: 65%;
+                }
+                h2.angular {
+                    width: 65%;
+                }
+                p {
+                    text-align: left;
+                    line-height: 1.7em;
+                    padding: 0 .5em;
+                    font-size: 1.3em;
+                    margin: .5em 0 0 0;
+                }
+                img.img-sm {
+                    display: none;
+                }
+                img.img-md {
+                    display: inline-block;
+                    width: 28%;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}

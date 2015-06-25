@@ -1,0 +1,23 @@
+html {
+    color: $font-color;
+    font-family: $gudea;
+    margin: -.5em;
+    margin-top: 0;
+    padding: 0;
+    body {
+        margin: 0;
+        padding: 0;
+        h1 {
+            margin: 0;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            padding: 0 1.5em 0 2em;
+            height: 45em;
+        }
+    }
+}

@@ -1,20 +1,30 @@
 //Accordion for projects 
 
 $(document).ready(function() {
+    //$(".ion-android-funnel").click(function(e) {
+    //
+    //    console.log('click');
+    //
+    //    $("#work ul").slideUp();
+    //
+    //    if (!$(this).next().is(":visible")) {
+    //        $('.btn').show();
+    //        $(this).next().slideDown();
+    //    }
+    //});
+    //when .btn is clicked slide up all other btns
+    //$(".btn").click(function() {
+    //    $(this).siblings().slideUp();
+    //});
+});
+
+
+$(document).ready(function() {
     $(".ion-android-funnel").click(function(e) {
 
-        console.log('click');
-
-        $("#work ul").slideUp();
-
-        if (!$(this).next().is(":visible")) {
-            $('.btn').show();
-            $(this).next().slideDown();
+        if ($(window).width() >= 768) {
+            $('.filter-list').toggleClass('show-filters');
         }
-    });
-    //when .btn is clicked slide up all other btns
-    $(".btn").click(function() {
-        $(this).siblings().slideUp();
     });
 });
 
@@ -32,7 +42,6 @@ var filterBtns = $('.btn').click(function() {
 
 $('#expand').click(function(e) {
 
-    console.log('clicked');
     var statusText = $(this).next()[0];
 
     if ($(this).hasClass('ion-android-expand')) {
@@ -48,14 +57,20 @@ $('#expand').click(function(e) {
 
 //Expand Single Project Detail
 
-$('.project').click(function() {
+$('.project').click(function(e) {
+    e.preventDefault();
     this.classList.add('expanded');
+    $('html, body').animate({
+        scrollTop: $("#" + this.id).offset().top - 130
+    }, 500);
 });
 
 //Close Project Detail
 
 $('.ion-ios-close-empty').click(function(e) {
-    $(this).parent().removeClass('expanded');
+    e.preventDefault();
+    var article = $(this).parent().parent()[0];
+    $(article).removeClass('expanded');
     e.stopPropagation();
 });
 

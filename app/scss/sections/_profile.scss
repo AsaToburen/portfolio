@@ -1,0 +1,93 @@
+section.profile {
+    height: 57em;
+    padding: 2em 1em 0em;
+    background-image: url('../../images/dark_geometric_@2X.png');
+    div.profile-desc {
+        height: auto;
+        background-color: $grey;
+        opacity: .6;
+        padding: 1em 2em 0;
+        h1 {
+            text-align: center;
+        }
+        img.profile {
+            display: block;
+            margin: 1.5em auto;
+        }
+        p {
+            line-height: 1.5em;
+            margin-bottom: 0;
+            font-size: 1.1em;
+        }
+        ul {
+            margin-top: 1em;
+            height: 4.5em;
+            li {
+                font-size: 3.5em;
+                color: $charcoal;
+                position: relative;
+                bottom: .1em;
+                float: left;
+                width: 20%;
+                margin: 0 6.5%;
+                &:hover {
+                    color: $charcoal;
+                    background-color: #fff;
+                    border-radius: .1em;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 360px) and (max-width: 480px) {
+    section.profile {
+        height: 56em;
+        padding: 3em 1.5em;
+        div.profile-desc {
+            padding: 1em 3em 0;
+        }
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    section.profile {
+        height: 55em;
+        padding: 3.5em 4em;
+        div.profile-desc {
+            text-align: center;
+            padding: 1em 5em 0;
+            ul {
+                padding: 1em
+            }
+        }
+    }
+}
+
+@media (min-device-width: 768px) and (max-device-width: 1024px) {
+    section.profile {
+        height: 49em;
+        padding: 3em 6em;
+        div.profile-desc {
+            text-align: center;
+            padding: 1em 7em 0;
+            ul {
+                padding: 1em
+            }
+        }
+    }
+}
+
+@media (min-device-width: 1024px) and (max-width: 1280px) {
+    section.profile {
+        height: 49em;
+        padding: 3.5em 8em;
+        div.profile-desc {
+            text-align: center;
+            padding: 1em 16em 0;
+            ul {
+                padding: 1em
+            }
+        }
+    }
+}
