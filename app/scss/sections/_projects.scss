@@ -245,6 +245,7 @@ section.projects {
                 height: 10em;
                 margin: 1em .5em;
                 padding-top: 1em;
+                cursor: pointer;
                 i {
                     display: none;
                 }
@@ -286,7 +287,21 @@ section.projects {
                         }
                     }
                     a {
-                        cursor: default;
+                        cursor: pointer;
+                    }
+                    a.ghub {
+                        float: right;
+                        font-size: 2.5em;
+                        margin-right: -2em;
+                        margin-top: .2em;
+                        color: $charcoal;
+                    }
+                    a.live {
+                        float: right;
+                        font-size: 2.5em;
+                        margin-top: .2em;
+                        margin-right: -3.6em;
+                        color: $charcoal;
                     }
                     i {
                         display: inline-block;
@@ -302,6 +317,7 @@ section.projects {
                         opacity: 1;
                         margin-top: 1em;
                         margin-bottom: .5em;
+                        cursor: default;
                     }
                     div.detail {
                         display: block;
@@ -318,9 +334,7 @@ section.projects {
                         border-bottom: 2px solid #000;
                         margin-top: 0;
                         margin-bottom: .1em;
-
                         padding: .5em;
-
                     }
                     ul.detail-list {
                         width: 30em;
@@ -405,7 +419,7 @@ section.projects {
                 height: 13em;
                 margin: 1.5em 1em;
                 padding-top: 1em;
-                cursor: default;
+                cursor: pointer;
                 a {
                     text-decoration: none;
                     color: $font-color;
@@ -454,7 +468,21 @@ section.projects {
                     }
                 }
                 a {
-                    cursor: default;
+                    cursor: pointer;
+                }
+                a.ghub {
+                    float: right;
+                    font-size: 2.5em;
+                    margin-right: -2em;
+                    margin-top: .2em;
+                    color: $charcoal;
+                }
+                a.live {
+                    float: right;
+                    font-size: 2.5em;
+                    margin-top: .2em;
+                    margin-right: -3.6em;
+                    color: $charcoal;
                 }
                 i {
                     display: inline-block;
@@ -470,6 +498,7 @@ section.projects {
                     opacity: 1;
                     margin-top: 1em;
                     margin-bottom: .5em;
+                    cursor: default;
                 }
                 div.detail {
                     display: block;

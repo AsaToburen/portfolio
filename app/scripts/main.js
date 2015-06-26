@@ -1,24 +1,3 @@
-//Accordion for projects 
-
-$(document).ready(function() {
-    //$(".ion-android-funnel").click(function(e) {
-    //
-    //    console.log('click');
-    //
-    //    $("#work ul").slideUp();
-    //
-    //    if (!$(this).next().is(":visible")) {
-    //        $('.btn').show();
-    //        $(this).next().slideDown();
-    //    }
-    //});
-    //when .btn is clicked slide up all other btns
-    //$(".btn").click(function() {
-    //    $(this).siblings().slideUp();
-    //});
-});
-
-
 $(document).ready(function() {
     $(".ion-android-funnel").click(function(e) {
 
@@ -58,7 +37,6 @@ $('#expand').click(function(e) {
 //Expand Single Project Detail
 
 $('.project').click(function(e) {
-    e.preventDefault();
     this.classList.add('expanded');
     $('html, body').animate({
         scrollTop: $("#" + this.id).offset().top - 130
@@ -75,9 +53,9 @@ $('.ion-ios-close-empty').click(function(e) {
 });
 
 
-// Add a date to the footer of the page.
-
-var dateEl = document.getElementById('date');
-var dateText = document.createElement('p');
-dateText.appendChild(document.createTextNode(new Date().getFullYear()));
-dateEl.appendChild(dateText);
+//// Add a date to the footer of the page.
+//
+//var dateEl = document.getElementById('date');
+//var dateText = document.createElement('p');
+//dateText.appendChild(document.createTextNode(new Date().getFullYear()));
+//dateEl.appendChild(dateText);
