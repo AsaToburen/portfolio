@@ -46,16 +46,10 @@ $('.project').click(function(e) {
 //Close Project Detail
 
 $('.ion-ios-close-empty').click(function(e) {
-    e.preventDefault();
-    var article = $(this).parent().parent()[0];
+    var article = $(this).parent();
     $(article).removeClass('expanded');
     e.stopPropagation();
 });
 
 
-//// Add a date to the footer of the page.
-//
-//var dateEl = document.getElementById('date');
-//var dateText = document.createElement('p');
-//dateText.appendChild(document.createTextNode(new Date().getFullYear()));
-//dateEl.appendChild(dateText);
+

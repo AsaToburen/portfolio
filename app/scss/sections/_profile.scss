@@ -1,11 +1,11 @@
 section.profile {
     height: 57em;
     padding: 2em 1em 0em;
-    background-image: url('../../images/dark_geometric_@2X.png');
+    background-image: url('../images/dark_geometric_@2X.png');
     div.profile-desc {
         height: auto;
         background-color: $grey;
-        opacity: .6;
+        opacity: .55;
         padding: 1em 2em 0;
         h1 {
             text-align: center;
@@ -42,7 +42,7 @@ section.profile {
 
 @media (min-width: 360px) and (max-width: 480px) {
     section.profile {
-        height: 56em;
+        height: 54em;
         padding: 3em 1.5em;
         div.profile-desc {
             padding: 1em 3em 0;
@@ -52,7 +52,7 @@ section.profile {
 
 @media (min-width: 480px) and (max-width: 768px) {
     section.profile {
-        height: 55em;
+        height: 48em;
         padding: 3.5em 4em;
         div.profile-desc {
             text-align: center;
@@ -64,9 +64,9 @@ section.profile {
     }
 }
 
-@media (min-device-width: 768px) and (max-device-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     section.profile {
-        height: 49em;
+        height: 47em;
         padding: 3em 6em;
         div.profile-desc {
             text-align: center;
@@ -78,16 +78,34 @@ section.profile {
     }
 }
 
-@media (min-device-width: 1024px) and (max-width: 1280px) {
+
+@media (min-width: 1024px) and (max-width: 1280px) {
     section.profile {
         height: 49em;
         padding: 3.5em 8em;
         div.profile-desc {
             text-align: center;
-            padding: 1em 16em 0;
+            padding: 1em 14em 0;
+            ul {
+                padding: 1.5em 1em;
+            }
+        }
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1900px) {
+    section.profile {
+        height: 49em;
+        padding: 3.5em 14em;
+        div.profile-desc {
+            text-align: center;
+            padding: 1em 15em 0;
             ul {
                 padding: 1em
             }
         }
     }
 }
+
+
+

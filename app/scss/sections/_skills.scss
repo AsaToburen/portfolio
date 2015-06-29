@@ -13,6 +13,7 @@ section.skills {
     }
     div.skill-area {
         padding: 0 2em;
+        height: auto;
         h2 {
             display: inline-block;
             margin: 0;
@@ -30,12 +31,12 @@ section.skills {
             display: none;
         }
         img.multi {
-            padding-right: 0;
+            padding-right: -.5em;
         }
     }
 }
 
-@media screen and (min-device-width: 360px) and (max-device-width: 480px) {
+@media (min-width: 360px) and (max-width: 480px) {
     section.skills {
         height: 53em;
         div.skill-area {
@@ -50,25 +51,9 @@ section.skills {
     }
 }
 
-@media only screen and (min-device-width: 480px) {
+@media (min-width: 600px) and (max-width: 768px) {
     section.skills {
-        height: 58em;
-        div.skill-area {
-            padding: 0 4em;
-            img, img.multi {
-                padding-right: 1em;
-            }
-            p {
-                line-height: 1.4em;
-                width: 89%;
-            }
-        }
-    }
-}
-
-@media (min-device-width: 600px) and (max-device-width: 768px) {
-    section.skills {
-        height: 46em;
+        height: 41em;
         div.container {
             display: flex;
             flex-flow: row wrap;
@@ -78,7 +63,6 @@ section.skills {
                 width: 42%;
                 padding: .5em;
                 margin: 1.5em .75em;
-                height: 15em;
                 border: 2px solid #0C120C;
                 box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
                 h2 {
@@ -95,7 +79,7 @@ section.skills {
                     text-align: left;
                     line-height: 1.4em;
                     padding: 0 .5em;
-                    font-size: 1.2em;
+                    font-size: 1.1em;
                     margin: .5em 0 0 0;
                 }
                 img {
@@ -107,9 +91,9 @@ section.skills {
     }
 }
 
-@media (min-device-width: 768px) and (max-device-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     section.skills {
-        height: 46em;
+        height: 50em;
         div.container {
             display: flex;
             flex-flow: row wrap;
@@ -119,7 +103,6 @@ section.skills {
                 width: 42%;
                 padding: .5em;
                 margin: 1.5em .75em;
-                height: 15em;
                 border: 2px solid #0C120C;
                 box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
                 h2 {
@@ -137,7 +120,7 @@ section.skills {
                     margin: .5em 0 0 0;
                 }
                 img {
-                    width: 28%;
+                    width: 27.5%;
                     padding-right: 0;
                 }
             }
@@ -145,9 +128,9 @@ section.skills {
     }
 }
 
-@media (min-device-width: 1024px) and (max-device-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
     section.skills {
-        height: 53em;
+        height: 52em;
         div.container {
             display: flex;
             flex-flow: row wrap;
@@ -156,8 +139,7 @@ section.skills {
             div.skill-area {
                 width: 40%;
                 padding: .5em;
-                margin: 1.5em 1.25em;
-                height: 16em;
+                margin: 2em 1.25em;
                 border: 2px solid #0C120C;
                 box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
                 h2 {
@@ -171,7 +153,48 @@ section.skills {
                     text-align: left;
                     line-height: 1.7em;
                     padding: 0 .5em;
-                    font-size: 1.3em;
+                    font-size: 1.35em;
+                    margin: .5em 0 0 0;
+                }
+                img.img-sm {
+                    display: none;
+                }
+                img.img-md {
+                    display: inline-block;
+                    width: 28%;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1900px) {
+    section.skills {
+        height: 52em;
+        div.container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            height: 18em;
+            div.skill-area {
+                width: 33%;
+                padding: .5em;
+                margin: 2em 1.25em;
+                border: 2px solid #0C120C;
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+                h2 {
+                    font-size: 1.6em;
+                    width: 65%;
+                }
+                h2.angular {
+                    width: 65%;
+                }
+                p {
+                    text-align: left;
+                    line-height: 1.9em;
+                    padding: 0 .5em;
+                    font-size: 1.35em;
                     margin: .5em 0 0 0;
                 }
                 img.img-sm {

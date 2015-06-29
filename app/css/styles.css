@@ -21,7 +21,7 @@ html {
 
 section.marquee {
   height: 36em;
-  background-image: url("../../images/index.png");
+  background-image: url("../images/index.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0% 99%; }
@@ -69,24 +69,24 @@ header {
         color: #CAD8DE;
         text-decoration: none; }
 
-@media screen and (min-device-width: 360px) and (max-device-width: 380px) {
+@media (min-width: 360px) and (max-width: 380px) {
   section.marquee {
     height: 43em; } }
 
-@media screen and (min-device-width: 380px) and (max-device-width: 600px) {
+@media (min-width: 380px) and (max-width: 600px) {
   section.marquee {
     height: 47em; } }
 
-@media (min-device-width: 768px) and (max-device-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   section.marquee {
     height: 50em;
     background-position: 100% 99%; }
   header i {
     left: 0.07%; } }
 
-@media (min-device-width: 1024px) and (max-device-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1900px) {
   section.marquee {
-    height: 47em;
+    height: 54em;
     background-position: 100% 96%; }
   header i {
     left: 0.1%; } }
@@ -94,11 +94,11 @@ header {
 section.profile {
   height: 57em;
   padding: 2em 1em 0em;
-  background-image: url("../../images/dark_geometric_@2X.png"); }
+  background-image: url("../images/dark_geometric_@2X.png"); }
   section.profile div.profile-desc {
     height: auto;
     background-color: #CAD8DE;
-    opacity: .6;
+    opacity: .55;
     padding: 1em 2em 0; }
     section.profile div.profile-desc h1 {
       text-align: center; }
@@ -127,14 +127,14 @@ section.profile {
 
 @media (min-width: 360px) and (max-width: 480px) {
   section.profile {
-    height: 56em;
+    height: 54em;
     padding: 3em 1.5em; }
     section.profile div.profile-desc {
       padding: 1em 3em 0; } }
 
 @media (min-width: 480px) and (max-width: 768px) {
   section.profile {
-    height: 55em;
+    height: 48em;
     padding: 3.5em 4em; }
     section.profile div.profile-desc {
       text-align: center;
@@ -142,9 +142,9 @@ section.profile {
       section.profile div.profile-desc ul {
         padding: 1em; } }
 
-@media (min-device-width: 768px) and (max-device-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   section.profile {
-    height: 49em;
+    height: 47em;
     padding: 3em 6em; }
     section.profile div.profile-desc {
       text-align: center;
@@ -152,13 +152,23 @@ section.profile {
       section.profile div.profile-desc ul {
         padding: 1em; } }
 
-@media (min-device-width: 1024px) and (max-width: 1280px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
   section.profile {
     height: 49em;
     padding: 3.5em 8em; }
     section.profile div.profile-desc {
       text-align: center;
-      padding: 1em 16em 0; }
+      padding: 1em 14em 0; }
+      section.profile div.profile-desc ul {
+        padding: 1.5em 1em; } }
+
+@media (min-width: 1280px) and (max-width: 1900px) {
+  section.profile {
+    height: 49em;
+    padding: 3.5em 14em; }
+    section.profile div.profile-desc {
+      text-align: center;
+      padding: 1em 15em 0; }
       section.profile div.profile-desc ul {
         padding: 1em; } }
 
@@ -175,7 +185,8 @@ section.skills {
     border-bottom: 3px solid #CAD8DE;
     margin-bottom: 1em; }
   section.skills div.skill-area {
-    padding: 0 2em; }
+    padding: 0 2em;
+    height: auto; }
     section.skills div.skill-area h2 {
       display: inline-block;
       margin: 0;
@@ -189,9 +200,9 @@ section.skills {
     section.skills div.skill-area img.img-md {
       display: none; }
     section.skills div.skill-area img.multi {
-      padding-right: 0; }
+      padding-right: -.5em; }
 
-@media screen and (min-device-width: 360px) and (max-device-width: 480px) {
+@media (min-width: 360px) and (max-width: 480px) {
   section.skills {
     height: 53em; }
     section.skills div.skill-area h2 {
@@ -200,20 +211,9 @@ section.skills {
       font-size: 1.1em;
       line-height: 1.3em; } }
 
-@media only screen and (min-device-width: 480px) {
+@media (min-width: 600px) and (max-width: 768px) {
   section.skills {
-    height: 58em; }
-    section.skills div.skill-area {
-      padding: 0 4em; }
-      section.skills div.skill-area img, section.skills div.skill-area img.multi {
-        padding-right: 1em; }
-      section.skills div.skill-area p {
-        line-height: 1.4em;
-        width: 89%; } }
-
-@media (min-device-width: 600px) and (max-device-width: 768px) {
-  section.skills {
-    height: 46em; }
+    height: 41em; }
     section.skills div.container {
       display: flex;
       flex-flow: row wrap;
@@ -223,7 +223,6 @@ section.skills {
         width: 42%;
         padding: .5em;
         margin: 1.5em 0.75em;
-        height: 15em;
         border: 2px solid #0C120C;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
         section.skills div.container div.skill-area h2 {
@@ -237,15 +236,15 @@ section.skills {
           text-align: left;
           line-height: 1.4em;
           padding: 0 0.5em;
-          font-size: 1.2em;
+          font-size: 1.1em;
           margin: .5em 0 0 0; }
         section.skills div.container div.skill-area img {
           width: 28%;
           padding-right: 0; } }
 
-@media (min-device-width: 768px) and (max-device-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   section.skills {
-    height: 46em; }
+    height: 50em; }
     section.skills div.container {
       display: flex;
       flex-flow: row wrap;
@@ -255,7 +254,6 @@ section.skills {
         width: 42%;
         padding: .5em;
         margin: 1.5em 0.75em;
-        height: 15em;
         border: 2px solid #0C120C;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
         section.skills div.container div.skill-area h2 {
@@ -270,12 +268,12 @@ section.skills {
           font-size: 1.3em;
           margin: .5em 0 0 0; }
         section.skills div.container div.skill-area img {
-          width: 28%;
+          width: 27.5%;
           padding-right: 0; } }
 
-@media (min-device-width: 1024px) and (max-device-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
   section.skills {
-    height: 53em; }
+    height: 52em; }
     section.skills div.container {
       display: flex;
       flex-flow: row wrap;
@@ -284,8 +282,7 @@ section.skills {
       section.skills div.container div.skill-area {
         width: 40%;
         padding: .5em;
-        margin: 1.5em 1.25em;
-        height: 16em;
+        margin: 2em 1.25em;
         border: 2px solid #0C120C;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
         section.skills div.container div.skill-area h2 {
@@ -297,7 +294,39 @@ section.skills {
           text-align: left;
           line-height: 1.7em;
           padding: 0 0.5em;
-          font-size: 1.3em;
+          font-size: 1.35em;
+          margin: .5em 0 0 0; }
+        section.skills div.container div.skill-area img.img-sm {
+          display: none; }
+        section.skills div.container div.skill-area img.img-md {
+          display: inline-block;
+          width: 28%;
+          padding-right: 0; } }
+
+@media (min-width: 1280px) and (max-width: 1900px) {
+  section.skills {
+    height: 52em; }
+    section.skills div.container {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      height: 18em; }
+      section.skills div.container div.skill-area {
+        width: 33%;
+        padding: .5em;
+        margin: 2em 1.25em;
+        border: 2px solid #0C120C;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+        section.skills div.container div.skill-area h2 {
+          font-size: 1.6em;
+          width: 65%; }
+        section.skills div.container div.skill-area h2.angular {
+          width: 65%; }
+        section.skills div.container div.skill-area p {
+          text-align: left;
+          line-height: 1.9em;
+          padding: 0 0.5em;
+          font-size: 1.35em;
           margin: .5em 0 0 0; }
         section.skills div.container div.skill-area img.img-sm {
           display: none; }
@@ -339,6 +368,9 @@ section.projects {
       background-repeat: no-repeat;
       background-size: 100% 100%;
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+      section.projects div.project-wrapper article a {
+        text-decoration: none;
+        color: #0C120C; }
       section.projects div.project-wrapper article h3 {
         text-align: left;
         padding: .5em;
@@ -355,25 +387,27 @@ section.projects {
         opacity: .9;
         padding: 0.2em 0.5em; }
     section.projects div.project-wrapper #reader {
-      background-image: url(../../images/project-sm/feedReader_sm.png); }
+      background-image: url(../images/project-sm/feedReader_sm.png); }
     section.projects div.project-wrapper #openMic {
-      background-image: url(../../images/project-sm/openMic.png); }
+      background-image: url(../images/project-sm/openMic.png); }
     section.projects div.project-wrapper #meanTodo {
-      background-image: url(../../images/project-sm/meanTodo.png); }
+      background-image: url(../images/project-sm/meanTodo.png); }
+    section.projects div.project-wrapper #text-analysis {
+      background-image: url(../images/project-sm/tweetAnalysis.png); }
     section.projects div.project-wrapper #reactList {
-      background-image: url(../../images/project-sm/reactList_sm.png); }
+      background-image: url(../images/project-sm/reactList_sm.png); }
     section.projects div.project-wrapper #store {
-      background-image: url(../../images/project-sm/store_sm.png); }
+      background-image: url(../images/project-sm/store_sm.png); }
     section.projects div.project-wrapper #weather {
-      background-image: url(../../images/project-sm/weather_sm.png); }
+      background-image: url(../images/project-sm/weather_sm.png); }
     section.projects div.project-wrapper #instagram {
-      background-image: url(../../images/project-sm/instagram_sm.png); }
+      background-image: url(../images/project-sm/instagram_sm.png); }
     section.projects div.project-wrapper #madLibs {
-      background-image: url(../../images/project-sm/madLib_sm.png); }
+      background-image: url(../images/project-sm/madLib_sm.png); }
     section.projects div.project-wrapper #waitStaff {
-      background-image: url(../../images/project-sm/waitstaff_sm.png); }
+      background-image: url(../images/project-sm/waitstaff_sm.png); }
     section.projects div.project-wrapper #musicDisc {
-      background-image: url(../../images/project-sm/musicdiscovery.png); }
+      background-image: url(../images/project-sm/musicdiscovery.png); }
 
 @media screen and (min-width: 360px) and (max-width: 480px) {
   section.projects div.project-wrapper {
@@ -421,8 +455,7 @@ section.projects {
       section.projects div.project-wrapper article p {
         padding: .2em 0;
         font-size: 1em;
-        margin-top: 3em;
-        display: none; } }
+        margin-top: 4em; } }
 
 @media (min-width: 768px) and (max-width: 1100px) {
   section.projects div.filter {
@@ -449,7 +482,7 @@ section.projects {
       section.projects div.filter span i {
         width: 100%;
         font-size: 32px;
-        transition: all 0.5s linear; }
+        transition: all 0.5s ease-out; }
       section.projects div.filter span p {
         margin: 0;
         margin-top: .5em;
@@ -459,7 +492,7 @@ section.projects {
         border-radius: .5em;
         background-color: #252525;
         color: #fff;
-        transition: display 0.5s linear; }
+        transition: display 0.5s ease-out; }
   section.projects div.project-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -476,103 +509,105 @@ section.projects {
       section.projects div.project-wrapper article h3 {
         opacity: 0;
         width: 0px;
-        transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in-out;
         height: 1.25em;
         overflow: hidden; }
+      section.projects div.project-wrapper article a {
+        text-decoration: none;
+        color: #0C120C; }
       section.projects div.project-wrapper article h2 {
         display: none; }
       section.projects div.project-wrapper article p {
         opacity: 0;
-        margin-top: 7em;
-        transition: all 0.3s ease-in; }
+        margin-top: 4.5em;
+        transition: all 0.3s ease-in-out; }
       section.projects div.project-wrapper article:hover h3 {
         width: 16em;
         opacity: 1; }
       section.projects div.project-wrapper article:hover p {
         opacity: 1; }
-      section.projects div.project-wrapper article article.expanded {
-        width: 80%;
-        height: 27em;
-        background-size: 320px 202px;
-        background-position: 4em 7.5em;
-        background-repeat: no-repeat;
-        background-color: #CAD8DE;
-        cursor: auto; }
-        section.projects div.project-wrapper article article.expanded:hover h3 {
-          width: 90%; }
-        section.projects div.project-wrapper article article.expanded a {
-          cursor: pointer; }
-        section.projects div.project-wrapper article article.expanded a.ghub {
-          float: right;
-          font-size: 2.5em;
-          margin-right: -2em;
-          margin-top: .2em;
-          color: #252525; }
-        section.projects div.project-wrapper article article.expanded a.live {
-          float: right;
-          font-size: 2.5em;
-          margin-top: .2em;
-          margin-right: -3.6em;
-          color: #252525; }
-        section.projects div.project-wrapper article article.expanded i {
-          display: inline-block;
-          float: right;
-          margin-right: .2em;
-          margin-top: -.45em;
-          font-size: 4em;
-          cursor: pointer; }
-        section.projects div.project-wrapper article article.expanded h3 {
-          width: 90%;
-          font-size: 1.5em;
-          opacity: 1;
-          margin-top: 1em;
-          margin-bottom: .5em;
-          cursor: default; }
-        section.projects div.project-wrapper article article.expanded div.detail {
-          display: block;
-          width: 40%;
-          margin-left: 30em;
-          margin-top: -1em; }
-          section.projects div.project-wrapper article article.expanded div.detail a {
-            width: 5em; }
-        section.projects div.project-wrapper article article.expanded h2 {
-          display: block;
-          text-align: left;
-          border-bottom: 2px solid #000;
-          margin-top: 0;
-          margin-bottom: .1em;
-          padding: .5em; }
-        section.projects div.project-wrapper article article.expanded ul.detail-list {
-          width: 30em;
-          height: 11em;
-          display: inline-block;
-          text-align: left;
-          list-style-type: disc; }
-          section.projects div.project-wrapper article article.expanded ul.detail-list li {
-            display: list-item;
-            width: 100%;
-            padding: .5em;
-            margin-left: 2em;
-            background-color: transparent;
-            color: #000;
-            cursor: auto; }
-        section.projects div.project-wrapper article article.expanded p {
-          height: 2em;
-          opacity: 1;
-          margin-top: 1.5em;
-          padding: 0.5em 4em 0em 0;
-          font-size: 1.2em; } }
+    section.projects div.project-wrapper article.expanded {
+      width: 95%;
+      height: 27em;
+      background-size: 320px 202px;
+      background-position: 4em 7.5em;
+      background-repeat: no-repeat;
+      background-color: #CAD8DE;
+      cursor: default; }
+      section.projects div.project-wrapper article.expanded a {
+        cursor: pointer; }
+      section.projects div.project-wrapper article.expanded a.ghub {
+        float: right;
+        font-size: 2.5em;
+        margin-right: -2em;
+        margin-top: .2em;
+        color: #252525; }
+      section.projects div.project-wrapper article.expanded a.live {
+        float: right;
+        font-size: 2.5em;
+        margin-top: .2em;
+        margin-right: -3.6em;
+        color: #252525; }
+      section.projects div.project-wrapper article.expanded i {
+        display: inline-block;
+        float: right;
+        margin-right: .2em;
+        margin-top: -.45em;
+        font-size: 4em;
+        cursor: pointer; }
+      section.projects div.project-wrapper article.expanded h3 {
+        width: 90%;
+        font-size: 1.6em;
+        opacity: 1;
+        margin-top: 1em;
+        margin-bottom: .5em;
+        cursor: default; }
+      section.projects div.project-wrapper article.expanded div.detail {
+        display: block;
+        width: 40%;
+        margin-top: -1em;
+        margin-left: 25.5em; }
+        section.projects div.project-wrapper article.expanded div.detail a {
+          width: 5em; }
+      section.projects div.project-wrapper article.expanded h2 {
+        display: block;
+        text-align: left;
+        border-bottom: 2px solid #000;
+        margin-top: 0;
+        margin-bottom: .1em;
+        padding: .5em; }
+      section.projects div.project-wrapper article.expanded ul.detail-list {
+        width: 30em;
+        height: 11em;
+        display: inline-block;
+        text-align: left;
+        list-style-type: disc; }
+        section.projects div.project-wrapper article.expanded ul.detail-list li {
+          display: list-item;
+          width: 100%;
+          padding: .5em;
+          margin-left: 2em;
+          background-color: transparent;
+          color: #000;
+          cursor: auto;
+          font-size: 1.1em; }
+      section.projects div.project-wrapper article.expanded p {
+        height: 2em;
+        opacity: 1;
+        margin-top: 1.5em;
+        padding: 0.5em 4em 0em 0;
+        font-size: 1.2em; } }
 
-@media (min-width: 1100px) and (max-width: 1440px) {
+@media (min-width: 1100px) and (max-width: 1300px) {
   section.projects div.filter {
     height: 2.5em;
     display: block;
-    padding-right: 4em;
-    margin: 1em 0; }
+    padding-right: 5em;
+    margin: 2em 0; }
     section.projects div.filter ul {
       display: none;
       cursor: pointer;
-      margin-left: 16%; }
+      margin-left: 20%; }
       section.projects div.filter ul li {
         display: inline-block;
         padding: 1em 1.25em;
@@ -605,8 +640,8 @@ section.projects {
     justify-content: space-around;
     padding: 0 3em; }
     section.projects div.project-wrapper article {
-      width: 19.5em;
-      height: 13em;
+      width: 17em;
+      height: 11em;
       margin: 1.5em 1em;
       padding-top: 1em;
       cursor: pointer; }
@@ -620,15 +655,15 @@ section.projects {
       section.projects div.project-wrapper article h3 {
         opacity: 0;
         width: 0px;
-        transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in-out;
         height: 1.25em;
         overflow: hidden; }
       section.projects div.project-wrapper article h2 {
         display: none; }
       section.projects div.project-wrapper article p {
         opacity: 0;
-        margin-top: 7em;
-        transition: all 0.3s ease-in; }
+        margin-top: 5em;
+        transition: all 0.2s ease-in-out; }
       section.projects div.project-wrapper article:hover h3 {
         width: 16em;
         opacity: 1; }
@@ -646,6 +681,8 @@ section.projects {
         width: 90%; }
       section.projects div.project-wrapper article.expanded a {
         cursor: pointer; }
+      section.projects div.project-wrapper article.expanded a.article-anchor {
+        display: none; }
       section.projects div.project-wrapper article.expanded a.ghub {
         float: right;
         font-size: 2.5em;
@@ -699,7 +736,155 @@ section.projects {
           margin-left: 2em;
           background-color: transparent;
           color: #000;
-          cursor: auto; }
+          cursor: auto;
+          font-size: 1.1em; }
+      section.projects div.project-wrapper article.expanded p {
+        height: 2em;
+        opacity: 1;
+        margin-top: 1.5em;
+        padding: 0.5em 4em 0em 0;
+        font-size: 1.2em; } }
+
+@media (min-width: 1300px) and (max-width: 1900px) {
+  section.projects div.filter {
+    height: 2.5em;
+    display: block;
+    padding-right: 9em;
+    margin: 2em 0; }
+    section.projects div.filter ul {
+      display: none;
+      cursor: pointer;
+      margin-left: 20%; }
+      section.projects div.filter ul li {
+        display: inline-block;
+        padding: 1em 1.25em;
+        margin-left: -5px; }
+    section.projects div.filter ul.show-filters {
+      display: inline-block; }
+    section.projects div.filter span {
+      width: 4em;
+      height: 2em;
+      cursor: pointer;
+      float: right;
+      margin-top: .5em; }
+      section.projects div.filter span i {
+        width: 100%;
+        font-size: 32px;
+        transition: all 0.5s linear; }
+      section.projects div.filter span p {
+        margin: 0;
+        margin-top: .5em;
+        margin-right: .5em;
+        color: #000;
+        display: none;
+        border-radius: .5em;
+        background-color: #252525;
+        color: #fff;
+        transition: display 0.5s linear; }
+  section.projects div.project-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 6em; }
+    section.projects div.project-wrapper article {
+      width: 19.5em;
+      height: 13em;
+      margin: 1.5em 1em;
+      padding-top: 1em;
+      cursor: pointer; }
+      section.projects div.project-wrapper article a {
+        text-decoration: none;
+        color: #0C120C;
+        width: 0;
+        height: 0; }
+      section.projects div.project-wrapper article i {
+        display: none; }
+      section.projects div.project-wrapper article h3 {
+        opacity: 0;
+        width: 0px;
+        transition: all 0.2s ease-in-out;
+        height: 1.25em;
+        overflow: hidden; }
+      section.projects div.project-wrapper article h2 {
+        display: none; }
+      section.projects div.project-wrapper article p {
+        opacity: 0;
+        margin-top: 7em;
+        transition: all 0.2s ease-in-out; }
+      section.projects div.project-wrapper article:hover h3 {
+        width: 16em;
+        opacity: 1; }
+      section.projects div.project-wrapper article:hover p {
+        opacity: 1; }
+    section.projects div.project-wrapper article.expanded {
+      width: 95%;
+      height: 27em;
+      background-size: 320px 202px;
+      background-position: 4em 7.5em;
+      background-repeat: no-repeat;
+      background-color: #CAD8DE;
+      cursor: default; }
+      section.projects div.project-wrapper article.expanded:hover h3 {
+        width: 90%; }
+      section.projects div.project-wrapper article.expanded a {
+        cursor: pointer; }
+      section.projects div.project-wrapper article.expanded a.article-anchor {
+        display: none; }
+      section.projects div.project-wrapper article.expanded a.ghub {
+        float: right;
+        font-size: 2.5em;
+        margin-right: -2em;
+        margin-top: .2em;
+        color: #252525; }
+      section.projects div.project-wrapper article.expanded a.live {
+        float: right;
+        font-size: 2.5em;
+        margin-top: .2em;
+        margin-right: -3.6em;
+        color: #252525; }
+      section.projects div.project-wrapper article.expanded i {
+        display: inline-block;
+        float: right;
+        margin-right: .2em;
+        margin-top: -.45em;
+        font-size: 4em;
+        cursor: pointer; }
+      section.projects div.project-wrapper article.expanded h3 {
+        width: 90%;
+        font-size: 1.5em;
+        opacity: 1;
+        margin-top: 1em;
+        margin-bottom: .5em;
+        cursor: default; }
+      section.projects div.project-wrapper article.expanded div.detail {
+        display: block;
+        width: 40%;
+        margin-top: -1em;
+        margin-left: 30em; }
+        section.projects div.project-wrapper article.expanded div.detail a {
+          width: 5em; }
+      section.projects div.project-wrapper article.expanded h2 {
+        display: block;
+        text-align: left;
+        border-bottom: 2px solid #000;
+        margin-top: 0;
+        margin-bottom: .1em;
+        padding: .5em; }
+      section.projects div.project-wrapper article.expanded ul.detail-list {
+        width: 30em;
+        height: 11em;
+        display: inline-block;
+        text-align: left;
+        list-style-type: disc; }
+        section.projects div.project-wrapper article.expanded ul.detail-list li {
+          display: list-item;
+          width: 100%;
+          padding: .5em;
+          margin-left: 2em;
+          background-color: transparent;
+          color: #000;
+          cursor: auto;
+          font-size: 1.1em; }
       section.projects div.project-wrapper article.expanded p {
         height: 2em;
         opacity: 1;
@@ -710,7 +895,7 @@ section.projects {
 section.contact {
   height: 40em;
   padding: 0;
-  background-image: url("../../images/dark_geometric_@2X.png"); }
+  background-image: url("../images/dark_geometric_@2X.png"); }
   section.contact div.contact-container {
     padding: 0 2em; }
   section.contact h2 {
@@ -727,7 +912,7 @@ section.contact {
     background-color: #CAD8DE;
     height: 24em;
     margin: 2em 1% 1em 1%;
-    padding: 1em 3em;
+    padding: 1em 1.75em;
     font-size: 1.2em; }
     section.contact form input, section.contact form label {
       margin: .5em 0; }
@@ -749,29 +934,61 @@ section.contact {
       color: #fff;
       width: 97%;
       font-size: 1em; }
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
-    section.contact {
-      height: 54em; }
-      section.contact div.contact-container {
-        padding: 0 18em; }
-        section.contact div.contact-container form {
-          font-size: 1.5em;
-          padding: 1em 2em 2em 2em; }
-          section.contact div.contact-container form textarea {
-            width: 86%;
-            padding: 1em; } }
-  @media (min-device-width: 1024px) and (max-width: 1280px) {
-    section.contact {
-      height: 46em; }
-      section.contact div.contact-container {
-        padding: 1.5em 22em; }
-      section.contact form {
-        height: 26em; }
-        section.contact form input, section.contact form textarea, section.contact form input[type='submit'] {
+
+@media (min-width: 480px) and (max-width: 768px) {
+  section.contact div.contact-container form {
+    height: 23em;
+    width: 17em;
+    margin: 3em auto; }
+    section.contact div.contact-container form input, section.contact div.contact-container form textarea, section.contact div.contact-container form input[type='submit'] {
+      width: 100%;
+      box-sizing: border-box; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  section.contact {
+    height: 45em; }
+    section.contact div.contact-container {
+      padding: 0; }
+      section.contact div.contact-container form {
+        height: 23em;
+        width: 17em;
+        margin: 3em auto; }
+        section.contact div.contact-container form input, section.contact div.contact-container form textarea, section.contact div.contact-container form input[type='submit'] {
           width: 100%;
-          box-sizing: border-box; }
-        section.contact form a {
-          padding: .8em;
-          background-color: #4b88a2; }
-        section.contact form textarea {
-          height: 13em; } }
+          box-sizing: border-box; } }
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  section.contact {
+    height: 50em; }
+    section.contact div.contact-container {
+      padding: 1.5em 0; }
+    section.contact form {
+      height: 26em;
+      width: 21em;
+      margin: 0 auto; }
+      section.contact form input, section.contact form textarea, section.contact form input[type='submit'] {
+        width: 100%;
+        box-sizing: border-box; }
+      section.contact form a {
+        padding: .8em;
+        background-color: #4b88a2; }
+      section.contact form textarea {
+        height: 13em; } }
+
+@media (min-width: 1280px) and (max-width: 1900px) {
+  section.contact {
+    height: 50em; }
+    section.contact div.contact-container {
+      padding: 1.5em 0; }
+    section.contact form {
+      height: 26em;
+      width: 21em;
+      margin: 0 auto; }
+      section.contact form input, section.contact form textarea, section.contact form input[type='submit'] {
+        width: 100%;
+        box-sizing: border-box; }
+      section.contact form a {
+        padding: .8em;
+        background-color: #4b88a2; }
+      section.contact form textarea {
+        height: 13em; } }
