@@ -165,17 +165,19 @@ section.profile {
 @media (min-width: 1280px) and (max-width: 1900px) {
   section.profile {
     height: 49em;
-    padding: 3.5em 14em; }
+    padding: 3.5em 20em; }
+    section.profile h1 {
+      font-size: 2em; }
     section.profile div.profile-desc {
       text-align: center;
-      padding: 1em 15em 0; }
+      padding: 1em 21em 0; }
       section.profile div.profile-desc ul {
         padding: 1em; } }
 
 section.skills {
   padding-left: 0;
   padding-right: 0;
-  height: 50em;
+  height: 52em;
   background-color: #D9D9D9; }
   section.skills h1 {
     text-align: center;
@@ -200,7 +202,7 @@ section.skills {
     section.skills div.skill-area img.img-md {
       display: none; }
     section.skills div.skill-area img.multi {
-      padding-right: -.5em; }
+      padding-right: 0; }
 
 @media (min-width: 360px) and (max-width: 480px) {
   section.skills {
@@ -306,19 +308,21 @@ section.skills {
 @media (min-width: 1280px) and (max-width: 1900px) {
   section.skills {
     height: 52em; }
+    section.skills h1 {
+      font-size: 2em; }
     section.skills div.container {
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
       height: 18em; }
       section.skills div.container div.skill-area {
-        width: 33%;
-        padding: .5em;
+        width: 31%;
+        padding: 1.5em;
         margin: 2em 1.25em;
         border: 2px solid #0C120C;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
         section.skills div.container div.skill-area h2 {
-          font-size: 1.6em;
+          font-size: 2em;
           width: 65%; }
         section.skills div.container div.skill-area h2.angular {
           width: 65%; }
@@ -599,6 +603,8 @@ section.projects {
         font-size: 1.2em; } }
 
 @media (min-width: 1100px) and (max-width: 1300px) {
+  section.projects h1 {
+    font-size: 2em; }
   section.projects div.filter {
     height: 2.5em;
     display: block;
@@ -787,8 +793,8 @@ section.projects {
     justify-content: space-around;
     padding: 0 6em; }
     section.projects div.project-wrapper article {
-      width: 19.5em;
-      height: 13em;
+      width: 23.5em;
+      height: 15em;
       margin: 1.5em 1em;
       padding-top: 1em;
       cursor: pointer; }
@@ -804,12 +810,14 @@ section.projects {
         width: 0px;
         transition: all 0.2s ease-in-out;
         height: 1.25em;
+        font-size: 1.55em;
         overflow: hidden; }
       section.projects div.project-wrapper article h2 {
         display: none; }
       section.projects div.project-wrapper article p {
         opacity: 0;
-        margin-top: 7em;
+        margin-top: 6.5em;
+        font-size: 1.2em;
         transition: all 0.2s ease-in-out; }
       section.projects div.project-wrapper article:hover h3 {
         width: 16em;
@@ -818,12 +826,13 @@ section.projects {
         opacity: 1; }
     section.projects div.project-wrapper article.expanded {
       width: 95%;
-      height: 27em;
+      height: 29em;
       background-size: 320px 202px;
       background-position: 4em 7.5em;
       background-repeat: no-repeat;
       background-color: #CAD8DE;
-      cursor: default; }
+      cursor: default;
+      overflow: hidden; }
       section.projects div.project-wrapper article.expanded:hover h3 {
         width: 90%; }
       section.projects div.project-wrapper article.expanded a {
@@ -884,11 +893,11 @@ section.projects {
           background-color: transparent;
           color: #000;
           cursor: auto;
-          font-size: 1.1em; }
+          font-size: 1.3em; }
       section.projects div.project-wrapper article.expanded p {
         height: 2em;
         opacity: 1;
-        margin-top: 1.5em;
+        margin-top: 1em;
         padding: 0.5em 4em 0em 0;
         font-size: 1.2em; } }
 
@@ -897,7 +906,7 @@ section.contact {
   padding: 0;
   background-image: url("../images/dark_geometric_@2X.png"); }
   section.contact div.contact-container {
-    padding: 0 2em; }
+    padding: 0; }
   section.contact h2 {
     text-align: center;
     padding: .5em 0;
@@ -910,29 +919,31 @@ section.contact {
     display: none; }
   section.contact form {
     background-color: #CAD8DE;
-    height: 24em;
-    margin: 2em 1% 1em 1%;
-    padding: 1em 1.75em;
+    height: 23em;
+    width: 13em;
+    margin: 2em auto;
+    padding: 1em 2em;
     font-size: 1.2em; }
     section.contact form input, section.contact form label {
-      margin: .5em 0; }
+      margin: .5em 0;
+      width: 100%; }
     section.contact form input {
-      width: 97%;
       font-size: 1.5em;
       border: 1px solid #252525;
-      background-color: #fff; }
+      background-color: #fff;
+      -webkit-appearance: none;
+      border-radius: 0; }
     section.contact form textarea {
-      width: 95%;
       height: 10em;
       margin-top: 1em;
       font-size: .8em;
+      width: 98%;
       border: 1px solid #252525; }
     section.contact form input[type="submit"] {
       margin: 1em 0;
       height: 2.5em;
       background-color: #4b88a2;
       color: #fff;
-      width: 97%;
       font-size: 1em; }
 
 @media (min-width: 480px) and (max-width: 768px) {
@@ -942,7 +953,9 @@ section.contact {
     margin: 3em auto; }
     section.contact div.contact-container form input, section.contact div.contact-container form textarea, section.contact div.contact-container form input[type='submit'] {
       width: 100%;
-      box-sizing: border-box; } }
+      box-sizing: border-box;
+      -webkit-appearance: none;
+      border-radius: 0; } }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   section.contact {
@@ -978,6 +991,8 @@ section.contact {
 @media (min-width: 1280px) and (max-width: 1900px) {
   section.contact {
     height: 50em; }
+    section.contact h2 {
+      font-size: 2em; }
     section.contact div.contact-container {
       padding: 1.5em 0; }
     section.contact form {
