@@ -82,9 +82,9 @@ header {
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1900px) {
+@media (min-width: 1024px) {
     section.marquee {
-        height: 54em;
+        height: 65em;
         background-position: 100% 96%;
     }
     header {

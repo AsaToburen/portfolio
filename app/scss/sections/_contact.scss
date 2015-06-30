@@ -41,6 +41,7 @@ section.contact {
             margin-top: 1em;
             font-size: .8em;
             width: 98%;
+            padding: 1em;
             border: 1px solid $charcoal;
         }
         input[type="submit"] {
@@ -112,7 +113,7 @@ section.contact {
     }
 }
 
-@media (min-width: 1280px) and (max-width: 1900px) {
+@media (min-width: 1280px) {
     section.contact {
         height: 50em;
         h2 {
@@ -135,6 +136,10 @@ section.contact {
             }
             textarea {
                 height: 13em;
+
+            }
+            input[type="button"] {
+                font-size: 1.75em;
             }
         }
     }

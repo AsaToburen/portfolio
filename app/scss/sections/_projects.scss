@@ -525,8 +525,11 @@ section.projects {
     }
 }
 
-@media (min-width: 1300px) and (max-width: 1900px) {
+@media (min-width: 1300px) {
     section.projects {
+        h1 {
+            font-size: 2em;
+        }
         div.filter {
             height: 2.5em;
             display: block;
