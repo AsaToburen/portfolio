@@ -165,12 +165,12 @@ section.profile {
 @media (min-width: 1280px) and (max-width: 1900px) {
   section.profile {
     height: 49em;
-    padding: 3.5em 20em; }
+    padding: 3.5em 10em; }
     section.profile h1 {
       font-size: 2em; }
     section.profile div.profile-desc {
       text-align: center;
-      padding: 1em 21em 0; }
+      padding: 1em 17em 0; }
       section.profile div.profile-desc ul {
         padding: 1em; } }
 
@@ -307,7 +307,7 @@ section.skills {
 
 @media (min-width: 1280px) and (max-width: 1900px) {
   section.skills {
-    height: 52em; }
+    height: 60em; }
     section.skills h1 {
       font-size: 2em; }
     section.skills div.container {
@@ -793,8 +793,8 @@ section.projects {
     justify-content: space-around;
     padding: 0 6em; }
     section.projects div.project-wrapper article {
-      width: 23.5em;
-      height: 15em;
+      width: 20em;
+      height: 13em;
       margin: 1.5em 1em;
       padding-top: 1em;
       cursor: pointer; }
@@ -816,7 +816,7 @@ section.projects {
         display: none; }
       section.projects div.project-wrapper article p {
         opacity: 0;
-        margin-top: 6.5em;
+        margin-top: 4.5em;
         font-size: 1.2em;
         transition: all 0.2s ease-in-out; }
       section.projects div.project-wrapper article:hover h3 {
