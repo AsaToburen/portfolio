@@ -169,9 +169,9 @@ section.skills {
     }
 }
 
-@media (min-width: 1280px) and (max-width: 1900px) {
+@media (min-width: 1280px) {
     section.skills {
-        height: 60em;
+        height: 55em;
         h1 {
             font-size: 2em;
         }
@@ -181,7 +181,7 @@ section.skills {
             justify-content: center;
             height: 18em;
             div.skill-area {
-                width: 31%;
+                width: 29%;
                 padding: 1.5em;
                 margin: 2em 1.25em;
                 border: 2px solid #0C120C;

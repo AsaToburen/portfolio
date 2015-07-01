@@ -576,11 +576,11 @@ section.projects {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            padding: 0 6em;
+            padding: 0 11em;
             article {
-                width: 20em;
-                height: 13em;
-                margin: 1.5em 1em;
+                width: 23em;
+                height: 14em;
+                margin: 2em 1em;
                 padding-top: 1em;
                 cursor: pointer;
                 a {
@@ -605,7 +605,7 @@ section.projects {
                 }
                 p {
                     opacity: 0;
-                    margin-top: 4.5em;
+                    margin-top: 5.5em;
                     font-size: 1.2em;
                     transition: all .2s ease-in-out;
                 }
@@ -621,7 +621,8 @@ section.projects {
             }
             article.expanded {
                 width: 95%;
-                height: 29em;
+                min-height: 29em;
+                height: auto;
                 background-size: 320px 202px;
                 background-position: 4em 7.5em;
                 background-repeat: no-repeat;

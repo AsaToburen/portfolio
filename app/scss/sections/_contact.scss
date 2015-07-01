@@ -90,9 +90,9 @@ section.contact {
 
 @media (min-width: 1024px) and (max-width: 1280px) {
     section.contact {
-        height: 50em;
+        height: 46em;
         div.contact-container {
-            padding: 1.5em 0;
+            padding: 2.5em 0;
         }
         form {
             height: 26em;
@@ -108,6 +108,9 @@ section.contact {
             }
             textarea {
                 height: 13em;
+            }
+             input[type="button"] {
+                font-size: 1.3em;
             }
         }
     }

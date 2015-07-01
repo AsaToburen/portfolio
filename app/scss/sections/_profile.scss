@@ -66,7 +66,7 @@ section.profile {
 
 @media (min-width: 768px) and (max-width: 1024px) {
     section.profile {
-        height: 47em;
+        height: 50em;
         padding: 3em 6em;
         div.profile-desc {
             text-align: center;
@@ -78,37 +78,61 @@ section.profile {
     }
 }
 
-
 @media (min-width: 1024px) and (max-width: 1280px) {
     section.profile {
-        height: 49em;
-        padding: 3.5em 8em;
+        height: 63em;
+        padding: 5.5em 8em;
         div.profile-desc {
             text-align: center;
-            padding: 1em 14em 0;
+            padding: 1em 10em 0;
             ul {
                 padding: 1.5em 1em;
+            }
+            p {
+                line-height: 1.7em;
             }
         }
     }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1280px) and (max-width: 1480px) {
     section.profile {
-        height: 49em;
-        padding: 3.5em 10em;
+        height: 68em;
+        padding: 3.5em 13em;
         h1 {
             font-size: 2em;
         }
         div.profile-desc {
             text-align: center;
-            padding: 1em 17em 0;
+            padding: 2em 12em 1em;
             ul {
                 padding: 1em
+            }
+            p {
+                font-size: 1.5em;
+                line-height: 1.7em;
             }
         }
     }
 }
 
-
-
+@media (min-width: 1480px) {
+    section.profile {
+        height: 68em;
+        padding: 3.5em 13em;
+        h1 {
+            font-size: 2em;
+        }
+        div.profile-desc {
+            text-align: center;
+            padding: 2em 12em 1em;
+            ul {
+                padding: 1em
+            }
+            p {
+                font-size: 1.5em;
+                line-height: 1.7em;
+            }
+        }
+    }
+}
