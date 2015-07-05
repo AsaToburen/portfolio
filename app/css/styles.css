@@ -92,7 +92,7 @@ header {
     left: 0.1%; } }
 
 section.profile {
-  height: 57em;
+  height: auto;
   padding: 2em 1em 0em;
   background-image: url("../images/dark_geometric_@2X.png"); }
   section.profile div.profile-desc {
@@ -127,14 +127,12 @@ section.profile {
 
 @media (min-width: 360px) and (max-width: 480px) {
   section.profile {
-    height: 54em;
     padding: 3em 1.5em; }
     section.profile div.profile-desc {
       padding: 1em 3em 0; } }
 
 @media (min-width: 480px) and (max-width: 768px) {
   section.profile {
-    height: 48em;
     padding: 3.5em 4em; }
     section.profile div.profile-desc {
       text-align: center;
@@ -144,7 +142,6 @@ section.profile {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   section.profile {
-    height: 50em;
     padding: 3em 6em; }
     section.profile div.profile-desc {
       text-align: center;
@@ -154,7 +151,6 @@ section.profile {
 
 @media (min-width: 1024px) and (max-width: 1280px) {
   section.profile {
-    height: 63em;
     padding: 5.5em 8em; }
     section.profile div.profile-desc {
       text-align: center;
@@ -162,34 +158,35 @@ section.profile {
       section.profile div.profile-desc ul {
         padding: 1.5em 1em; }
       section.profile div.profile-desc p {
-        line-height: 1.7em; } }
+        line-height: 1.7em;
+        font-size: 1.25em; } }
 
 @media (min-width: 1280px) and (max-width: 1480px) {
   section.profile {
-    height: 68em;
-    padding: 3.5em 13em; }
+    padding: 3.5em 21em; }
     section.profile h1 {
       font-size: 2em; }
     section.profile div.profile-desc {
       text-align: center;
-      padding: 2em 12em 1em; }
+      padding: 2em 17em 1em; }
       section.profile div.profile-desc ul {
-        padding: 1em; }
+        padding: 1em li;
+          padding-font-size: 4em; }
       section.profile div.profile-desc p {
         font-size: 1.5em;
         line-height: 1.7em; } }
 
 @media (min-width: 1480px) {
   section.profile {
-    height: 68em;
-    padding: 3.5em 13em; }
+    padding: 3.5em 21em; }
     section.profile h1 {
       font-size: 2em; }
     section.profile div.profile-desc {
       text-align: center;
-      padding: 2em 12em 1em; }
+      padding: 2em 17em 1em; }
       section.profile div.profile-desc ul {
-        padding: 1em; }
+        padding: 1em li;
+          padding-font-size: 4em; }
       section.profile div.profile-desc p {
         font-size: 1.5em;
         line-height: 1.7em; } }
@@ -960,7 +957,7 @@ section.contact {
       height: 10em;
       margin-top: 1em;
       font-size: .8em;
-      width: 98%;
+      width: 87.5%;
       padding: 1em;
       border: 1px solid #252525; }
     section.contact form input[type="submit"] {
@@ -996,11 +993,9 @@ section.contact {
 
 @media (min-width: 1024px) and (max-width: 1280px) {
   section.contact {
-    height: 46em; }
-    section.contact div.contact-container {
-      padding: 2.5em 0; }
+    height: 42em; }
     section.contact form {
-      height: 26em;
+      height: 24.5em;
       width: 21em;
       margin: 0 auto; }
       section.contact form input, section.contact form textarea, section.contact form input[type='submit'] {
