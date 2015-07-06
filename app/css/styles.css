@@ -93,7 +93,7 @@ header {
 
 section.profile {
   height: auto;
-  padding: 2em 1em 0em;
+  padding: 2em 1em 3em;
   background-image: url("../images/dark_geometric_@2X.png"); }
   section.profile div.profile-desc {
     height: auto;
@@ -157,6 +157,9 @@ section.profile {
       padding: 1em 10em 0; }
       section.profile div.profile-desc ul {
         padding: 1.5em 1em; }
+        section.profile div.profile-desc ul li {
+          width: 13%;
+          margin: 0 10%; }
       section.profile div.profile-desc p {
         line-height: 1.7em;
         font-size: 1.25em; } }
@@ -171,7 +174,9 @@ section.profile {
       padding: 2em 17em 1em; }
       section.profile div.profile-desc ul {
         padding: 1em li;
-          padding-font-size: 4em; }
+          padding-font-size: 4em;
+          padding-width: 13%;
+          padding-margin: 0 10%; }
       section.profile div.profile-desc p {
         font-size: 1.5em;
         line-height: 1.7em; } }
@@ -186,7 +191,9 @@ section.profile {
       padding: 2em 17em 1em; }
       section.profile div.profile-desc ul {
         padding: 1em li;
-          padding-font-size: 4em; }
+          padding-font-size: 4em;
+          padding-width: 13%;
+          padding-margin: 0 10%; }
       section.profile div.profile-desc p {
         font-size: 1.5em;
         line-height: 1.7em; } }
@@ -223,7 +230,7 @@ section.skills {
 
 @media (min-width: 360px) and (max-width: 480px) {
   section.skills {
-    height: 53em; }
+    height: 47em; }
     section.skills div.skill-area h2 {
       width: 73%; }
     section.skills div.skill-area p {
@@ -425,6 +432,8 @@ section.projects {
       background-image: url(../images/project-sm/instagram_sm.png); }
     section.projects div.project-wrapper #madLibs {
       background-image: url(../images/project-sm/madLib_sm.png); }
+    section.projects div.project-wrapper #react-coding-challenge {
+      background-image: url(../images/project-sm/coding-challenge.png); }
     section.projects div.project-wrapper #waitStaff {
       background-image: url(../images/project-sm/waitstaff_sm.png); }
     section.projects div.project-wrapper #musicDisc {
@@ -779,7 +788,7 @@ section.projects {
     section.projects div.filter ul {
       display: none;
       cursor: pointer;
-      margin-left: 20%; }
+      margin-left: 16.5%; }
       section.projects div.filter ul li {
         display: inline-block;
         padding: 1em 1.25em;
@@ -921,8 +930,27 @@ section.projects {
         padding: 0.5em 4em 0em 0;
         font-size: 1.2em; } }
 
+section.toolkit {
+  text-align: center;
+  padding: 0; }
+  section.toolkit h2 {
+    background-color: #4b88a2;
+    padding: .5em 0;
+    border-top: 3px solid #CAD8DE;
+    border-bottom: 3px solid #CAD8DE;
+    margin-bottom: 1em;
+    margin-top: 0;
+    font-size: 2em; }
+  section.toolkit ul {
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+    section.toolkit ul li {
+      display: inline-block;
+      margin: 0 1em; }
+
 section.contact {
-  height: 40em;
+  height: 41em;
   padding: 0;
   background-image: url("../images/dark_geometric_@2X.png"); }
   section.contact div.contact-container {
@@ -942,7 +970,7 @@ section.contact {
     height: 23em;
     width: 13em;
     margin: 2em auto;
-    padding: 1em 2em;
+    padding: 2em 1em;
     font-size: 1.2em; }
     section.contact form input, section.contact form label {
       margin: .5em 0;
@@ -984,7 +1012,7 @@ section.contact {
     section.contact div.contact-container {
       padding: 0; }
       section.contact div.contact-container form {
-        height: 23em;
+        height: 25em;
         width: 17em;
         margin: 3em auto; }
         section.contact div.contact-container form input, section.contact div.contact-container form textarea, section.contact div.contact-container form input[type='submit'] {
@@ -1006,7 +1034,7 @@ section.contact {
         background-color: #4b88a2; }
       section.contact form textarea {
         height: 13em; }
-      section.contact form input[type="button"] {
+      section.contact form input[type="submit"] {
         font-size: 1.3em; } }
 
 @media (min-width: 1280px) {
@@ -1028,5 +1056,5 @@ section.contact {
         background-color: #4b88a2; }
       section.contact form textarea {
         height: 13em; }
-      section.contact form input[type="button"] {
-        font-size: 1.75em; } }
+      section.contact form input[type='submit'] {
+        font-size: 1.3em; } }

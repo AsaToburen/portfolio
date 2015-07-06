@@ -5,9 +5,343 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Asa Toburen || Web Developer</title>
-    <style>header div div,header div h1{box-shadow:0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23);background-color:#CAD8DE;opacity:.7;border-bottom:1px solid #0C120C}header div div h2,header div h1{text-shadow:2px 8px 6px rgba(0,0,0,.2),0 -5px 35px rgba(255,255,255,.3)}header div div,header div h1{box-shadow:0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23)}html{color:#0C120C;font-family:Gudea,sans-serif;margin:0 -.5em -.5em;padding:0}html body{margin:0;padding:0}html body h1{margin:0}html body ul{list-style-type:none;margin:0;padding:0}html body section{padding:0 1.5em 0 2em;height:45em}section.marquee{height:36em;background-image:url(../images/index.png);background-size:cover;background-repeat:no-repeat;background-position:0 99%}header{font-size:1.2em;text-align:right}header i{border-top:5.2em solid #4b88a2;border-left:6em solid transparent;position:relative;top:6.4em;left:.3%;z-index:100;pointer-events:none}header div{text-align:left}header div h1{padding:0 .5em;margin:0}header div div{margin-top:1em}header div div h2{text-transform:uppercase;margin:0;padding:.2em .5em;font-size:1.1em}header div div ul{background-color:#252525;padding:.5em 0}header div div li{display:inline-block}header div div a{padding:.5em .7em;color:#CAD8DE;text-decoration:none}@media (min-width:360px) and (max-width:380px){section.marquee{height:43em}}@media (min-width:380px) and (max-width:600px){section.marquee{height:47em}}@media (min-width:768px) and (max-width:1024px){section.marquee{height:50em;background-position:100% 99%}header i{left:.07%}}@media (min-width:1024px) and (max-width:1600px){section.marquee{height:54em;background-position:100% 96%}header i{left:.1%}}section.profile{height:57em;padding:2em 1em 0;background-image:url(../images/dark_geometric_@2X.png)}@media (min-width:360px) and (max-width:480px){section.profile{height:54em;padding:3em 1.5em}}@media (min-width:480px) and (max-width:768px){section.profile{height:48em;padding:3.5em 4em}}@media (min-width:768px) and (max-width:1024px){section.profile{height:47em;padding:3em 6em}}@media (min-width:1024px) and (max-width:1280px){section.profile{height:49em;padding:3.5em 8em}}@media (min-width:1280px) and (max-width:1600px){section.profile{height:49em;padding:3.5em 14em}}section.skills div.skill-area img{float:right;padding-right:.5em}@media (min-width:600px) and (max-width:768px){section.skills div.container div.skill-area img{width:28%;padding-right:0}}@media (min-width:768px) and (max-width:1024px){section.skills div.container div.skill-area img{width:27.5%;padding-right:0}}@media (min-width:1024px) and (max-width:1280px){section.skills div.container div.skill-area img.img-sm{display:none}}@media (min-width:1280px) and (max-width:1600px){section.skills div.container div.skill-area img.img-sm{display:none}}section.projects div.project-wrapper article div.detail,section.projects ul{display:none}section.projects ul li{padding:1.5em 0;color:#CAD8DE;background-color:#252525}section.projects div.project-wrapper article a{text-decoration:none;color:#0C120C}@media screen and (min-width:360px) and (max-width:480px){section.projects div.project-wrapper article a{text-decoration:none;color:#0C120C}section.projects div.project-wrapper article i{display:none}}@media (min-width:480px) and (max-width:768px){section.projects div.project-wrapper article a{text-decoration:none;color:#0C120C}section.projects div.project-wrapper article i{display:none}}@media (min-width:768px) and (max-width:1100px){section.projects div.filter ul{display:none;cursor:pointer;margin-left:16%}section.projects div.filter ul li{display:inline-block;padding:1em 1.25em;margin-left:-5px}section.projects div.filter span p{margin:.5em .5em 0 0;display:none;border-radius:.5em;background-color:#252525;color:#fff;transition:display .5s ease-out}section.projects div.project-wrapper article h2,section.projects div.project-wrapper article i{display:none}section.projects div.project-wrapper article a{text-decoration:none;color:#0C120C}}@media (min-width:1100px) and (max-width:1300px){section.projects div.filter ul{display:none;cursor:pointer;margin-left:20%}section.projects div.filter ul li{display:inline-block;padding:1em 1.25em;margin-left:-5px}section.projects div.filter span p{margin:.5em .5em 0 0;display:none;border-radius:.5em;background-color:#252525;color:#fff;transition:display .5s linear}section.projects div.project-wrapper article h2,section.projects div.project-wrapper article i{display:none}section.projects div.project-wrapper article a{text-decoration:none;color:#0C120C;width:0;height:0}}@media (min-width:1300px) and (max-width:1600px){section.projects div.filter ul{display:none;cursor:pointer;margin-left:20%}section.projects div.filter ul li{display:inline-block;padding:1em 1.25em;margin-left:-5px}section.projects div.filter span p{margin:.5em .5em 0 0;display:none;border-radius:.5em;background-color:#252525;color:#fff;transition:display .5s linear}section.projects div.project-wrapper article h2,section.projects div.project-wrapper article i{display:none}section.projects div.project-wrapper article a{text-decoration:none;color:#0C120C;width:0;height:0}}</style>
+    <style>
+    header div div,
+    header div h1 {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+        background-color: #CAD8DE;
+        opacity: .7;
+        border-bottom: 1px solid #0C120C
+    }
+    
+    header div div h2,
+    header div h1 {
+        text-shadow: 2px 8px 6px rgba(0, 0, 0, .2), 0 -5px 35px rgba(255, 255, 255, .3)
+    }
+    
+    header div div,
+    header div h1 {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23)
+    }
+    
+    html {
+        color: #0C120C;
+        font-family: Gudea, sans-serif;
+        margin: 0 -.5em -.5em;
+        padding: 0
+    }
+    
+    html body {
+        margin: 0;
+        padding: 0
+    }
+    
+    html body h1 {
+        margin: 0
+    }
+    
+    html body ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0
+    }
+    
+    html body section {
+        padding: 0 1.5em 0 2em;
+        height: 45em
+    }
+    
+    section.marquee {
+        height: 36em;
+        background-image: url(../images/index.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0 99%
+    }
+    
+    header {
+        font-size: 1.2em;
+        text-align: right
+    }
+    
+    header i {
+        border-top: 5.2em solid #4b88a2;
+        border-left: 6em solid transparent;
+        position: relative;
+        top: 6.4em;
+        left: .3%;
+        z-index: 100;
+        pointer-events: none
+    }
+    
+    header div {
+        text-align: left
+    }
+    
+    header div h1 {
+        padding: 0 .5em;
+        margin: 0
+    }
+    
+    header div div {
+        margin-top: 1em
+    }
+    
+    header div div h2 {
+        text-transform: uppercase;
+        margin: 0;
+        padding: .2em .5em;
+        font-size: 1.1em
+    }
+    
+    header div div ul {
+        background-color: #252525;
+        padding: .5em 0
+    }
+    
+    header div div li {
+        display: inline-block
+    }
+    
+    header div div a {
+        padding: .5em .7em;
+        color: #CAD8DE;
+        text-decoration: none
+    }
+    
+    @media (min-width: 360px) and (max-width: 380px) {
+        section.marquee {
+            height: 43em
+        }
+    }
+    
+    @media (min-width: 380px) and (max-width: 600px) {
+        section.marquee {
+            height: 47em
+        }
+    }
+    
+    @media (min-width: 768px) and (max-width: 1024px) {
+        section.marquee {
+            height: 50em;
+            background-position: 100% 99%
+        }
+        header i {
+            left: .07%
+        }
+    }
+    
+    @media (min-width: 1024px) and (max-width: 1600px) {
+        section.marquee {
+            height: 54em;
+            background-position: 100% 96%
+        }
+        header i {
+            left: .1%
+        }
+    }
+    
+    section.profile {
+        height: 57em;
+        padding: 2em 1em 0;
+        background-image: url(../images/dark_geometric_@2X.png)
+    }
+    
+    @media (min-width: 360px) and (max-width: 480px) {
+        section.profile {
+            height: 54em;
+            padding: 3em 1.5em
+        }
+    }
+    
+    @media (min-width: 480px) and (max-width: 768px) {
+        section.profile {
+            height: 48em;
+            padding: 3.5em 4em
+        }
+    }
+    
+    @media (min-width: 768px) and (max-width: 1024px) {
+        section.profile {
+            height: 47em;
+            padding: 3em 6em
+        }
+    }
+    
+    @media (min-width: 1024px) and (max-width: 1280px) {
+        section.profile {
+            height: 49em;
+            padding: 3.5em 8em
+        }
+    }
+    
+    @media (min-width: 1280px) and (max-width: 1600px) {
+        section.profile {
+            height: 49em;
+            padding: 3.5em 14em
+        }
+    }
+    
+    section.skills div.skill-area img {
+        float: right;
+        padding-right: .5em
+    }
+    
+    @media (min-width: 600px) and (max-width: 768px) {
+        section.skills div.container div.skill-area img {
+            width: 28%;
+            padding-right: 0
+        }
+    }
+    
+    @media (min-width: 768px) and (max-width: 1024px) {
+        section.skills div.container div.skill-area img {
+            width: 27.5%;
+            padding-right: 0
+        }
+    }
+    
+    @media (min-width: 1024px) and (max-width: 1280px) {
+        section.skills div.container div.skill-area img.img-sm {
+            display: none
+        }
+    }
+    
+    @media (min-width: 1280px) and (max-width: 1600px) {
+        section.skills div.container div.skill-area img.img-sm {
+            display: none
+        }
+    }
+    
+    section.projects div.project-wrapper article div.detail,
+    section.projects ul {
+        display: none
+    }
+    
+    section.projects ul li {
+        padding: 1.5em 0;
+        color: #CAD8DE;
+        background-color: #252525
+    }
+    
+    section.projects div.project-wrapper article a {
+        text-decoration: none;
+        color: #0C120C
+    }
+    
+    @media screen and (min-width: 360px) and (max-width: 480px) {
+        section.projects div.project-wrapper article a {
+            text-decoration: none;
+            color: #0C120C
+        }
+        section.projects div.project-wrapper article i {
+            display: none
+        }
+    }
+    
+    @media (min-width: 480px) and (max-width: 768px) {
+        section.projects div.project-wrapper article a {
+            text-decoration: none;
+            color: #0C120C
+        }
+        section.projects div.project-wrapper article i {
+            display: none
+        }
+    }
+    
+    @media (min-width: 768px) and (max-width: 1100px) {
+        section.projects div.filter ul {
+            display: none;
+            cursor: pointer;
+            margin-left: 16%
+        }
+        section.projects div.filter ul li {
+            display: inline-block;
+            padding: 1em 1.25em;
+            margin-left: -5px
+        }
+        section.projects div.filter span p {
+            margin: .5em .5em 0 0;
+            display: none;
+            border-radius: .5em;
+            background-color: #252525;
+            color: #fff;
+            transition: display .5s ease-out
+        }
+        section.projects div.project-wrapper article h2,
+        section.projects div.project-wrapper article i {
+            display: none
+        }
+        section.projects div.project-wrapper article a {
+            text-decoration: none;
+            color: #0C120C
+        }
+    }
+    
+    @media (min-width: 1100px) and (max-width: 1300px) {
+        section.projects div.filter ul {
+            display: none;
+            cursor: pointer;
+            margin-left: 20%
+        }
+        section.projects div.filter ul li {
+            display: inline-block;
+            padding: 1em 1.25em;
+            margin-left: -5px
+        }
+        section.projects div.filter span p {
+            margin: .5em .5em 0 0;
+            display: none;
+            border-radius: .5em;
+            background-color: #252525;
+            color: #fff;
+            transition: display .5s linear
+        }
+        section.projects div.project-wrapper article h2,
+        section.projects div.project-wrapper article i {
+            display: none
+        }
+        section.projects div.project-wrapper article a {
+            text-decoration: none;
+            color: #0C120C;
+            width: 0;
+            height: 0
+        }
+    }
+    
+    @media (min-width: 1300px) and (max-width: 1600px) {
+        section.projects div.filter ul {
+            display: none;
+            cursor: pointer;
+            margin-left: 20%
+        }
+        section.projects div.filter ul li {
+            display: inline-block;
+            padding: 1em 1.25em;
+            margin-left: -5px
+        }
+        section.projects div.filter span p {
+            margin: .5em .5em 0 0;
+            display: none;
+            border-radius: .5em;
+            background-color: #252525;
+            color: #fff;
+            transition: display .5s linear
+        }
+        section.projects div.project-wrapper article h2,
+        section.projects div.project-wrapper article i {
+            display: none
+        }
+        section.projects div.project-wrapper article a {
+            text-decoration: none;
+            color: #0C120C;
+            width: 0;
+            height: 0
+        }
+    }
+    </style>
     <link href='http://fonts.googleapis.com/css?family=Gudea' rel='stylesheet' type='text/css'>
-    <link async rel="stylesheet" href="css/ionicons.min.css">
+    <link async rel="stylesheet" href="dist/css/ionicons.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -83,39 +417,6 @@
                 <p>Familiar with Responsive Design and and page speed optimization best practices. Working understanding of mobile-first design and development.</p>
             </div>
         </div>
-        <!-- <section class="toolkit">
-            <h2>Workflow Tools</h2>
-            <ul class="tool-img">
-                <li>
-                    <img src="./images/icons/workflow/sublime.svg" alt="Sublime Text 3">
-                    <p>Cross-platform Text Editing</p>
-                </li>
-                <li>
-                    <img src="./images/icons/workflow/gulp.svg" alt="Gulp">
-                    <p>Streaming Build System</p>
-                </li>
-                <li>
-                    <img src="./images/icons/workflow/git.svg" alt="Git">
-                    <p>Git Version Control</p>
-                </li>
-                <li>
-                    <img src="./images/icons/workflow/sass.svg" alt="Sass">
-                    <p>CSS Preprocessing</p>
-                </li>
-                <li>
-                    <img src="./images/icons/workflow/npm.svg" alt="npm">
-                    <p>Node Package Manager</p>
-                </li>
-                <li>
-                    <img src="./images/icons/workflow/github_full.svg" alt="Github">
-                    <p>Online Collaboration</p>
-                </li>
-                <li>
-                    <img src="./images/icons/workflow/terminal.svg" alt="Terminal">
-                    <p>Command Line</p>
-                </li>
-            </ul>
-    </section> -->
     </section>
     <section id="work" class="projects">
         <h1>Portfolio</h1>
@@ -299,7 +600,7 @@
                 <h3>Angular Madlibs</h3>
                 <div class="detail">
                     <span>
-                        <a href="https://github.com/AsaToburen/angular_madlibs" target="_blank" class="ion-code-working ghub"></a>
+                        <a href="https://github.com/AsaToburen/ngMadlibs" target="_blank" class="ion-code-working ghub"></a>
                         <a href="http://asatoburen.com/angular_madlibs"
                         target="_blank" class="ion-android-open live"></a>
                         <h2>Project Details:</h2>
@@ -329,6 +630,23 @@
                     </ul>
                 </div>
                 <p>Calulate tips and totals</p>
+            </article>
+            <article id="react-coding-challenge" class="project js ht jq">
+                <i class="ion-ios-close-empty"></i>
+                <h3>React - PSD to HTML</h3>
+                <div class="detail">
+                    <span>
+                        <a href="https://github.com/AsaToburen/react-coding-challenge" target="_blank" class="ion-code-working ghub"></a>
+                        <a href="http://www.asatoburen.com/react-coding-challenge/app" target="_blank" class="ion-android-open live"></a>
+                        <h2>Project Details:</h2>
+                        </span>
+                    <ul class="detail-list">
+                        <li>Created almost identical one-page site from PSD file.</li>
+                        <li>Submit questions and see them update on a list.</li>
+                        <li>ReactJS was used to handle the form and list logic.</li>
+                    </ul>
+                </div>
+                <p>Ask questions and add them to a list.</p>
             </article>
             <article id="musicDisc" class="project js ht jq">
                 <i class="ion-ios-close-empty"></i>
@@ -364,7 +682,7 @@
         </div>
     </section>
     <script src="scripts/jquery.min.js"></script>
-    <script src="scripts/app.min.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>

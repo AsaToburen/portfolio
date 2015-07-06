@@ -1,6 +1,6 @@
 section.profile {
     height: auto;
-    padding: 2em 1em 0em;
+    padding: 2em 1em 3em;
     background-image: url('../images/dark_geometric_@2X.png');
     div.profile-desc {
         height: auto;
@@ -83,6 +83,10 @@ section.profile {
             padding: 1em 10em 0;
             ul {
                 padding: 1.5em 1em;
+                li {
+                    width: 13%;
+                    margin: 0 10%;
+                }
             }
             p {
                 line-height: 1.7em;
@@ -105,6 +109,8 @@ section.profile {
                 padding: 1em
                 li {
                     font-size: 4em;
+                    width: 13%;
+                    margin: 0 10%;
                 }
             }
             p {
@@ -128,6 +134,8 @@ section.profile {
                 padding: 1em
                 li {
                     font-size: 4em;
+                    width: 13%;
+                    margin: 0 10%;
                 }
             }
             p {

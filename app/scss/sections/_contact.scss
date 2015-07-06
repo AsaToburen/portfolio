@@ -1,5 +1,5 @@
 section.contact {
-    height: 40em;
+    height: 41em;
     padding: 0;
     background-image: url('../images/dark_geometric_@2X.png');
     div.contact-container {
@@ -23,7 +23,7 @@ section.contact {
         height: 23em;
         width: 13em;
         margin: 2em auto;
-        padding: 1em 2em;
+        padding: 2em 1em;
         font-size: 1.2em;
         input, label {
             margin: .5em 0;
@@ -76,7 +76,7 @@ section.contact {
         div.contact-container {
             padding: 0;
             form {
-                height: 23em;
+                height: 25em;
                 width: 17em;
                 margin: 3em auto;
                 input, textarea, input[type='submit'] {
@@ -106,7 +106,7 @@ section.contact {
             textarea {
                 height: 13em;
             }
-             input[type="button"] {
+             input[type="submit"] {
                 font-size: 1.3em;
             }
         }
@@ -138,8 +138,8 @@ section.contact {
                 height: 13em;
 
             }
-            input[type="button"] {
-                font-size: 1.75em;
+            input[type='submit'] {
+                font-size: 1.3em;
             }
         }
     }
